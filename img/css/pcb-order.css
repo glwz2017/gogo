@@ -1,0 +1,1240 @@
+/*订单标题*/
+.denominat-box {
+    background: url("../images/denominated-bg.png") no-repeat center;
+    width: 100%;
+    min-width: 1280px;
+    height: 200px;
+}
+
+.denominat-box .location-hints {
+    float: right;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.denominat-box .location-hints>a{
+    color: #ffffff;
+    max-width: 170px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: text-top;
+}
+/*订单盒子开始*/
+.main-order {
+    width: 100%;
+    padding: 30px 0 40px 0;
+    height: auto;
+    background: #f5f5f5;
+    color: #333333;
+    user-select: none;
+}
+
+.main-order:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.order-box {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    top: -150px;
+}
+
+.order-box .order-left {
+    float: left;
+    width: 880px;
+    height: auto;
+    border-radius: 6px;
+
+}
+
+/*每项计价公用开始*/
+.order-item {
+    *min-height: 50px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.order-item::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.order-item:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.order-item .item-left, .item-right, .item-pic {
+    float: left;
+}
+
+.order-item .item-pic {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.order-item .item-left {
+    width: 115px;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-indent: 15px;
+    position: relative;
+}
+
+.item-left .flag {
+    display: block;
+    background: url("../images/start.png") no-repeat center;
+    width: 7px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 44%;
+}
+
+.item-right input {
+    width: 190px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d5d5d5;
+    text-indent: 15px;
+    margin-right: 10px;
+}
+
+.item-right label {
+    color: #808080;
+}
+
+.item-right .list {
+    min-height: 28px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #d5d5d5;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-right .list .flag {
+    background: url("../images/choose-ico.png") no-repeat center;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+/*鼠标进入效果*/
+.item-right .list:hover {
+    border: 1px solid #f43d3e;
+}
+
+.item-right .list:hover .flag {
+    display: block;
+}
+
+/*选中效果*/
+.item-right .active-list {
+    border: 1px solid #f43d3e;
+}
+
+.item-right .active-list .flag {
+    display: block;
+}
+
+/*不可选的效果*/
+.item-right .disabled {
+    background-color: #efefef;
+    cursor: not-allowed !important;
+    color: #727171;
+}
+
+.item-right .disabled:hover {
+    border: 1px solid #d5d5d5;
+}
+
+.item-right .disabled:hover .flag {
+    display: none;
+}
+
+/*下单按钮样式*/
+.reference-btn {
+    width: 180px;
+    height: 44px;
+    background-color: #0b953a;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 100px;
+    border: 1px solid #05732b;
+    box-shadow: 0 2px 4px #9fa0a0;
+}
+
+.reference-btn:hover {
+    box-shadow: 0 2px 6px #cfcece;
+}
+
+/*每项计价公用结束*/
+/*smt模块开始*/
+.smt-box {
+    padding: 20px 29px 30px 29px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 6px;
+    min-height: 998px;
+}
+
+.smt-box  .smt-title {
+    height: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.smt-box .smt-title > h2 {
+    width: 165px;
+    font-size: 24px;
+    line-height: 46px;
+    color: #333333;
+    text-align: left;
+    float: left;
+}
+
+.smt-box .smt-title .smt-title-tips {
+    line-height: 50px;
+    font-size: 18px;
+    color: #00a964;
+}
+
+.item-right textarea {
+    width: 560px;
+    height: 88px;
+    border: 1px solid #e5e5e5;
+    resize: none;
+    padding: 5px 10px;
+}
+
+.smt-box .reference-btn {
+    margin: 50px auto 0;
+}
+
+/*smt模块结束*/
+
+/*pcb模块开始*/
+/*上部分开始*/
+.pcb-box {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.pcb-box .pcb-title {
+    box-sizing: border-box;
+    padding: 20px 29px 0 29px;
+}
+
+.pcb-box .pcb-title .pcb-plane {
+    border-bottom: 1px solid #efefef;
+    height: 50px;
+}
+
+.pcb-box .pcb-title .pcb-plane > h2 {
+    width: 165px;
+    font-size: 24px;
+    line-height: 46px;
+    color: #333333;
+    text-align: left;
+   float: left;
+}
+.pcb-box .pcb-title .pcb-plane .pcb-title-tips{
+    line-height: 50px;
+    font-size: 18px;
+    color: #00a964;
+}
+
+/*内容区*/
+.pcb-box .pcb-content {
+    padding: 30px 29px 40px 29px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: none;
+}
+
+/*显示内容区域*/
+.pcb-box .show-content {
+    display: block;
+}
+
+.tips-box {
+    float: left;
+    position: relative;
+    background: url("../images/smt-tips.png") no-repeat center;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.tips-box .tips-text {
+    position: absolute;
+    min-height: 30px;
+    padding: 10px;
+    min-width: 250px;
+    top: 20px;
+    left: 0;
+    box-shadow: 0 0 1px 0 #f4ae3f;
+    display: none;
+    z-index: 998;
+    background-color: #ffffff;
+}
+
+/*文本提示*/
+.tips-box:hover .tips-text {
+    display: block;
+}
+
+/*隐藏元素1*/
+.page-request {
+    background-color: #f5f5f5;
+    margin-top: 5px;
+    display: none;
+}
+
+/*交货形式隐藏元素3*/
+.delivery-box {
+    background-color: #f5f5f5;
+    display: none;
+}
+
+.delivery-box .side-box {
+    float: left;
+}
+
+.delivery-box .side-box > span {
+    float: left;
+    line-height: 28px;
+    margin: 0 5px;
+}
+
+.delivery-box .side-param {
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/*示例1*/
+.delivery-box .delivery-pic {
+    float: left;
+    color: #00aaee;
+    line-height: 30px;
+    border-bottom: 1px dashed #40aef2;
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
+}
+
+.delivery-box .delivery-pic > i {
+    background: url("../images/pinban-two-img.png") no-repeat center;
+    width: 520px;
+    height: 300px;
+    position: absolute;
+    top: 28px;
+    left: -300px;
+    z-index: 99;
+    display: none;
+    transtion: all .3s;
+}
+
+.delivery-box .delivery-pic:hover i {
+    display: block;
+}
+
+/*示例2*/
+.delivery-box .demo-pic {
+    float: left;
+    color: #00aaee;
+    line-height: 30px;
+    border-bottom: 1px dashed #40aef2;
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
+}
+
+.delivery-box .demo-pic > i {
+    background: url("../images/pinban-three-img.png") no-repeat center;
+    width: 520px;
+    height: 300px;
+    position: absolute;
+    top: 28px;
+    left: -299px;
+    z-index: 99;
+    display: none;
+    transtion: all .3s;
+}
+
+.delivery-box .demo-pic:hover i {
+    display: block;
+}
+
+/*隐藏元素2*/
+.line-process {
+    background-color: #f5f5f5;
+    margin-top: 1px;
+    display: none;
+}
+
+/*显示隐藏元素添加类名 active-item*/
+.pcb-content .active-item {
+    display: block;
+}
+
+.pcb-content .size-item input {
+    width: 120px;
+    margin-right: 0;
+    float: left;
+}
+
+.pcb-content .size-item .take-flag {
+    float: left;
+    width: 30px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 0 1px 0 #d5d5d5;
+    background-color: #d5d5d5;
+}
+
+.pcb-content .order-item .change-box {
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    border: 1px solid #f5f5f5;
+    background: url("../images/smt-tips.png") no-repeat 92% center;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pcb-content .order-item .change-box .change-tips {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    box-shadow: 0 0 2px 0 #fdbb2d;
+    border: 1px solid #fdbb2d \9;
+    width: 290px;
+    padding: 10px 20px;
+    *padding-right: 0;
+    *padding-left: 0;
+    box-sizing: border-box;
+    display: none;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+.pcb-content .order-item .change-box:hover .change-tips {
+    display: block;
+}
+
+.pcb-content .order-item .change-box .change-tips .change-title {
+    border-top: 1px solid #efefef;
+    font-weight: bold;
+    margin-top: 5px;
+    text-indent: 0;
+}
+
+.change-tips .change-text {
+    line-height: 20px;
+    color: #727171;
+    text-align: left;
+    text-indent: 0;
+}
+
+.size-x {
+    border: 1px solid #cfcfcf;
+    margin-top: 25px;
+}
+
+.size-y {
+    border: 1px solid #cfcfcf;
+    margin-top: 10px;
+}
+
+.size-x input, .size-y input {
+    width: 160px;
+    margin-right: 10px;
+    border: none;
+    text-indent: 15px;
+}
+
+.submit {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #2e2525;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all .3s;
+    border-radius: 2px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #554a4a;
+}
+
+.board-nums {
+    height: 230px;
+    background-color: #efefef;
+    width: 425px;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    display: none;
+    z-index: 10;
+}
+
+.boardnumber {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    border: 1px solid #cfcfcf;
+    z-index: 9;
+    background-color: #efefef;
+    padding: 5px;
+    width: 416px;
+    height: 220px;
+}
+
+.boardnumber > li {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 5px;
+    min-width: 40px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #ffffff;
+    margin: 3px 1px;
+    cursor: pointer;
+    float: left;
+}
+
+.other-box {
+    width: 416px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #efefef;
+    position: absolute;
+    top: 195px;
+    left: 8px;
+    z-index: 99;
+}
+
+.other-box .other-input {
+    width: 95px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #d8d8d8;
+    color: #6E6E6E;
+    padding-left: 3px;
+    margin-right: 3px;
+}
+
+.other-box > a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    cursor: pointer;
+    border: 0;
+    font-size: 12px;
+    margin-left: 6px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.other-box .confirm-btn {
+    background: #271e1e;
+}
+
+.other-box .confirm-btn:hover {
+    background: #4c4242;
+}
+
+.other-box .cancel-btn {
+    background: #7B7B7B;
+}
+
+.other-box .cancel-btn:hover {
+    background: #9c9c9c;
+}
+
+/*第五项*/
+.layer-boxs {
+    background-color: #efefef;
+    min-height: 50px;
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    margin-right: 20px;
+}
+
+.dropdown select {
+    margin-top: 15px;
+}
+
+/*弹窗遮罩选择板子数量*/
+.open-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    display: none;
+}
+
+.open-mask .table-open {
+    width: 620px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -470px;
+    z-index: 99999;
+    opacity: 1;
+}
+
+.open-mask .table-open .open-title {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #271e1e;
+    background-color: #2c313a;
+}
+
+.choose-title {
+    font-weight: bold;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 20px;
+    font-size: 18px;
+    color: #ffffff !important;
+}
+
+.close-box {
+    float: right;
+    margin: 10px 20px 0 0;
+    cursor: pointer;
+}
+
+.in-box {
+    width: 100%;
+    padding: 20px;
+}
+
+.getInput-box {
+    margin-bottom: 10px;
+}
+
+.getInput-box .getInput {
+    width: 300px;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 15px;
+    border: 1px solid #cfcfcf;
+    margin-left: 20px;
+}
+
+.get-btn {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #b21f1f;
+    border-radius: 2px;
+    margin: 30px 0 0 40px;
+    cursor: pointer;
+}
+
+.get-btn:hover {
+    background-color: #ce1f1f;
+}
+
+.pcb-content .mcpcb {
+    display: none;
+    background-color: #efefef;
+}
+
+.pcb-content .mcpcb img {
+    float: left;
+    margin: 0 15px;
+}
+
+.unit-mm {
+    margin: 5px 10px 0 0;
+    float: left;
+}
+
+/*颜色盒子*/
+.color-box {
+    width: 585px;
+}
+
+.color-box .list {
+    margin-bottom: 10px;
+}
+
+.order-item .item-right .green, .red, .yellow, .blue, .white, .purple, .black, .matt-black, .matt-green {
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+    margin: 4px 5px 0 0;
+}
+
+.order-item .item-right .green {
+    background-color: green;
+}
+
+.order-item .item-right .red {
+    background-color: red;
+}
+
+.order-item .item-right .yellow {
+    background-color: yellow;
+}
+
+.order-item .item-right .blue {
+    background-color: blue;
+}
+
+.order-item .item-right .white {
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+}
+
+.order-item .item-right .purple {
+    background-color: purple;
+}
+
+.order-item .item-right .black {
+    background-color: black;
+}
+
+.order-item .item-right .matt-black {
+    background-color: #767676;
+}
+
+.order-item .item-right .matt-green {
+    background-color: #56be59;
+}
+
+.bevel-box {
+    float: left;
+    display: none;
+}
+
+.bevel-text {
+    float: left;
+    margin: 4px 20px 0 10px;;
+}
+
+.add-order {
+    float: left;
+    margin-top: 10px;
+}
+
+/*上部分结束*/
+
+/*特殊工艺开始*/
+.special-process {
+    margin-top: 40px;
+    border: 1px solid #cfcfcf;
+    width: 700px;
+}
+
+.special-process .special-title {
+    width: 700px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #efefef;
+    /*background: url("../images/arrow.png") no-repeat 98% center #f5f5f5;*/
+    text-indent: 15px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.special-process .special-title .add-flag {
+    font-size: 24px;
+    color: #000000;
+    float: left;
+    margin-top: -2px;
+}
+
+.special-process .special-title .options {
+    font-size: 14px;
+    color: #000000;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+.special-process .special-title  .iconfont{
+    float: right;
+    margin-right: 15px;
+}
+.special-process .special-content {
+    padding: 30px 35px 15px 30px;
+    box-sizing: border-box;
+    display: none;
+}
+
+/*显示工艺内容*/
+.special-process .show-content {
+    display: block;
+}
+
+.special-content .style-tag {
+    margin-top: 30px;
+    /*IE8以下清浮动*/
+    *overflow: hidden;
+}
+
+.special-content .style-tag:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.style-tag .tag-item {
+    float: left;
+    margin-right: 27px;
+}
+
+.style-tag .tag-item select {
+    margin-top: 5px;
+    height: 28px;
+    width: 160px;
+    float: left;
+    border: 1px solid #efefef;
+}
+
+.tag-tips {
+    display: inline-block;
+    background: url("../images/smt-tips.png") no-repeat center;
+    width: 18px;
+    height: 18px;
+    margin: 6px 0 0 10px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.tag-tips .tag-text {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px 0 #fdbb2d;
+    height: auto;
+    border: 1px solid #fdbb2d \9;
+    display: none;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+.tag-tips:hover .tag-text {
+    display: block;
+}
+
+/*参数选择*/
+.parameter-box {
+    margin-top: 20px;
+    *overflow: hidden;
+}
+
+.parameter-box:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.parameter-box .parameter-item {
+    float: left;
+    margin: 0 25px 25px 0;
+}
+
+/*第三个清除右边距*/
+.parameter-box .clear-margin {
+    margin-right: 0;
+}
+
+.parameter-box .parameter-item .item {
+    width: 158px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+    float: left;
+}
+
+.parameter-box .parameter-item .item .flag {
+    background: url("../images/choose-ico.png") no-repeat center;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+/*选中样式*/
+.parameter-box .parameter-item .active-mark {
+    border: 1px solid #f43d3e;
+}
+
+.parameter-box .parameter-item .active-mark .flag {
+    display: block;
+}
+
+/*特殊工艺结束*/
+
+/*组合smt下单*/
+.pcb-smt-title{
+    padding-left: 29px;
+    /*width: 700px;*/
+    /*height: 60px;*/
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+.pcb-smt-title .title-text{
+    width: 700px;
+    background-color: #d9d9d9;
+    height: 60px;
+    border: 1px solid #cfcfcf;
+    line-height: 60px;
+}
+.pcb-smt-title .title-text>span{
+    font-size: 24px;
+    padding-left: 29px;
+    margin-right: 25px;
+}
+
+
+
+
+/*pcb模块结束*/
+
+/*计价右侧部分开始*/
+.main-order .order-box .order-right {
+    float: right;
+    width: 360px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.main-order .order-box .order-right .move-price{
+    transition: all .3s
+}
+/*未下单样式*/
+.order-box .order-right .reference-box {
+    text-align: center;
+    background-color: #efefef;
+    display: inline-block;
+    width: 360px;
+    padding-bottom: 30px;
+}
+
+.order-box .order-right .reference-box > h2 {
+    font-size: 18px;
+    color: #008144;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 30px;
+    border-bottom: 1px solid #efefef;
+    background-color: #ffffff;
+}
+
+.order-box .order-right .reference-box > .total-price {
+    font-size: 18px;
+    color: #3e3a3a;
+    padding: 20px 0 20px 30px;
+
+}
+
+.reference-box > .total-price > span {
+    font-size: 24px;
+    color: #f53848;
+
+}
+
+.reference-box .reference-btn {
+    margin: 0 auto;
+    width: 300px;
+}
+/*广告盒子*/
+.advertising{
+    margin: 20px 0;
+}
+/*已下单样式*/
+.order-box .order-right .denominated-box {
+    position: relative;
+    display: none;
+}
+
+.order-box .order-right .denominated-box > h2 {
+    font-size: 18px;
+    color: #008144;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 30px;
+    border-bottom: 1px solid #efefef;
+    background-color: #ffffff;
+}
+
+/*生成周期盒子*/
+.production-cycle {
+    background-color: #ffffff;
+    padding-top: 10px;
+}
+
+.production-cycle > h3 {
+    font-size: 14px;
+    color: #3e3a3a;
+    padding-left: 30px;
+}
+
+.production-cycle > h6 {
+    color: #00844d;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+/*交期选择*/
+.delivery-option {
+    margin-top: 10px;
+    width: 300px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.delivery-option li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #efefef;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delivery-option li > span {
+    float: right;
+    display: none;
+}
+
+/*选中交期*/
+.delivery-option .active-option {
+    background-color: #0b953a;
+    color: #ffffff;
+    border: 1px solid #05732b;
+}
+
+.delivery-option .active-option > span {
+    display: block;
+}
+
+/*smt 与 pcb 总计*/
+.production-cycle .smt-price, .pcb-price {
+    border-top: 1px solid #efefef;
+    height: 48px;
+    line-height: 48px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.production-cycle .style-name {
+    float: left;
+}
+
+.production-cycle .style-price {
+    float: right;
+    color: #f53848;
+}
+
+/*结算价格总计*/
+.settlement-price {
+    background-color: #efefef;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.settlement-price .total-box {
+    font-size: 18px;
+    color: #3e3a3a;
+    height: 30px;
+    line-height: 30px;
+}
+
+.settlement-price .total-box .price-item {
+    font-size: 24px;
+    color: #f53848;
+    vertical-align: middle;
+}
+
+/*优惠盒子*/
+.settlement-price .preferential-box {
+    font-size: 14px;
+    color: #3e3a3a;
+    margin-top: 10px;
+}
+
+.settlement-price .reference-btn {
+    margin: 10px auto;
+    width: 300px;
+}
+
+/*加载切换动画开始*/
+.denominated-box .loadingprice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 360px;
+     height: 100%;
+    background: #ccc;
+    text-align: center;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.denominated-box .loadingprice img {
+    margin-top: 200px;
+    vertical-align: middle;
+}
+
+/*加载切换动画结束*/
+
+/*计价右侧部分结束*/
+/*遮罩层弹窗开始*/
+.main-order .confirm-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /*IE遮罩兼容*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    display: none;
+}
+
+.main-order .confirm-mask .confirm-box {
+    width: 620px;
+    height: 420px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -210px;
+    margin-left: -310px;
+    z-index: 99999;
+    opacity: 1;
+}
+
+.confirm-box .confirm-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.confirm-box .confirm-content .content-top {
+    margin-top: 110px;
+    font-size: 18px;
+    color: #010101;
+}
+
+.confirm-box .confirm-content .way {
+    font-size: 24px;
+    color: #000000;
+}
+
+.confirm-box .confirm-content .btn-group {
+    margin-top: 60px;
+}
+
+.confirm-box .confirm-content .btn-group > span {
+    width: 248px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.confirm-box .confirm-content .btn-group .cancel-btn {
+    background-color: #c9caca;
+    color: #000000;
+    margin-right: 15px;
+}
+
+.confirm-box .confirm-content .btn-group .order-btn {
+    background-color: #f53d3d;
+    color: #ffffff;
+}
+
+.confirm-box .confirm-content .btn-group .cancel-btn:hover {
+    background-color: #babbbb;
+}
+
+.confirm-box .confirm-content .btn-group .order-btn:hover {
+    background-color: #ce3434;
+}
+
+/*遮罩层弹窗结束*/

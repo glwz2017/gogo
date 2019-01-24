@@ -1,0 +1,513 @@
+/*标题*/
+.denominated-box{
+    width: 100%;
+    background-color: #2c313a;
+    height: 120px;
+    min-width: 1280px;
+}
+.denominated-box .warp{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 30px 0 30px 60px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.denominated-box .warp .each-item{
+    height: 60px;
+    width: 355px;
+    border-radius: 3px;
+    margin-right: 45px;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+.denominated-box .warp .each-item>a{
+    display: inline-block;
+    width: 335px;
+    height: 60px;
+    color: #ffffff;
+    padding-left: 165px;
+    box-sizing: border-box;
+}
+.denominated-box .warp .smt-item{
+    background: url("../../../img/images/order/smt-bg.png") no-repeat 27% center #04532e;
+    font-size: 24px;
+    line-height: 60px;
+    border: 1px solid #056936;
+}
+.denominated-box .warp .pcb-item{
+    background: url("../../../img/images/order/pcb-bg.png") no-repeat 27% center #323946;
+    font-size: 24px;
+    line-height: 60px;
+    border: 1px solid #056936;
+}
+.denominated-box .warp .customer-item{
+    background: url("../../../img/images/order/customer.png") no-repeat 20% center #323946;
+    padding: 7px 0 0 120px;
+    box-sizing: border-box;
+    border: 1px solid #414958;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/*订单盒子开始*/
+.main-order {
+    width: 100%;
+    padding: 30px 0 40px 0;
+    height: auto;
+    background: #f5f5f5;
+    color: #333333;
+    user-select: none;
+}
+
+.main-order:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.order-box {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.order-box .order-left {
+    float: left;
+    width: 760px;
+    height: auto;
+}
+
+/*每项计价公用开始*/
+.order-item {
+    *min-height: 50px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.order-item::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.order-item:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.order-item .item-left, .item-right, .item-pic {
+    float: left;
+}
+
+.order-item .item-pic {
+    margin-left: 20px;
+}
+
+.order-item .item-left {
+    width: 115px;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-indent: 15px;
+    position: relative;
+}
+
+.item-left .flag {
+    display: block;
+    background: url("../../../img/images/order/strat.png") no-repeat center;
+    width: 7px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 44%;
+}
+
+.item-right input {
+    width: 190px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 0 1px 0 #d5d5d5;
+    text-indent: 15px;
+    margin-right: 10px;
+}
+
+.item-right label {
+    color: #808080;
+}
+
+.item-right .list {
+    min-height: 28px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #d5d5d5;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-right .list .flag {
+    background: url("../images/choose-ico.png") no-repeat center;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+/*鼠标进入效果*/
+.item-right .list:hover {
+    border: 1px solid #f43d3e;
+}
+
+.item-right .list:hover .flag {
+    display: block;
+}
+
+/*选中效果*/
+.item-right .active-list {
+    border: 1px solid #f43d3e;
+}
+
+.item-right .active-list .flag {
+    display: block;
+}
+
+/*不可选的效果*/
+.item-right .disabled {
+    background-color: #efefef;
+    cursor: not-allowed !important;
+    color: #727171;
+}
+
+.item-right .disabled:hover {
+    border: 1px solid #d5d5d5;
+}
+
+.item-right .disabled:hover .flag {
+    display: none;
+}
+
+/*每项计价公用结束*/
+/*smt模块开始*/
+.smt-box {
+    padding: 20px 29px 30px 29px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.smt-title {
+    height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 29px;
+}
+
+.smt-title > h2 {
+    width: 165px;
+    font-size: 24px;
+    line-height: 46px;
+    color: #333333;
+    text-align: left;
+    border-bottom: 4px #f43d3e solid;
+}
+
+.item-right textarea {
+    width: 560px;
+    height: 88px;
+    border: 1px solid #e5e5e5;
+    resize: none;
+    padding: 5px 10px;
+}
+
+/*smt模块结束*/
+/*计价右侧部分开始*/
+.main-order .order-box .order-right {
+    float: right;
+    width: 350px;
+}
+
+.order-box .order-right .reference-box {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.reference-btn {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f43d3e;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto 5px auto;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    /*margin-bottom: 5px;*/
+    transition: all .3s;
+}
+
+.reference-btn:hover {
+    background-color: #db3737;
+}
+
+/*服务*/
+.right_service {
+    width: 100%;
+    padding: 0;
+    margin: 10px auto;
+    clear: both;
+    overflow: hidden;
+    background: url("../images/fr_bg.jpg") #ffffff no-repeat bottom center;
+}
+
+.right_service h3 {
+    font-size: 20px;
+    padding: 3px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 4px #f43d3e solid;
+}
+
+.service_pic {
+    width: 312px;
+    padding: 0;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+
+.service_pic img {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.service_contact {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.service_des {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.service_content {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+/*下单结算1*/
+/*下单结算1*/
+.offer-box {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+/*加载切换动画开始*/
+.offer-box .loadingprice {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 3;
+    width: 352px;
+    min-height: 550px;
+    *min-height: 600px;
+    /*min-height: 447px;*/
+    background: #ccc;
+    text-align: center;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+.offer-box .loadingprice img {
+    margin-top: 150px;
+    vertical-align: middle;
+}
+/*加载切换动画结束*/
+
+.offer-box .offer-title {
+    width: 350px;
+    height: 73px;
+    line-height: 73px;
+    border-bottom: 1px solid #efefef;
+    background: url("../images/offer.png") no-repeat 10% center;
+    padding-left: 27px;
+    box-sizing: border-box;
+    text-indent: 45px;
+    font-size: 18px;
+    color: #41afec;
+}
+
+/*联系电话*/
+.offer-box .phone-box {
+    height: 85px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.offer-box .phone-box > input {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 5px;
+    text-indent: 15px;
+    box-shadow: 0 0 1px 0 #7a7a7a;
+    border: none;
+    border: 1px solid #7a7a7a \9;
+}
+
+/*生产周期*/
+.cycle-box {
+    padding: 0 10px 12px 10px;
+    box-sizing: border-box;
+}
+
+.cycle-box .cycle-title {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.cycle-box .cycle-title .cycle {
+    float: left;
+    color: black;
+}
+
+.cycle-title > span {
+    float: right;
+    font-size: 16px;
+    color: #f43d3e;
+}
+
+.times-box {
+    background-color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.times-box:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.times-box > li {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+.times-box > li > i {
+    background: url("../images/choose-ico.png") no-repeat center;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+/*鼠标进入样式*/
+.times-box > li:hover {
+    border: 1px solid #f43d3e;
+}
+
+.times-box > li:hover .flag {
+    display: block;
+}
+
+/*选中的样式*/
+.times-box .active-time {
+    border: 1px solid #f43d3e;
+}
+
+.times-box .active-time .flag {
+    display: block;
+}
+
+.pcb-price {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background-color: #e4f2ff;
+    padding: 0 15px;
+    *padding-right: 0;
+    *padding-left: 0;
+    box-sizing: border-box;
+    margin-top: 1px;
+}
+
+.pcb-price .pcb-offer {
+    float: left;
+    color: black;
+}
+
+.pcb-price span {
+    float: right;
+    color: #f43d3e;
+    font-size: 16px;
+}
+
+.total-price {
+    margin-top: 2px;
+    background-color: #e4f2ff;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.total-price  .total {
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.total-price  .price {
+    font-size: 22px ;
+    color: #f43d3e ;
+    vertical-align: sub;
+    *vertical-align: middle;
+}
+.total-price>p{
+    color: #f43d3e ;
+}
+.total-price .order-btn{
+    display: inline-block;
+    width: 130px;
+    /* padding: 0 35px; */
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: url(../images/offer2.png) no-repeat 15% center #f43d3e;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 15px 0 10px 0;
+    border-radius: 5px;
+    text-indent: 30px;
+    transition: all .3s;
+}
+.total-price .order-btn:hover{
+    background-color: #c93333;
+}
+/*计价右侧部分结束*/
