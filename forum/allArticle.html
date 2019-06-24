@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/publicDynamic.css">
+    <link rel="stylesheet" href="../img/css/forum/allArticle.css">
+</head>
+<body>
+<!--顶部-->
+<div class="top">
+    <div class="banner-top">
+        <ul class="banner-right">
+            <li><a href="../index.html">PCBgogo</a></li>
+            <li class="top-line">|</li>
+            <li><a href="../index.html">PCB Instant Quote</a></li>
+            <li class="top-line">|</li>
+            <li><a href="../index.html">PCB Assembly</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner-nav">
+    <div class="nav-box">
+        <!--logo-->
+        <div class="nav-l" onclick="window.open('index.html','_self')"></div>
+        <!--列表-->
+        <div class="lists-box js-forum-nav">
+            <ul>
+                <li><a href="../dynamic.html" class="active">Forum</a></li>
+                <li><a href="../dynamicDetails.html">Feedback</a></li>
+                <li><a href="../dynamicDetails.html">Current Events</a></li>
+            </ul>
+        </div>
+        <!--账户登陆后-->
+        <div class="user-box">
+            <span class="hi-text"> Hi! The user...</span>
+            <div class="user-pic js-user-pic">
+                <i><img src="../img/images/user.png" alt=""></i>
+                <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+            </div>
+            <div class="user-item">
+                <div class="account active">
+                    My Account
+                </div>
+                <div class="account">
+                    My Forum
+                </div>
+                <div class="account">
+                    My Orders list
+                </div>
+                <div class="account">
+                    My Delivery Address
+                </div>
+                <div class="facebook-btn ">
+                    Bind FaceBook
+                </div>
+                <div class="out-btn " style="margin-top: 10px">
+                    Sign Out
+                </div>
+            </div>
+        </div>
+        <!--账户登录前-->
+        <div class="no-user-box">
+            <div class="sg-in js-sg-in">
+                Sign in
+            </div>
+            <div class="join-free js-sg-free">
+                Join free
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner图-->
+<div class="banner-box">
+    <div class="search-box">
+        <div class="search-bg"></div>
+        <div class="input-box">
+            <input type="text" class="search-input" placeholder="Please enter the article/ keywords"
+                   onfocus="if(this.value==='Please enter the article/ keywords')this.value=''"
+                   onblur="if(this.value==='')this.value='Please enter the article/ keywords'">
+            <a href="searchIndex.html" class="search js-search-btn">Search</a>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="section-box">
+    <div class="container_warp" style="position: relative">
+        <!--轮播广告位置开始-->
+        <div class="section-top">
+            <!--左侧轮播动画-->
+            <div class="activity-box js-activity-box">
+                <a href="#" class="activity-item" style="z-index: 9">
+                    <img src="../img/images/forum/active1.png" alt="activity" width="918" height="298">
+                </a>
+                <a href="#" class="activity-item">
+                    <img src="../img/images/forum/feed1.png" alt="activity" width="918" height="298">
+                </a>
+                <a href="#" class="activity-item">
+                    <img src="../img/images/forum/feed2.png" alt="activity" width="918" height="298">
+                </a>
+                <a href="#" class="activity-item">
+                    <img src="../img/images/forum/feed3.png" alt="activity" width="918" height="298">
+                </a>
+                <a href="#" class="activity-item">
+                    <img src="../img/images/forum/feed4.png" alt="activity" width="918" height="298">
+                </a>
+                <!--轮播按钮-->
+                <div class="activity-btn">
+                    <span class="btn-left js-btn-left"></span>
+                    <span class="btn-right js-btn-right"></span>
+                </div>
+            </div>
+            <!--右侧登录状态-->
+            <!--未登录状态-->
+            <a href="../login.html" class="information-box" style="display: block">
+                <div class="infor-top">
+                    <div class="head-box">
+                        Sign in
+                    </div>
+                </div>
+                <ul class="infor-center">
+                    <li>
+                        <img src="../img/images/forum/infor1.png" alt="information" width="20" height="20">
+                        <p> Follow</p>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <img src="../img/images/forum/infor2.png" alt="information" width="20" height="20">
+                        <p> Follower</p>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <img src="../img/images/forum/infor3.png" alt="information" width="20" height="20">
+                        <p> Inform</p>
+                    </li>
+                </ul>
+                <!--分割线-->
+                <div class="projection" style="position: relative;height: 20px">
+                    <img src="../img/images/forum/projection.png" alt="" style="position: absolute;top:0;left: -18px">
+                </div>
+                <ul class="ask-box">
+                    <li>Releasing </li>
+                    <li>Asking
+                        questions
+                    </li>
+                    <li>Comment
+                        and share
+                    </li>
+                </ul>
+            </a>
+            <!--登陆后状态-->
+            <div class="information-box" style="display: none">
+                <div class="infor-top">
+                    <a href="article.html">
+                        <div class="head-box">
+                            <img src="../img/images/forum/big-user.png" alt="">
+                        </div>
+                        <p>d****ion <img src="../img/images/forum/usa.png" alt=""></p>
+                    </a>
+                </div>
+                <ul class="infor-center">
+                    <li>
+                        <a href="article.html">
+                            <img src="../img/images/forum/infored1.png" alt="information" width="20" height="20">
+                            <p> Follow(<span>30</span>)</p>
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="Follower.html">
+                            <img src="../img/images/forum/infored2.png" alt="information" width="20" height="20">
+                            <p> Follower(<span>30</span>)</p>
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="commentShare.html">
+                            <img src="../img/images/forum/infored3.png" alt="information" width="20" height="20">
+                            <p>Inform</p>
+                            <!--提示原点-->
+                            <i class="point"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!--分割线-->
+                <div class="projection" style="position: relative;height: 20px">
+                    <img src="../img/images/forum/projection.png" alt="" style="position: absolute;top:0;left: -18px">
+                </div>
+                <ul class="ask-box active-info">
+                    <li onclick="window.open('personalArticle.html','_bank')">Releasing</li>
+                    <li onclick="window.open('personalProblem.html','_bank')">Asking
+                        questions
+                    </li>
+                    <li onclick="window.open('../member/awaiting-payment.html','_bank')">Comment
+                        and share
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--轮播广告位置结束-->
+        <div class="wrap-box">
+            <!--左边-->
+            <div class="wrap-left">
+                <!--轮播广告位置结束-->
+                <!--标题选中样式li元素添加类名 active-item-->
+                <ul class="categories-title js-categories-title">
+                    <li class="active-item"><a href="allArticle.html">All categories</a></li>
+                    <li><a href="articleLists.html">Article</a></li>
+                    <li><a href="askLists.html">Ask and Answer</a></li>
+                </ul>
+                <!--展示10条列表-->
+               <div class="items-lists">
+                   <!--文章项-->
+                   <div class="items">
+                       <a href="articleDetail.html">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user1.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>[Notice]Login fail with IE11, please using Firefox or Chrome instead.</h3>
+                               <div class="info-box">
+                                   <span>d****ion</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                               <p>I have designed a Multichannel RF Transmitter, based on a ATMega 328P-PU, a NRF24
+                                   transceiver and it have capability to send some... transceiver and it have capability to
+                                   send
+                                   transceiver and it have capability to send transceiver and it have capability to send
+                               </p>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--回复评论项-->
+                   <div class="items">
+                       <a href="publicProblemDetail.html">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user2.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>Why PCB design uses 3D functions?</h3>
+                               <div class="info-box">
+                                   <span>M****mes</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--文章项-->
+                   <div class="items">
+                       <a href="#">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user1.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>[Notice]Login fail with IE11, please using Firefox or Chrome instead.</h3>
+                               <div class="info-box">
+                                   <span>d****ion</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                               <p>I have designed a Multichannel RF Transmitter, based on a ATMega 328P-PU, a NRF24
+                                   transceiver and it have capability to send some...</p>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--回复评论项-->
+                   <div class="items">
+                       <a href="#">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user2.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>Why PCB design uses 3D functions?</h3>
+                               <div class="info-box">
+                                   <span>M****mes</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--文章项-->
+                   <div class="items">
+                       <a href="#">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user1.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>[Notice]Login fail with IE11, please using Firefox or Chrome instead.</h3>
+                               <div class="info-box">
+                                   <span>d****ion</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                               <p>I have designed a Multichannel RF Transmitter, based on a ATMega 328P-PU, a NRF24
+                                   transceiver and it have capability to send some...</p>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--回复评论项-->
+                   <div class="items">
+                       <a href="#">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user2.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>Why PCB design uses 3D functions?</h3>
+                               <div class="info-box">
+                                   <span>M****mes</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--文章项-->
+                   <div class="items">
+                       <a href="articleDetail.html">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user1.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>[Notice]Login fail with IE11, please using Firefox or Chrome instead.</h3>
+                               <div class="info-box">
+                                   <span>d****ion</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                               <p>I have designed a Multichannel RF Transmitter, based on a ATMega 328P-PU, a NRF24
+                                   transceiver and it have capability to send some... transceiver and it have capability to
+                                   send
+                                   transceiver and it have capability to send transceiver and it have capability to send
+                               </p>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--回复评论项-->
+                   <div class="items">
+                       <a href="publicProblemDetail.html">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user2.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>Why PCB design uses 3D functions?</h3>
+                               <div class="info-box">
+                                   <span>M****mes</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--文章项-->
+                   <div class="items">
+                       <a href="#">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user1.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>[Notice]Login fail with IE11, please using Firefox or Chrome instead.</h3>
+                               <div class="info-box">
+                                   <span>d****ion</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                               <p>I have designed a Multichannel RF Transmitter, based on a ATMega 328P-PU, a NRF24
+                                   transceiver and it have capability to send some...</p>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--回复评论项-->
+                   <div class="items">
+                       <a href="#">
+                           <div class="items-left">
+                               <img src="../img/images/forum/user2.png" alt="header" width="60" height="60">
+                           </div>
+                           <div class="items-center">
+                               <h3>Why PCB design uses 3D functions?</h3>
+                               <div class="info-box">
+                                   <span>M****mes</span>
+                                   <span>|</span>
+                                   <span>March 22, 2018, 07:18:22 pm</span>
+                               </div>
+                           </div>
+                           <ul class="items-right">
+                               <li>
+                                   <span class="iconfont icon-chakanyan"></span>
+                                   120
+                               </li>
+                               <li>
+                                   <span class="iconfont icon-wodepinglun"></span>
+                                   120
+                               </li>
+                           </ul>
+                       </a>
+                   </div>
+                   <!--分页盒子-->
+                   <div class="page-box">
+               </div>
+                    <div id="pages">
+                        <a id="pageprev" href="#">
+                            <span class="yy-icon yy-ljt"></span>
+                        </a>
+                        <a href="#" id="pageactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">11</a>
+                        ...
+                        <a id="pagenext" href="#">
+                            <span class="yy-icon yy-rjt"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="wrap-right">
+                <!--hot label盒子-->
+                <div class="hot-label">
+                    <h3>Hot Label </h3>
+                    <!--热门标签-->
+                    <div class="hot-text">
+                        <a href="searchIndex.html">Transmitter</a>
+                        <a href="searchIndex.html">Controller</a>
+                        <a href="searchIndex.html">Radio Frequenzy</a>
+                        <a href="searchIndex.html">RF</a>
+                        <a href="searchIndex.html">Arduino</a>
+                        <a href="searchIndex.html">Radio Frequenzy</a>
+                    </div>
+                    <!--标志图片-->
+                    <img src="../img/images/forum/hot.png" alt="hot" width="27" height="30" class="hot-flag">
+                </div>
+                <!--参数选择-->
+                <div class="parameter-box">
+                    <input type="text" placeholder="Length(mm)">
+                    <input type="text" placeholder="Width(mm)">
+                    <select name="Layersquote" class="layer-box">
+                        <option value="Layer" selected class="tips">Layer</option>
+                        <option value="1" style="padding: 5px">1 Layer</option>
+                        <option value="2">2 Layers</option>
+                        <option value="4">4 Layers</option>
+                        <option value="6">6 Layers</option>
+                        <option value="8">8 Layers</option>
+                        <option value="10">10 Layers</option>
+                        <option value="12">12 Layers</option>
+                        <option value="14">14 Layers</option>
+                    </select>
+                    <select name="Thicknessquote" class="layer-box">
+                        <option value="" selected class="tips">Thickness</option>
+                        <option value="0.4">0.4mm</option>
+                        <option value="0.6">0.6mm</option>
+                        <option value="0.8">0.8mm</option>
+                        <option value="1.0">1.0mm</option>
+                        <option value="1.2">1.2mm</option>
+                        <option value="1.6">1.6mm</option>
+                        <option value="2.0">2.0mm</option>
+                        <option value="2.4">2.4mm</option>
+                    </select>
+                    <input type="submit" class="quote-now" value="QUOTE NOW">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部列表-->
+<div class="footer">
+    <div class="container_warp">
+        <div class="footer-item">
+            <ul class="footer-item-ul">
+                <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                    Ltd. <br>
+                    Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                </li>
+                <li>
+                    Whatsapp <br>+8618665922549
+                </li>
+                <li>
+                    Mail <br>service@pcbgogo.com
+                </li>
+                <li>
+                    Tel <br>+86-755-33066136
+                </li>
+                <li class="footer-last-item">
+                    Sitemap <i><img src="../img/images/rr-point.png" alt="箭头" width="6" height="11"
+                                    style="vertical-align: middle"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/forum.js"></script>
+<script>
+    $(function () {
+        //   活动轮播图开始
+        void function () {
+            var index = 0;
+            var activeTimer;
+            var length = $('.js-activity-box .activity-item').length - 1;
+            function activityMove() {
+                index++;
+                index = index > length ? 0 : index;
+                $('.js-activity-box .activity-item').eq(index).stop().fadeIn().siblings('.activity-item').stop().fadeOut();
+            }
+            activeTimer = setInterval(function () {
+                activityMove();
+            }, 2500);
+            $('.js-activity-box').hover(function () {
+                clearInterval(activeTimer);
+            }, function () {
+                activeTimer = setInterval(function () {
+                    activityMove();
+                }, 2500);
+            });
+            $('.js-btn-left').click(function () {
+                if (index == 0) {
+                    index = length;
+                } else {
+                    index--;
+                }
+                $('.js-activity-box .activity-item').eq(index).stop().fadeIn().siblings('.activity-item').stop().fadeOut();
+            });
+
+            $('.js-btn-right').click(function () {
+                index++;
+                index = index > length ? 0 : index;
+                $('.js-activity-box .activity-item').eq(index).stop().fadeIn().siblings('.activity-item').stop().fadeOut();
+            });
+        }();
+        //   活动轮播图结束
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/memberTop.css">
+    <link rel="stylesheet" href="../img/css/no-balance.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="top-nav">
+    <div class="nav-l">
+        <a href="orderIndex.html">
+            <img src="../img/images/order/orderlogo.png" alt="logo">
+        </a>
+    </div>
+    <div class="nav-r">
+        <!--右侧图标-->
+        <div class="shopping-box">
+            <ul class="hints js-hints">
+                <li class="active message-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-ai-message"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="active coupon-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-youhuiquan"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="active coupon-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-fukuan"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="car-box cared-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-gouwuche1"></span>
+                </a>
+                    <i class="round car-nums">99</i>
+                </li>
+            </ul>
+        </div>
+        <!--登录后-->
+        <div class="user-box">
+            <span class="hi-text"> Hi! The user...</span>
+            <div class="user-pic js-user-pic">
+                <i><img src="../img/images/user.png" alt=""></i>
+                <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+            </div>
+            <div class="user-item">
+                <div class="account" onclick="window.open('orderIndex.html','_self')">
+                    My Account
+                </div>
+                <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                    My Orders list
+                </div>
+                <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                    My Delivery Address
+                </div>
+                <div class="facebook-btn ">
+                    Bind FaceBook
+                </div>
+                <div class="out-btn " style="margin-top: 10px">
+                    Sign Out
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--二级菜单-->
+<div class="main-menu">
+    <div class="vip_warp">
+        <ul class="menu-list clear-fix">
+            <li class="active"><a href="orderIndex.html">My Account</a></li>
+            <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+            <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+            <li><a href="../reviewList.html">Forum</a></li>
+        </ul>
+        <!--面包屑-->
+        <div class="bread-crumbs">
+            <a href="javascript:void(0)">
+                <span class="iconfont icon-shouye1"></span>
+                <span>- Shopping Cart</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item "><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item "><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class=" item "><a href="myInvitation.html">
+                <span class="iconfont icon-daipingjiab"></span>
+                <span class="category-name">+Experience Share</span></a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="myInvitation.html">
+                    <span class="second-name">My Invitation</span>
+                </a>
+                <a href="promoteIndex.html">
+                    <span class="second-name">Share links</span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="javascript:void(0)">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name active-new">- Reward points</span></a></div>
+            <!--vip-->
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="essentialInformation.html">
+                    <span class="second-name">Basic Information</span></a>
+                <a href="receivingAddress.html">
+                    <span class="second-name">My Delivery Address</span>
+                </a>
+                <a href="changePassword.html">
+                    <span class="second-name">Change Password</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            SHOPPING CART
+        </div>
+        <!--进度指示图-->
+        <div class="progress-map-box">
+            <ul class="progress-ul">
+                <li class="active">
+                    <span class="iconfont icon-gou-shi finish-pic"></span>
+                    <i class="progress-line">
+                        Review your Order
+                    </i>
+                </li>
+                <li class="active">
+                    <span class="iconfont icon-gou-shi finish-pic"></span>
+                    <i class="progress-line">
+                        Payment
+                    </i>
+                </li>
+                <li>
+                    <span class="iconfont icon-gou-shi finish-pic"></span>
+                    <i class="progress-line">
+                        Done
+                    </i>
+                </li>
+            </ul>
+        </div>
+        <!--分割线-->
+        <div class="add-box">
+            <div class="new-address-box">
+                <p>Combine shipping</p>
+                <div class="js-new-address">
+                    No combinar envio
+                </div>
+            </div>
+            <!--具体提示-->
+            <div class="combine-tips">
+                <!--<img src="../img/images/safe-tips.png" alt="">-->
+                Please confirm if you want add new order to this "order Group" for shipment. The delivery time will be
+                arranged according to the new order. And the shipping cost will be calculated
+                again.And it will be changed because of the change of Logistics information.
+            </div>
+            <!--信息展示-->
+            <div>
+                <ul class="combine-ul">
+                    <li style="width: 200px;">
+                        <p>Group NO: <i>G286</i></p>
+                        <p>Total Amount: <span>$38</span></p>
+                    </li>
+                    <li style="width:260px;">
+                        <p>Create Time:<i>2017.10.19 </i></p>
+                        <p>EstimatedDelivery: <i>2017.10.21</i></p>
+                    </li>
+                    <li style="width:260px;">
+                        <p>Address:</p>
+                        <p><i> abc abc abc,BATESVI</i></p>
+                    </li>
+                    <li style="width: 360px;">
+                        <img src="../img/images/dhl2.png" alt="" style="float: left;margin-top: 8px;">
+                        <div style="float: left;margin-left: 15px;"><p>Weight: <span style="color: #b21f1f">0.51kg+0.00kg</span>
+                        </p>
+                            <p>Shipping Cost: <span style="color: #b21f1f">$25.00+$-4</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <!--浏览与确认订单-->
+        <div class="tabed-item1">
+            <!--标题-->
+            <p class="item-title">Review and confirm your order：</p>
+            <!--列表-->
+            <ul class="item-boxed">
+                <li class="item1">Order Details</li>
+                <li class="item2">Size (mm)</li>
+                <li class="item3">Qty</li>
+                <li style="width: 520px">Sub Total</li>
+            </ul>
+            <!--具体每一项-->
+            <div class="item-content">
+                <div class="list1">
+                    <!--0-->
+                    <div class="my-selected">
+                    </div>
+                    <!--1-->
+                    <div class="imgs">
+                        <img src="../img/images/order/hdi.png" alt="">
+                        <div class="imgs-text">
+                            <p>Product No: A11302AS6 <br>[SMD-Stencil]</p>
+                            <p class="days">Build Time: 2-3 days</p>
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="size">
+                        10 x 10
+                    </div>
+                    <!--3-->
+                    <div class="qty">
+                        20
+                    </div>
+                    <!--4-->
+                    <div class="sub-total" style="width: 520px">
+                        $ <span>5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--支付方式-->
+        <div class="pay-method-box">
+            <div class="pay-method-title">
+                Payment method
+            </div>
+            <div class="pay-box">
+                <div class="pay-l clear-fix">
+                    <!--各个付款方式-->
+                    <div class="pay js-pay clear-fix">
+                        <div class="pay-item active">
+                            <!---->
+                            <div class="pay-flag">
+
+                            </div>
+                            <div class="pay-logo">
+                                <img src="../img/images/order/pay-pal.png" alt="">
+                            </div>
+                            <p>Pay with Paypal</p>
+                        </div>
+                        <div class="pay-item">
+                            <div class="pay-logo">
+                                <img src="../img/images/order/icbc.png" alt="">
+                            </div>
+                            <p>Wireless Transfer</p>
+                            <!--银行提示-->
+                            <div class="pay-tips">
+                                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                                <h3>Bank Transfer</h3>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Beneficiary:
+                                    </div>
+                                    <div class="info-r">
+                                        Shenzhen JDB Technology Co., Ltd.
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Bank:
+                                    </div>
+                                    <div class="info-r">
+                                        ICBC SHENZHEN BRANCH, SHENZHEN CHINA
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Bank Address:
+                                    </div>
+                                    <div class="info-r">
+                                        NORTH BLOCK FINANCIAL CENTER SHENNAN ROAD EAST,
+                                        SHENZHEN, 518000, CHINA
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Account No:
+                                    </div>
+                                    <div class="info-r">
+                                        4000027519200517444
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Swift Code:
+                                    </div>
+                                    <div class="info-r">
+                                        ICBKCNBJSZN
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Address:
+                                    </div>
+                                    <div class="info-r">
+                                        No.15,Zhongxing Road,Kengzi Street,Pingshan District,Shenzhen,518000,China
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+                                <p class="pay-text">Please send the receipt to your sales after you make payment
+                                    when you use this
+                                    kind of payment method so that we could arrange your order to production on
+                                    time.</p>
+                            </div>
+                        </div>
+                        <div class="pay-item">
+                            <div class="pay-logo">
+                                <img src="../img/images/order/wu.png" alt="">
+                            </div>
+                            <p>Western Union</p>
+                            <!--银行提示-->
+                            <div class="pay-tips">
+                                <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                                <h3>Westen Union</h3>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        First Name:
+                                    </div>
+                                    <div class="info-r">
+                                        Xiao Ming
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Last Name:
+                                    </div>
+                                    <div class="info-r">
+                                        Wu
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Street
+                                    </div>
+                                    <div class="info-r">
+                                        Zhenhua Road 55,Futian District
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        City:
+                                    </div>
+                                    <div class="info-r">
+                                        Shenzhen
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Country:
+                                    </div>
+                                    <div class="info-r">
+                                        China
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-l">
+                                        Zip code
+                                    </div>
+                                    <div class="info-r">
+                                        518000
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+                                <p class="pay-text">Please send the receipt to your sales after you make payment
+                                    when you use this
+                                    kind of payment method so that we could arrange your order to production on
+                                    time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="other-pay">If you need to pay by other means, please contact the sales representative
+                        via Email: <a href="javascript:void(0)">service@pcbgo.com.</a></p>
+                </div>
+                <div class="pay-r">
+                    <div class="pay-r-top"></div>
+                    <!--优惠项-->
+                    <ul class="discount-list">
+                        <li>
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg js-pay-label"></label>
+                                    <input type="checkbox" class="js-pay-input">
+                                </div>
+                                <div class="list-name">
+                                    <span>Account Balance：$</span>
+                                    <span>100000.00</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <span>-$<span>0.00</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-l">
+                                <div class="list-state">
+                                    <label class="label-bg js-pay-label"></label>
+                                    <input type="checkbox" class="js-pay-input">
+                                </div>
+                                <div class="list-name">
+                                    <span>Gocoin：</span>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <span class="pal-free">Paypal Fee</span><span>-3</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--shipping-method-->
+            <div class="ship-method">
+                <!--报关-->
+                <!--报关-->
+                <div class="customs-box">
+                    <div class="customs-ways clear-fix js-customs-ways">
+                        <div class="item active">
+                            <label class="label-bg ">
+                                <input type="checkbox" class="">
+                            </label>
+                            <div class="ways-text">
+                                <h5>Formal declaration</h5>
+                                <p>Recommended company group users</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label class="label-bg ">
+                                <input type="checkbox" class="">
+                            </label>
+                            <div class="ways-text">
+                                <h5>Informal declaration</h5>
+                                <p>Recommend individual users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customs-tips">
+                        If you do not want to go through the formal customs process, please change the option to
+                        "lnformal declaration".
+                        <br>Supplementary note: The "Formal declaration" payment method only supports bank (ICBC);
+                        the logistics method only supports DHL and Fedex.
+                    </div>
+                </div>
+                <!--右侧-->
+                <div class="ship-r">
+                    <dl>
+                        <dt>PCB Cost</dt>
+                        <dd>$500.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Shipping Cost</dt>
+                        <dd>$41.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Paypal Fee</dt>
+                        <dd>$2.00</dd>
+                    </dl>
+                    <!--优惠价格-->
+                    <div class="the-price">
+                        <div class="price">
+                            <div class="price-left">Member Discount</div>
+                            <div class="price-right">-$50</div>
+                        </div>
+                        <div class="price">
+                            <div class="price-left">Coupon Savings</div>
+                            <div class="price-right">-$100.00</div>
+                        </div>
+                    </div>
+                    <div class="total-amount">
+                        <div class="amount-l">Total Amount</div>
+                        <div class="amount-r">
+                            <span>$357.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--button盒子-->
+            <div class="pro-box">
+                <button class="checkout-btn disable" type="submit">
+                    Proceed to checkout
+                </button>
+                <div class="invoice-btn">
+                    <span class="iconfont icon-xiazai"></span>Proforma invoice
+                </div>
+            </div>
+        </div>
+        <!--提示-->
+        <dl style="margin-top: 28px">
+            <dt style="float: left;margin-top: 5px"><img src="../img/images/safe-tips.png" alt=""></dt>
+            <dd style="float: left;margin-left: 15px">
+                <p style="font-size: 12px;color: #fdbb2d">01. We must review your order before proceeding with payment.
+                    We review orders between 9:00am to 12:00pm for BeiJing Time.</p>
+                <p style="font-size: 12px;color: #fdbb2d">02. Tips: You should pay the tax when the product is shipped
+                    to your country. If you need low value declaration in invoice, please contact us free:
+                    service@pcbgogo.com</p>
+            </dd>
+        </dl>
+        <!--版权说明-->
+        <div class="copy-right-box">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+    <img src="../img/images/order/gotop.png" alt="">
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<script src="../img/js/no-balance.js"></script>
+<script>
+    $(function () {
+        $('.js-pay .pay-item').hover(function () {
+            $(this).find('.pay-tips').stop().fadeIn();
+        }, function () {
+            $(this).find('.pay-tips').stop().fadeOut();
+        });
+        //复制按钮
+        $('.js-copy-btn').click(function () {
+            var arr = [];
+            $(this).parent().find('.info-item').each(function () {
+                arr.push($(this).text().replace(/\s/g, ''));
+            });
+            $('.js-hidden-tips').val(arr.join('\n'));
+            var that = this;
+            if (document.execCommand('copy')) {
+                $('.js-hidden-tips').select();
+                document.execCommand('copy'); //复制内容到剪切板
+                layer.msg('Copy Succeeded<br>', {}, function () {
+                    $(that).parent().fadeOut();
+                });
+            }
+        });
+        //模拟选中效果 套用删除
+        $('.js-customs-ways .item').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    })
+</script>
+</body>
+</html>

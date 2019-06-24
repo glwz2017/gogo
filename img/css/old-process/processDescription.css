@@ -1,0 +1,493 @@
+.main-description {
+    height: 2980px;
+}
+
+.main-description .main-box {
+    background-color: #271e1e;
+    height: 1980px;
+    width: 100%;
+    min-width: 1280px;
+}
+
+/*banner展示*/
+.banner-box {
+    min-width: 1280px;
+    height: 540px;
+    background: url("../../images/0000.jpg") no-repeat center top;
+    color: #ffffff;
+    padding-top: 130px;
+    box-sizing: border-box;
+}
+
+.banner-box .printed {
+    font-size: 30px;
+    text-align: center;
+}
+
+.banner-box .link-com {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.banner-box .link-text {
+    text-align: center;
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*图片展示*/
+.imgs-box {
+    width: 100%;
+    height: 93px;
+    margin-top: 60px;
+    padding-left: 72px;
+    box-sizing: border-box;
+}
+
+.imgs-box > li {
+    float: left;
+    width: 140px;
+    height: 93px;
+    margin-right: 2px;
+}
+
+.imgs-box > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*下单链接盒子*/
+.single-box {
+    height: 600px;
+    background: url("../../images/pcb14.jpg") no-repeat center bottom;
+}
+
+.single-box .single-l {
+    width: 640px;
+    height: 600px;
+    background: url("../../images/pcb13.png") no-repeat center 52%;
+    float: left;
+}
+
+.single-title {
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding-top: 217px;
+}
+
+.single-text {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 63px;
+}
+
+.single-btn-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.single-btn {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 40px;
+    background-color: #b21f1f;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.single-btn:hover {
+    box-shadow: 0 0 5px #821b1b;
+}
+
+/*提醒盒子*/
+.remind-box {
+    margin-top: 160px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.remind-box .remind-tab {
+    height: 120px;
+    background: url("../../images/remind-bg.png") no-repeat center;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.remind-tabs {
+    width: 33%;
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    color: #483838;
+}
+
+.remind-tabs p {
+    margin-top: 20px;
+}
+
+.remind-item {
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.remind-item1 {
+    background: url("../../images/parts1.png") no-repeat center 167%;
+    overflow: hidden;
+}
+
+.remind-item2 {
+    background: url("../../images/parts2.png") no-repeat center 167%;
+    overflow: hidden;
+    display: none;
+}
+
+.remind-item3 {
+    background: url("../../images/parts3.png") no-repeat center -415%;
+    overflow: hidden;
+    display: none;
+}
+
+/*左侧切换盒子*/
+.sample-show-box {
+    margin-top: 1px;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.sample-l {
+    border-right: 1px solid #efefef;
+    padding-top: 140px;
+    float: left;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+}
+
+.sample-l .sample-left-item {
+    text-align: right;
+    padding-right: 32px;
+    height: 20px;
+    width: 240px;
+    background: url(../../images/round.png) no-repeat right top;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    color: #727171;
+    margin-left: 6px;
+    font-weight: bold;
+    position: relative;
+}
+
+.sample-l .sample-left-item:hover {
+    background: url(../../images/rounded.png) no-repeat right top;
+    color: #b21f1f;
+}
+
+.sample-l .show-rounded {
+    color: #b21f1f;
+    background-image: url(../../images/rounded.png);
+}
+
+/*右侧*/
+.sample-r {
+    float: right;
+    width: 960px;
+    padding-top: 140px;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+}
+
+.sample-title {
+    font-size: 30px;
+    color: #b21f1f;
+}
+
+.sample-sign {
+    width: 100%;
+    border-top: 1px solid #b21f1f;
+    margin-top: 30px;
+    height: auto;
+    position: relative;
+}
+
+.signs {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    background-color: #ffffff;
+    height: 15px;
+    width: 40px;
+}
+
+.sample-pic-box {
+    margin-top: 35px;
+    position: relative;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sample-pic-box1 {
+    background-image: url("../../images/sample-bg.jpg");
+}
+
+.sample-pic-box2 {
+    background-image: url("../../images/sample-bg2.jpg");
+}
+
+.sample-pic-mask {
+    width: 480px;
+    height: 220px;
+    background-color: rgba(59, 46, 45, 0.9);
+    background-color: rgb(59, 46, 45) \9;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #ffffff;
+    background-image: url("../../images/sample-back.png");
+    background-repeat: no-repeat;
+    background-position: 11% 65%;
+    padding: 50px 0 0 50px;
+    box-sizing: border-box;
+}
+
+.pic-mask-left {
+    font-size: 18px;
+    float: left;
+}
+
+.pic-mask-text {
+    float: left;
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 12px;
+}
+
+/*文字介绍*/
+.sample-text {
+    margin-top: 50px;
+    color: #2e2525;
+    line-height: 25px;
+}
+
+.text-item-box {
+    height: 150px;
+}
+
+/*表格展示信息*/
+.table-show-info {
+    margin-top: 57px;
+}
+
+.table-box {
+    border-collapse: collapse;
+    border: 1px solid #efefef;
+    width: 100%;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.sample-box th {
+    background-color: #f7f8f8;
+    font-weight: bold;
+}
+
+.sample-box td {
+    font-size: 12px;
+}
+
+.sample-box tr {
+    height: 60px;
+    border: 1px solid #efefef;
+}
+
+.sample-box .wd3 {
+    width: 30%;
+    border-right: 1px solid #efefef;
+}
+
+.sample-box .wd7 {
+    width: 70%;
+}
+
+.sample-list {
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #727171;
+    margin-bottom: 30px;
+}
+
+.sample-list p {
+    margin-top: 20px;
+}
+
+.sample-list .list-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-price-item {
+    border-right: 1px solid #efefef;
+    height: 150px;
+    padding-top: 25px;
+    padding-right: 44px;
+    box-sizing: border-box;
+    word-break: break-all;
+    padding-left: 30px;
+    float: left;
+}
+
+.text-price-item .price-item {
+    font-size: 72px;
+    color: #2e2525;
+    font-weight: bold;
+}
+
+.text-price-item .price-text {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.requested-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.sample-text .requested-item {
+    padding: 50px 0 50px 320px;
+    box-sizing: border-box;
+    border-top: 1px dashed #727171;
+}
+
+.sample-text .requested-item1 {
+    background: url("../../images/requested1.png") no-repeat 14% center;
+}
+.sample-text .requested-item2 {
+    background: url("../../images/requested2.png") no-repeat 14% center;
+}
+
+.sample-text .requested-item3 {
+    background: url("../../images/requested3.png") no-repeat 14% 15%;
+}
+
+.sample-text .requested-item .item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.requested-list-box {
+    margin-top: 50px;
+}
+
+.requested-list-box > ul > li {
+    margin-top: 30px;
+}
+
+.sample-text .faq-item {
+    margin-top: 40px;
+}
+
+.sample-text .faq-title {
+    font-weight: bold;
+}
+
+.sample-text .faq-text {
+    padding: 20px 25px;
+    background-color: #f7f8f8;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.sample-text .samrle-box {
+
+}
+
+.sample-text .samrle-box .samrle-item {
+    width: 300px;
+    height: 290px;
+    background-color: #f7f8f8;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.sample-text .samrle-box .remove-margin {
+    margin-right: 0;
+}
+
+.sample-text .samrle-box .samrle-item .item-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sample-text .samrle-box .samrle-item .item-img > img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.sample-text .samrle-box .samrle-item .item-img:hover img {
+    transform: scale(1.1);
+}
+
+.sample-text .samrle-box .samrle-item > p {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+/*计价盒子*/
+.valuation-box {
+    width: 100%;
+    height: 320px;
+    background-color: #efebeb;
+}
+
+.valuation-box .valuation-item {
+    height: 320px;
+    background: url("../../images/valuation-bg.png") no-repeat 50% center;
+    padding: 115px 0 0 210px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.valuation-item .your-files {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.got-project {
+    margin-top: 20px;
+    color: #826c6c;
+}
+
+.got-project > a {
+    text-decoration: underline;
+    color: #826c6c;
+}
+
+.pcb-now-btn {
+    background: url("../../images/pcb-btn-bg.jpg") no-repeat center;
+    width: 293px;
+    height: 65px;
+    line-height: 58px;
+    color: #ffffff;
+    font-weight: bold;
+    text-indent: 30px;
+    position: absolute;
+    top: 135px;
+    right: 100px;
+}

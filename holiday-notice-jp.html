@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>春節の休業と納期のお知らせ</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/public.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="img/fonts/iconfont.css">
+    <link rel="stylesheet" href="img/css/header.css">
+    <link rel="stylesheet" href="img/css/footer.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69152275-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-69152275-1');
+    </script>
+    <script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+    <style>
+        .holiday-box {
+            background: url("img/images/with-gold.png") no-repeat center #c4131b;
+            width: 100%;
+            height: 1939px;
+            box-sizing: border-box;
+        }
+
+        .holiday-box .main-box {
+            padding-top: 65px;
+        }
+
+        .holiday-box .holiday-top {
+            background: url("img/images/holiday-box.png") no-repeat center;
+            width: 1280px;
+            height: 530px;
+            position: relative;
+            border: 1px solid #e0b377;
+        }
+
+        .holiday-box .holiday-top .white-bg {
+            position: absolute;
+            top: 15px;
+            left: 17px;
+            background-color: #ffffff;
+            width: 1247px;
+            z-index: 9;
+            height: 502px
+        }
+
+        .holiday-box .flowers-left, .flowers-right {
+            position: absolute;
+            top: -25px;
+            z-index: 9;
+        }
+
+        .holiday-box .flowers-left {
+            left: 0;
+        }
+
+        .holiday-box .flowers-right {
+            right: -8px;
+        }
+
+        .holiday-box .holiday-top .holiday-title {
+            width: 400px;
+            height: 65px;
+            line-height: 80px;
+            background-color: #c4131b;
+            margin: 80px auto 0;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .holiday-box .holiday-top p {
+            width: 1090px;
+            margin: 50px auto 0;
+            font-size: 24px;
+            font-family: '微软雅黑';
+            position: relative;
+            z-index: 10;
+        }
+
+        .holiday-box .tag-left, .tag-right {
+            position: absolute;
+            z-index: 9;
+        }
+
+        .holiday-box .tag-left {
+            left: 190px;
+            top: 100px;
+        }
+
+        .holiday-box .tag-right {
+            right: 90px;
+            bottom: 80px;
+        }
+
+        /*日历*/
+        .the-calendar {
+            width: 1247px;
+            background-color: #ffffff;
+            min-height: 600px;
+            margin-left: 18px;
+            position: relative;
+            top: -14px;
+            overflow: hidden;
+            padding-bottom: 80px;
+        }
+
+        .the-calendar table {
+            width: 1090px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0 auto;
+        }
+
+        .the-calendar table th {
+            padding: 25px 0;
+            text-align: center;
+            border: 1px solid #ddddde;
+        }
+
+        .the-calendar table td {
+            padding: 30px 16px;
+            border: 1px solid #ddddde;
+            box-sizing: border-box;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .the-calendar table td:first-child {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .the-calendar table td:first-child + td {
+            font-size: 14px;
+        }
+
+        .the-calendar table tr:first-child + tr td {
+            padding: 2px 10px;
+            border: 1px solid #ddddde;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <ul class="nav-items">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-qushuchakanshuxing2"></span>
+                    <span class="gerber">Online Gerber Viewer</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-Skype"></span>
+                </a>
+            </li>
+            <li><a href="mailto:service@pcbgogo.com">
+                <span class="iconfont icon-E-mail"></span>
+                <span class="mail-text">service@pcbgogo.com</span>
+            </a>
+            </li>
+            <li class="language"><span><img src="img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                            src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--日文-->
+        <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <ul class="sign-lists">
+                <li class="sign-in"><a href="javascript:void(0)">Sign in</a></li>
+                <li class="join"><a href="javascript:void(0)">Join Free</a></li>
+                <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+                    user...</strong></a></li>
+                <li class="joined">
+                    <i><img src="img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="img/images/down-pointer.png" alt=""></span>
+                    <!--登陆后-->
+                    <div class="user-item">
+                        <div class="account active">
+                            My Account
+                        </div>
+                        <div class="account">
+                            My Orders list
+                        </div>
+                        <div class="account">
+                            My Delivery Address
+                        </div>
+                        <div class="facebook-btn ">
+                            Bind FaceBook
+                        </div>
+                        <div class="out-btn " style="margin-top: 10px">
+                            Sign Out
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <!--<div class="container_warp">-->
+            <!--左侧列表-->
+            <ul class="nav-lists">
+                <li class="active"><a href="index.html" class="home">Home</a></li>
+                <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+                <li class="assembly-menus">
+                    <a href="PCBAssembly.html">PCB Assembly</a>
+                    <ol class="next-item">
+                        <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+                        <li><a href="old-process/pcbaCapabilitiesProcess.html">PCBA process</a></li>
+                    </ol>
+                </li>
+                <li><a href="pcbLayout.html">PCB Layout</a></li>
+                <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+                    <ol class="capa-sub-menus">
+                        <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+                        <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+                        <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+                        <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+                        <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+                    </ol>
+                </li>
+                <li><a href="reviewList.html">Forum</a></li>
+                <li class="contact-menus"><a href="aboutUs.html">About Us</a>
+                    <ol class="contact-sub-menus">
+                        <li><a href="whyUs.html">Why us</a></li>
+                        <li><a href="methodPayment.html">Method of payment</a></li>
+                        <li><a href="Introduction.html">Intoduction</a></li>
+                        <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                        <li><a href="orderGuide.html">Order guide</a></li>
+                        <li><a href="shippingMethod.html">Shipping method guide</a></li>
+                        <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+                        <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+                    </ol>
+                </li>
+                <!--后续添加-->
+                <!--<li><a href="forum.html">Blog</a></li>-->
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="js-hints">
+                    <li class="active"><a href="member/newsed.html" title="Message">
+                        <img src="img/images/message.png" alt="" width="20" height="18"></a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/coupon-page.html" title="Coupons">
+                        <img src="img/images/coupon.png" alt="" width="22" height="20"></a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active "><a href="member/awaiting-payment.html" title="Awaiting payment">
+                        <img src="img/images/for-the-payment.png" alt="" width="22" height="20"></a>
+                        <i class="point now-hide"></i>
+                    </li>
+                    <li class="car-box"><a href="member/shopping-car.html" title="Shopping cart">
+                        <img src="img/images/shopping-car.png" alt="" width="22" height="20"></a>
+                        <i class="round car-nums">10</i>
+                    </li>
+                </ul>
+            </div>
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<div class="holiday-box">
+    <div class="container_warp">
+        <div class="main-box">
+            <div class="holiday-top">
+                <div class="white-bg"></div>
+                <div class="flowers-left">
+                    <img src="img/images/flowers-left.png" alt="flowers" width="169" height="199">
+                </div>
+                <div class="flowers-right">
+                    <img src="img/images/flowers-right.png" alt="flowers" width="169" height="199">
+                </div>
+                <!--标题-->
+                <div class="holiday-title">
+                    <img src="img/images/holiday-title_jp.png" alt="title" width="337" height="25">
+                </div>
+                <p>いつもPCBGOGOをご利用頂き、ありがとうございます。旧正月により、当社は01月31日（木）～
+                    02月11日（月）の期間を春節休業期間とさせていただきます。休業期間中は受注致しますが、納期
+                    が通常と異なりますのでご注意ください。休業直前のご注文については、できる限り休業前に発送し
+                    ますが、間に合わない場合は休業明け（02月12日）以降に順延させて頂きます。ご了承くださいま
+                    すようお願い致します。</p>
+                <div class="tag-left"><img src="img/images/tag-left.png" alt="tag" width="86" height="31"></div>
+                <div class="tag-right"><img src="img/images/tag-right.png" alt="tag" width="77" height="27"></div>
+            </div>
+            <!--日历-->
+            <div class="the-calendar">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <th colspan="11">春節休業前後のスケジュール（GMT＋８）</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td bgcolor="#c4131b">
+                            <img src="img/images/table-style_jp.png" alt="title" width="140" height="140">
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 0 5px;width: 90px">01月30日-
+                            <br>02月11日
+                            <br>に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月29日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月28日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月27日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月26日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月25日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月24日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月23日
+                            に発註
+                        </td>
+                        <td bgcolor="#FFF3EB">01月22日
+                            に発註
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td bgcolor="#FFF3EB">
+                            片面-両面
+                            <br>(24時間特急コース)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷
+                        </td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                        <td>01月26日</td>
+                        <td>01月25日</td>
+                        <td>01月24日</td>
+                        <td>01月23日</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td bgcolor="#FFF3EB">
+                            片面-両面
+                            <br>(48時間特急コース)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                        <td>01月26日</td>
+                        <td>01月25日</td>
+                        <td>01月24日</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td bgcolor="#FFF3EB">
+                            4層基板試作、
+                            <br>(48時間特急コース)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                        <td>01月26日</td>
+                        <td>01月25日</td>
+                        <td>01月24日</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td bgcolor="#FFF3EB">
+                            4層基板試作
+                            <br>(72時間特急コース)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                        <td>01月26日</td>
+                        <td>01月25日</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td bgcolor="#FFF3EB">
+                            片面-両面
+                            <br>(3-4日間製作)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                        <td>01月26日</td>
+                        <td>01月25日</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td bgcolor="#FFF3EB">
+                            4層基板試作
+                            <br>(4-5日間製作)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                        <td>01月26日</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td bgcolor="#FFF3EB">
+                            片面-両面
+                            <br>(小ロット)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                        <td>01月28日</td>
+                        <td>01月27日</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td bgcolor="#FFF3EB">
+                            4層基板試作
+                            <br>(小ロット)
+                        </td>
+                        <td bgcolor="#FFF3EB" style="padding: 30px 7px">休業期間中</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td bgcolor="#FFF3EB">休業明け
+                            <br>後の出荷</td>
+                        <td>01月29日</td>
+                    </tr>
+                    <tr>
+                        <td colspan="11" style="font-size: 12px;padding: 10px 20px">特急注文については、18：00pm（GMT+8）前にご発註頂ければ当日の注文だと見なします。標準注文については、18：30pm（GMT+8）前にご発註頂ければ当日の注文だと見なします。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 60px;padding: 0">実装</td>
+                        <td colspan="10" style="font-size: 12px">実装案件については、部品の代理調達が必要であれば、01月10日前に発註するようアドバイス致します。01月18日以降に発註した実装案件では、
+                            <br>たとえ部品が当日に揃っても、春節休業前の出荷には間に合いません。予めご了承ください。
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        //  导航吸顶
+        $(window).scroll(function () {
+            var navTop = $(this).scrollTop();
+            if (navTop >= 130) {
+                $('.nav-box').addClass('nav-fixed');
+            } else {
+                $('.nav-box').removeClass('nav-fixed');
+            }
+        });
+    });//end function
+</script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/publicDynamic.css">
+    <link rel="stylesheet" href="../img/css/forum/myArticleDetail.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <!--编辑器-->
+    <script src="../img/js/edit/ueditor.config.js"></script>
+    <script src="../img/js/edit/ueditor.all.min.js"></script>
+    <script src="../img/js/edit/lang/en/en.js"></script>
+    <link rel="stylesheet" href="../img/js/edit/themes/default/css/ueditor.css">
+    <script src="../img/js/edit/third-party/codemirror/codemirror.js"></script>
+    <link rel="stylesheet" href="../img/js/edit/third-party/codemirror/codemirror.css">
+    <script src="../img/js/edit/third-party/zeroclipboard/ZeroClipboard.js"></script>
+    <!--编辑器-->
+    <script src="../img/js/forum.js"></script>
+    <script src="../img/js/layui-v2.3.0/layui/layui.all.js"></script>
+</head>
+<body>
+<!--顶部-->
+<div class="top">
+    <div class="banner-top">
+        <ul class="banner-right">
+            <li><a href="../index.html">PCBgogo</a></li>
+            <li class="top-line">|</li>
+            <li><a href="../index.html">PCB Instant Quote</a></li>
+            <li class="top-line">|</li>
+            <li><a href="../index.html">PCB Assembly</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner-nav">
+    <div class="nav-box">
+        <!--logo-->
+        <div class="nav-l" onclick="window.open('index.html','_self')"></div>
+        <!--列表-->
+        <div class="lists-box js-forum-nav">
+            <ul>
+                <li><a href="../dynamic.html" class="active">Forum</a></li>
+                <li><a href="../dynamicDetails.html">Feedback</a></li>
+                <li><a href="../dynamicDetails.html">Current Events</a></li>
+            </ul>
+        </div>
+        <!--账户登陆后-->
+        <div class="user-box">
+            <span class="hi-text"> Hi! The user...</span>
+            <div class="user-pic js-user-pic">
+                <i><img src="../img/images/user.png" alt=""></i>
+                <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+            </div>
+            <div class="user-item">
+                <div class="account active">
+                    My Account
+                </div>
+                <div class="account">
+                    My Forum
+                </div>
+                <div class="account">
+                    My Orders list
+                </div>
+                <div class="account">
+                    My Delivery Address
+                </div>
+                <div class="facebook-btn ">
+                    Bind FaceBook
+                </div>
+                <div class="out-btn " style="margin-top: 10px">
+                    Sign Out
+                </div>
+            </div>
+        </div>
+        <!--账户登录前-->
+        <div class="no-user-box">
+            <div class="sg-in js-sg-in">
+                Sign in
+            </div>
+            <div class="join-free js-sg-free">
+                Join free
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="section-box">
+    <div class="container_warp">
+        <!--左侧结构-->
+        <div class="section-left">
+            <h6>Forum > PCBgogo Celebrating 4 Years: A Letter from Mr. Yan</h6>
+            <h2 class="change-height">PCBgogo Celebrating 4 Years: A Letter from Mr. Yan </h2>
+            <ul class="time-box">
+                <li>March 22, 2018, 07:18:22 pm</li>
+                <li>丨</li>
+                <li><img src="../img/images/forum/see.png" alt="see" width="16" height="11">120</li>
+                <li>丨</li>
+                <li><img src="../img/images/forum/pinglun.png" alt="see" width="13" height="12">120</li>
+            </ul>
+            <!--标签-->
+            <div class="label-box">
+                <!--左边衬托线开始-->
+                <div class="left-lines"></div>
+                <!--左边衬托线结束-->
+                <ul class="box-l">
+                    <li>Transmitter</li>
+                    <li>Controller</li>
+                    <li>Radio Frequenzy</li>
+                    <li>Arduino</li>
+                </ul>
+                <div class="left-linesed"></div>
+                <a href="articleDetail.html" class="return-btn">Return</a>
+            </div>
+            <!--图文显示-->
+            <div class="show-message">
+                <p class="show-title">
+                    WaveLicker : ViceEtVersa (Modular Synth) <br>
+                    Dual Flip-Flop daisy chained if no jack plugged in 2nd entry.
+                </p>
+                <div class="show-pic">
+                    <img src="../img/images/forum/dongtai.jpg" alt="forum" width="600" height="451">
+                </div>
+                <p class="show-text">
+                    This module trig a gate when output is high since output is high again. It is basically a clock
+                    divider (1/2 for each part and 1/4 on second part if no jack is plugged in 2nd entry). it can also
+                    be used to octave down an oscillator (one octave for each part and 2 octaves if daisy chained). For
+                    each part, it is possible to reset the flip-flop by entering a high signal on RES. The module don't
+                    flip-flop since RES is high. RES can be used to "mute" the trigs. www.wavelicker.com
+                </p>
+            </div>
+            <!--收藏盒子-->
+            <div class="collecting-box">
+                <!--收藏用户-->
+                <ul class="collect-user js-collect-user">
+                    <li>
+                        <img src="../img/images/forum/collect1.png" alt="header" width="24" height="24">
+                    </li>
+                    <li>
+                        <img src="../img/images/forum/collect2.png" alt="header" width="24" height="24">
+                    </li>
+                    <li>
+                        <img src="../img/images/forum/collect2.png" alt="header" width="24" height="24">
+                    </li>
+                    <li>
+                        <img src="../img/images/forum/collect3.png" alt="header" width="24" height="24">
+                    </li>
+                </ul>
+            </div>
+            <!--图文编辑区-->
+            <div class="edit-box">
+                <ul class="edit-title">
+                    <li>Comments(2)</li>
+                </ul>
+                <!--富文本编辑区域-->
+                <div class="edit-area">
+                    <div id="editor" class="edui-default" style="width: 950px;"></div>
+                    <!--未登录状态下的富文本遮罩层-->
+                    <div class="editor-mask">
+                    </div>
+                    <a href="../login.html" class="post-comments">Log in to post comments</a>
+                    <!--未登录状态下的富文本遮罩层-->
+                </div>
+                <!--富文本编辑区域-->
+                <div class="rules-box">
+                    <div class="rules-tips">
+                        <span>Upload a photo:</span>You can only upload 1 files in total. Each file cannot exceed 2MB.
+                        Supports JPG, JPEG, GIF, PNG, BMP
+                    </div>
+                    <!--上传按钮-->
+                    <div class="up-box">
+                        <div class="files-box">
+                            <span>文件名.jpg</span>
+                            <div class="browse">Browse
+                                <input type="file">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="submit-btn js-submit-btn">
+                            Submit
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--留言交互内容-->
+            <div class="interaction-box js-interaction">
+                <!--实例模板开始-->
+                <div class="interaction-item">
+                    <div class="item-left">
+                        <img src="../img/images/forum/header3.png" alt="header" width="40" height="40">
+                    </div>
+                    <div class="item-right js-item-right">
+                        <h5>x****mes</h5>
+                        <p>March 22, 2018, 07:18:22 pm</p>
+                        <p class="interaction-text">
+                            My customer lists open rates are between 80% and 100%. But again, you can't consider them
+                            normal marketing lists since they also expect update notices on the software they purchased.
+                            The more broad a list is, the lower the open rate. Very narrow niche lists usually get very
+                            high open rated. I quit doing broad email lists many years ago and concentrate on very
+                            narrow niche lists now. Depending on the niche, I get 30% to 80%+ open rates.
+                        </p>
+                        <p class="reply-p"><a href="javascript:void(0)" class="reply-btn js-reply-btn">Reply</a></p>
+                        <!--回复框-->
+                        <div class="reply-box">
+                            <input type="text" class="reply-area">
+                            <span class="reply-submit js-reply-submit">Submit</span>
+                        </div>
+                        <!--回复内容-->
+                        <div class="reply-lists">
+                            <div class="lists">
+                                <div class="lists-left">
+                                    <img src="../img/images/forum/header2.png" alt="header" width="40" height="40">
+                                </div>
+                                <div class="lists-right">
+                                    <h5>x****mes</h5>
+                                    <p>March 22, 2018, 07:18:22 pm</p>
+                                    <p class="lists-text">
+                                        My customer lists open rates are between 80% and 100%. But again, you can't
+                                        consider them
+                                        normal marketing lists since they also expect update notices on the software
+                                        they purchased.
+                                        The more broad a list is, the lower the open rate. Very narrow niche lists
+                                        usually get very
+                                        high open rated. I quit doing broad email lists many years ago and concentrate
+                                        on very
+                                        narrow niche lists now. Depending on the niche, I get 30% to 80%+ open rates.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--实例模板结束-->
+            </div>
+        </div>
+        <!--右侧结构-->
+        <div class="section-right">
+            <a href="article.html" class="right-top">
+               <i> <img src="../img/images/forum/header2.png" alt=""></i>
+                <p><span>d****ion</span><img src="../img/images/forum/usa.png" alt=""></p>
+            </a>
+                <ul class="news-box">
+                    <li onclick="window.open('article.html','_bank')">
+                        <span>10</span>
+                        <p>Article</p>
+                    </li>
+                    <li onclick="window.open('askAnswer.html','_bank')">
+                        <span>10</span>
+                        <p>Ask and <br>Answer</p>
+                    </li>
+                    <li onclick="window.open('../member/memberList.html')">
+                        <span>8</span>
+                        <p>Comment<br>and share</p>
+                    </li>
+                </ul>
+            <a href="personalArticle.html" class="follow-btn ">
+                Releasing
+            </a>
+            <!--hot label-->
+            <div class="hot-label">
+                <h3>Hot Label </h3>
+                <!--热门标签-->
+                <div class="hot-text">
+                    <a href="searchIndex.html">Transmitter</a>
+                    <a href="searchIndex.html">Controller</a>
+                    <a href="searchIndex.html">Radio Frequenzy</a>
+                    <a href="searchIndex.html">RF</a>
+                    <a href="searchIndex.html">Arduino</a>
+                    <a href="searchIndex.html">Radio Frequenzy</a>
+                </div>
+                <!--标志图片-->
+                <img src="../img/images/forum/hot.png" alt="hot" width="27" height="30" class="hot-flag">
+            </div>
+            <!--参数选择-->
+            <div class="parameter-box">
+                <input type="text" placeholder="Length(mm)">
+                <input type="text" placeholder="Width(mm)">
+                <select name="Layersquote" class="layer-box">
+                    <option value="Layer" selected="" class="tips">Layer</option>
+                    <option value="1" style="padding: 5px">1 Layer</option>
+                    <option value="2">2 Layers</option>
+                    <option value="4">4 Layers</option>
+                    <option value="6">6 Layers</option>
+                    <option value="8">8 Layers</option>
+                    <option value="10">10 Layers</option>
+                    <option value="12">12 Layers</option>
+                    <option value="14">14 Layers</option>
+                </select>
+                <select name="Thicknessquote" class="layer-box">
+                    <option value="" selected="" class="tips">Thickness</option>
+                    <option value="0.4">0.4mm</option>
+                    <option value="0.6">0.6mm</option>
+                    <option value="0.8">0.8mm</option>
+                    <option value="1.0">1.0mm</option>
+                    <option value="1.2">1.2mm</option>
+                    <option value="1.6">1.6mm</option>
+                    <option value="2.0">2.0mm</option>
+                    <option value="2.4">2.4mm</option>
+                </select>
+                <input type="submit" class="quote-now" value="QUOTE NOW">
+            </div>
+        </div>
+        <!--线-->
+        <div class="right-lines"></div>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+    <img src="../img/images/order/gotop.png" alt="">
+</div>
+<!--底部列表-->
+<div class="footer">
+    <div class="container_warp">
+        <div class="footer-item">
+            <ul class="footer-item-ul">
+                <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                    Ltd. <br>
+                    Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                </li>
+                <li>
+                    Whatsapp <br>+8618665922549
+                </li>
+                <li>
+                    Mail <br>service@pcbgogo.com
+                </li>
+                <li>
+                    Tel <br>+86-755-33066136
+                </li>
+                <li class="footer-last-item">
+                    Sitemap <i><img src="../img/images/rr-point.png" alt="箭头" width="6" height="11"
+                                    style="vertical-align: middle"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

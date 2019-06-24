@@ -1,0 +1,226 @@
+/* 主体*/
+.order-main::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+/*右侧*/
+.order-main .box-r {
+    background-color: #fff;
+    padding-left: 276px;
+    width: 1100px;
+}
+
+.box-r .r-title {
+    padding-top: 55px;
+    font-size: 24px;
+    color: #2e2525;
+    font-weight: bold;
+}
+
+/*返回顶部*/
+.order-main .go-btn {
+    position: fixed;
+    right: 10px;
+    top: 700px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*信息盒子*/
+.box-r .basic-box {
+    margin-top: 30px;
+    padding-top: 90px;
+    border-top: 1px solid #efefef;
+    width: 1080px;
+    height: auto;
+}
+
+.box-r .basic-box .basic-l {
+    float: left;
+    width: 360px;
+    height: 430px;
+    border-right: 1px solid #efefef;
+}
+
+.box-r .basic-box .basic-l .modify-box {
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.modify-btn {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #271e1e;
+    line-height: 30px;
+    color: #ffffff;
+    margin-left: 130px;
+    margin-top: -3px;
+    position: relative;
+    z-index: 99;
+}
+.modify-btn:hover{
+    background-color: #4b4141;
+}
+.modify-btn input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 38px;
+    opacity: 0;
+    z-index: 97;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+/兼容ie8及以下/
+}
+
+/*右边盒子*/
+.box-r .basic-box .basic-r {
+    margin-left: 77px;
+    float: left;
+    height: 430px;
+    padding-left: 27px;
+}
+
+.box-r .basic-box .basic-r i {
+    width: 95px;
+    font-size: 12px;
+}
+
+.box-r .basic-box .basic-r .basic-input {
+    width: 360px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #efefef;
+    margin-left: 10px;
+    text-indent: 15px;
+}
+
+.box-r .basic-box .basic-r .input-box {
+    margin-bottom: 15px;
+}
+
+.quantity-select {
+    float: right;
+    width: 360px;
+    border: 1px solid #efefef;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-radius: 2px;
+    /* color: #2e2525; */
+}
+
+.quantity-select .selectq {
+    width: 91%;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    text-indent: 15px;
+    overflow: hidden;
+}
+
+.down-pic {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #efefef;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    background-image: url(../images/downed-pointer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: none;
+}
+
+.down-country {
+    height: auto;
+    border: 1px solid #efefef;
+    position: relative;
+    z-index: 99;
+    background-color: #ffffff;
+    width: 359px;
+    display: none;
+}
+
+.shed-down {
+    position: relative;
+    left: 0px;
+    width: 357px;
+    height: 230px;
+    z-index: 9;
+    background-color: #fff;
+    overflow: scroll;
+}
+
+.quantity-select li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 15px;
+    background-color: #fff;
+}
+
+.quantity-select li:hover {
+    background-color: #b0fcff;
+}
+
+.fast-search {
+    width: 96%;
+    height: 30px;
+    line-height: 30px;
+    background-image: url("../images/forum/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    border: 1px solid #efefef;
+    margin-left: 5px;
+}
+
+.area-box {
+    margin-top: 20px;
+    width: 470px;
+}
+
+.info-area {
+    float: right;
+    width: 360px;
+    height: 155px;
+    resize: none;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.change-btn {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #b21f1f;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 38px;
+    margin-left: 110px;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+.change-btn:hover{
+    background-color: #f22828;
+}
+.copy-right-box {
+    margin-top: 250px;
+}

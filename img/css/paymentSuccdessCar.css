@@ -1,0 +1,87 @@
+/* 主体*/
+.order-main:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+/*右侧*/
+.order-main .box-r {
+    background-color: #fff;
+    padding-right: 80px;
+    padding-left: 276px;
+    min-width: 1080px;
+}
+
+
+.box-r .r-title {
+    padding-top: 55px;
+    font-size: 24px;
+    color: #2e2525;
+    font-weight: bold;
+}
+
+/*进度图盒子*/
+.box-r .progress-map-box {
+    margin-top: 30px;
+    height: 60px;
+}
+
+.progress-map-box .progress-ul li {
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.progress-line {
+    width: 359px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 2px solid #efefef;
+    margin-top: 10px;
+    position: relative;
+}
+
+.finish-pic {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.order-main .box-r .pay-success-box {
+    width: 100%;
+    padding: 150px 0 100px 300px;
+    box-sizing: border-box;
+}
+
+.pay-status {
+    width: 600px;
+    height: 150px;
+}
+
+.continue-btn {
+    margin-top: 35px;
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #271e1e;
+    color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background-color: #804343;
+}
+
+.continue-btn > a {
+    color: #ffffff;
+}
+.copy-right-box {
+   margin-top: 180px;
+}

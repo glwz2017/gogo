@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join - PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/public.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="img/fonts/iconfont.css">
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            /*background: url("img/images/logo-bg.jpg") no-repeat center top;*/
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /*头部样式*/
+        .header {
+            width: 100%;
+            height: 52px;
+            background-color: #2e2525;
+            min-width: 1280px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 102;
+        }
+
+        .header .header-logo {
+            float: left;
+            background: url("img/images/login-logo.png") no-repeat center;
+            width: 121px;
+            height: 26px;
+            margin-top: 14px;
+            overflow: hidden;
+        }
+
+        .header .header-logo > a {
+            text-indent: 9999999px;
+            width: 121px;
+            height: 26px;
+            line-height: 26px;
+        }
+
+        .header .nav {
+            float: right;
+        }
+
+        .header .nav > li {
+            height: 50px;
+            padding: 0 6px;
+            line-height: 50px;
+            float: left;
+            margin-left: 35px;
+            border-bottom: 2px solid transparent;
+            font-size: 12px;
+        }
+
+        .header .nav > li:first-child {
+            margin-left: 0;
+        }
+
+        .header .nav > li > a {
+            color: #ffffff;
+        }
+
+        .header .nav > li:hover > a {
+            color: #b21f1f;
+            border-bottom: 2px solid #b21f1f;
+        }
+
+        /*头部样式*/
+        /*视频*/
+        #video {
+            height: 695px;
+            width: 100%;
+            min-width: 1280px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #video .mask, .hide-mask {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            z-index: 99;
+        }
+
+        #video .mask {
+            background-color: rgba(0, 0, 0, 0);
+            top: 0;
+            height: 397px;
+        }
+
+        #video .hide-mask {
+            height: 300px;
+            background-color: rgba(255, 255, 255, 1);
+            bottom: 0;
+        }
+
+        #video video {
+            width: 100%;
+        }
+
+        /*主体*/
+        .warp-content {
+            width: 100%;
+            min-width: 1280px;
+            margin: 0 auto;
+            position: absolute;
+            height: 725px;
+            top: 0;
+            z-index: 100;
+        }
+
+        .login-box {
+            width: 1024px;
+            margin: 125px auto 0;
+            height: 600px;
+            background-color: #fbfbfb;
+        }
+
+        .login-box .login-l {
+            float: left;
+            width: 50%;
+            height: 600px;
+            background-color: #fbfbfb;
+        }
+
+        .login-box .login-r {
+            float: right;
+            width: 50%;
+            height: 600px;
+            background-color: #fbfbfb;
+        }
+
+        /*右侧*/
+        .login-r .register-text {
+            margin-top: 60px;
+            font-size: 16px;
+            color: #2e2525;
+            font-family: 'Adobe 黑体 Std';
+            text-align: center;
+        }
+
+        .login-r .log-in-box {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-r .log-in-box .log-in {
+            color: #b21f1f;
+            font-size: 14px;
+            text-decoration: underline;
+            padding-left: 12px;
+            font-family: 'Adobe 黑体 Std';
+        }
+
+        .login-r .login-form {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .login-r .login-form .form-item {
+            border-radius: 2px;
+            border: 1px solid #efefef;
+            height: 55px;
+            line-height: 55px;
+            width: 400px;
+            display: inline-block;
+            outline: none;
+            background-color: #ffffff;
+            margin-top: -1px;
+        }
+
+        .login-r .login-form .form-item:first-child {
+            border-bottom: none;
+        }
+        .login-r .login-form .form-item > span {
+            font-size: 22px;
+            vertical-align: middle;
+            color: #b5b5b6;
+        }
+        .login-r .login-form .form-item .e-mail{
+            font-size: 18px;
+        }
+
+        .login-r .login-form .email, .password, .yan-zheng, .skype, .social {
+            height: 55px;
+            line-height: 55px;
+            display: inline-block;
+            outline: none;
+            background-color: #ffffff;
+            width: 355px;
+            float: right;
+            text-indent: 5px;
+        }
+
+        .login-r .login-form .skype, .social {
+            width: 199px;
+        }
+
+        .login-r .login-form .skype-box {
+            margin-top: 20px;
+        }
+        .login-r .login-form .skype>span{
+            font-size: 22px;
+            vertical-align: middle;
+            color: #00aff0;
+        }
+        .login-r .login-form .skype>input{
+            height: 55px;
+            line-height: 55px;
+            display: inline-block;
+            outline: none;
+            background-color: #ffffff;
+            width: 155px;
+            text-indent: 5px;
+            float: right;
+        }
+        .login-r .login-form .social>span{
+            font-size: 22px;
+            vertical-align: middle;
+            color: #4fac32;
+        }
+        .login-r .login-form .social>input{
+            height: 55px;
+            line-height: 55px;
+            display: inline-block;
+            outline: none;
+            background-color: #ffffff;
+            width: 155px;
+            text-indent: 5px;
+            float: right;
+             border-right: 1px solid #efefef;
+        }
+        .login-r .login-form .sign-in-btn {
+            height: 55px;
+            background-color: #b21f1f;
+            line-height: 55px;
+            text-align: center;
+            width: 400px;
+            color: #fff;
+            margin-top: 40px;
+            border-radius: 2px;
+            font-size: 18px;
+            transition: all 1s;
+            cursor: pointer;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.26);
+        }
+
+        .login-r .login-form .sign-in-btn:hover {
+            background-color: #ff1a4b;
+        }
+
+        .login-r .forget {
+            width: 500px;
+            text-align: center;
+            margin-top: 30px;
+            color: #9fa0a0;
+            font-size: 12px;
+        }
+
+        .bottom-p {
+            font-size: 12px;
+            text-align: center;
+            color: #999;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .login-box {
+                width: 1024px;
+                margin: 8% auto 0;
+                height: 600px;
+                background-color: #fbfbfb;
+            }
+
+            .login-box .login-l {
+                height: 600px;
+            }
+
+            .login-box .login-r {
+                height: 600px;
+            }
+
+            .bottom-p {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--视频-->
+<div id="video">
+    <div class="mask"></div>
+    <div class="hide-mask"></div>
+    <video playsinline="" autoplay="" muted="" loop="">
+        <source src="img/images/logo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+<!--视频-->
+<!--header-->
+<div class="header">
+    <div class="container_warp">
+        <div class="header-logo">
+            <a href="index.html">PCBgogo</a>
+        </div>
+        <ul class="nav">
+            <li class="active"><a href="index.html" class="home">Home</a></li>
+            <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+            <li class="assembly-menus">
+                <a href="PCBAssembly.html">PCB Assembly</a>
+            </li>
+            <li><a href="pcbLayout.html">PCB Layout</a></li>
+            <li class="capabilities-menus">
+                <a href="pcbCapabilities.html">Capabilities</a>
+            </li>
+            <li><a href="reviewList.html">Forum</a></li>
+            <li class="contact-menus">
+                <a href="aboutUs.html">About Us</a>
+            </li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<div class="warp-content">
+    <div class="login-box ">
+        <div class="login-l">
+            <img src="img/images/logo-ads.png" alt="" width="512">
+        </div>
+        <div class="login-r">
+            <div class="register-text">
+                New customer will get $20 bonus after you register.
+            </div>
+            <div class="log-in-box">
+                Already signed up?<a href="login.html" class="log-in"> Log in</a>
+            </div>
+            <div class="login-form">
+                <form action="#" method="post">
+                    <div class="form-item">
+                        <span class="iconfont e-mail">&#xe60b;</span>
+                        <input type="text" class="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-item">
+                        <span class="iconfont ">&#xe60c;</span>
+                        <input type="password" class="password" placeholder="Create Password">
+                    </div>
+                    <div class="form-item">
+                        <span class="iconfont ">&#xe60d;</span>
+                        <input type="password" class="yan-zheng" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-item skype-box">
+                        <div class="skype">
+                            <span class="iconfont ">&#xe610;</span>
+                            <input type="text"  placeholder="Skype">
+                        </div>
+                        <div class="social">
+                            <span class="iconfont">&#xe613;</span>
+                            <input type="text"  placeholder="WhatsApp">
+                        </div>
+                    </div>
+                    <input type="submit" class="sign-in-btn" value="CREATE ACCOUNT">
+                </form>
+            </div>
+            <div class="forget">
+                PCBGOGO promise to keep your private information 100% safe.
+            </div>
+        </div>
+    </div>
+</div>
+<p class="bottom-p">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.Address: No. 15,
+    Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China</p>
+<script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        var getMessage = [];
+//        邮箱验证
+        $('.email').blur(function () {
+            var getEmail = $(this).val();
+            var reg = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+            if (reg.test(getEmail)) {
+                getMessage[0] = true;
+            } else {
+                getMessage[0] = false;
+            }
+        });
+//        初步验证密码【】
+        $('.password').blur(function () {
+            var getPassword = $(this).val();
+            if (getPassword.length < 6) {
+                getMessage[1] = false;
+            } else {
+                getMessage[1] = true;
+            }
+        });
+        $('.yan-zheng').blur(function () {
+            var getPassword = $(this).val();
+            if (getPassword.length < 6 || getPassword !== $('.password').val()) {
+                getMessage[2] = false;
+            } else {
+                getMessage[2] = true;
+            }
+        });
+
+//        提交之前验证
+        $('.sign-in-btn').click(function () {
+
+            if (getMessage[0] !== true || getMessage[1] !== true || getMessage[2] !== true) {
+                return false;
+            }
+        });
+    })//end function
+</script>
+</body>
+</html>

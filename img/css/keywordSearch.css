@@ -1,0 +1,128 @@
+.main-key {
+    /*margin-top: 80px;*/
+    padding-top: 80px;
+}
+
+.key-box {
+    margin: 0 0 400px 0;
+}
+
+.key-box .key-l {
+    width: 1010px;
+    height: auto;
+    display: inline-block;
+}
+
+.key-box .key-l .key-title {
+    font-size: 30px;
+    color: #2e2525;
+    font-weight: bold;
+    height: 60px;
+    border-bottom: 1px solid #b21f1f;
+}
+
+.key-box .key-l .key-title > span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.key-box .key-l .search-content {
+    /*margin-top: 25px;*/
+}
+
+.key-box .key-l .search-content .search-item {
+    margin-top: 45px;
+}
+
+.key-box .key-l .search-content .search-item .search-item-title {
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.key-box .key-l .search-content .search-item .item-list {
+    width: 500px;
+    min-height: 60px;
+    border: 1px solid #efefef;
+    background-color: #f7f8f8;
+    color: #2e2525;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 20px;
+    float: left;
+    margin: 0 5px 12px 0;
+    position: relative;
+}
+
+.key-box .key-l .search-content .search-item .item-list .list-mask {
+    width: 100%;
+    min-height: 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    color: #2e2525;
+    position: absolute;
+    top: 58px;
+    border: 1px solid #efefef;
+    left: 0;
+    z-index: 9;
+    display: none;
+}
+
+.key-box .key-l .search-content .search-item .item-list:hover {
+    background-color: #ffffff;
+}
+
+.key-box .key-l .search-content .search-item .item-list:hover .list-mask {
+    display: block;
+}
+
+/*右侧悬浮*/
+.key-r {
+    width: 200px;
+    height: 233px;
+    float: right;
+}
+
+.click-box {
+    width: 200px;
+    /*height: 233px;*/
+    /*float: right;*/
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.click-table {
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.click-table tr {
+    width: 100%;
+}
+
+.click-table td {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 20%;
+    border: 1px solid #efefef;
+    color: #9fa0a0;
+    font-size: 18px;
+    transition: all .8s;
+}
+
+.click-table td:hover{
+    font-size: 22px;
+    background-color: #f7f8f8;
+}
+.active-td {
+    background-color: #2e2525 !important;
+    color: #ffffff !important;
+}

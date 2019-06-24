@@ -39,12 +39,11 @@
 				callback: null,
 				pagesize: 10,//页数
 				current: 1,
-				prevTpl: "上一页",
-				nextTpl: "下一页",
-				firstTpl: "首页",
-				lastTpl: "末页",
+				prevTpl: "PageUP",
+				nextTpl: "PageDown",
+				firstTpl: "First",
+				lastTpl: "Last",
 				ellipseTpl: "...",
-                jumpTpl: "跳转",
 				toolbar: false,
 				hash:true,
 				pageSizeList: [5, 10, 15, 20]
@@ -155,7 +154,7 @@
 		},
 		bindToolbar: function() {
 			var _this = this;
-			var html = $('<li class="ui-paging-toolbar"><input type="text" class="ui-paging-count"/><a href="javascript:void(0)">' + this.settings.jumpTpl + '</a></li>');
+			var html = $('<li class="ui-paging-toolbar"><input type="text" class="ui-paging-count"/><a href="javascript:void(0)">Go</a></li>');
 			var sel = $('.ui-select-pagesize', html);
 			sel.val(this.pagesize);
 			$('input', html).val(this.current);

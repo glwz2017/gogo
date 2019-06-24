@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix {
+zoom: 1;
+}
+
+.clearfix:after {
+content: '.';
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clear{
+    clear: both;
+}
+.red {
+color: #ff0000 !important;
+}
+
+.b-buton:hover {
+background: #008a32;
+text-decoration: none;
+}
+
+.ui-textfield {
+display: inline-block;
+*display: inline;
+*zoom: 1;
+overflow: visible;
+outline: none
+}
+#city, #txtPostCode {
+/*background: url(../images/defaultdown.gif) no-repeat right center;*/
+background: url("../images/order/defaultdown.gif") no-repeat right center;
+cursor: pointer;
+padding-right: 22px;
+}
+.icon-sprite {
+background: url(../images/order/top-header-sprite.png) 0 0 no-repeat;
+display: inline-block;
+}
+.address-item-box {
+background: url(../images/order/shopcart-address-bg.png) repeat;
+padding: 4px;
+width: 896px;
+position: relative;
+border: 1px solid #dddddd;
+border-radius: 3px;
+margin-bottom: 5px;
+}
+
+.address-item-inner {
+padding: 10px 10px 10px 15px;
+background: #fff;
+}
+
+.select-icon {
+background-position: 0 -190px;
+display: block;
+height: 34px;
+left: 0;
+position: absolute;
+top: 0;
+width: 34px;
+z-index: 2;
+}
+
+.address-info-item .ui-form-label {
+color: #333;
+line-height: 20px;
+font-size: 11px;
+background-color: #e4e4e4;
+border-left: thick solid #cccccc;
+text-align: right;
+margin: 0 2px;
+padding: 2px 4px 2px 0;
+    float: left;
+}
+
+.ui-textfield-system {
+height: 16px;
+padding: 3px 3px;
+font-family: Arial;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #333;
+background-color: #fff;
+border: 1px solid #ccc;
+-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+-webkit-transition: border linear .2s;
+-moz-transition: border linear .2s;
+-ms-transition: border linear .2s;
+-o-transition: border linear .2s;
+transition: border linear .2s
+}
+
+.ui-textfield-system:focus {
+border: 1px solid #70a5e0;
+-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 0 1px 0 rgba(112, 165, 224, 1);
+-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 0 1px 0 rgba(112, 165, 224, 1);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 0 1px 0 rgba(112, 165, 224, 1)
+}
+
+.ui-textfield-system:-moz-placeholder {
+color: #aaa
+}
+
+.ui-textfield-system:-ms-input-placeholder {
+color: #aaa
+}
+
+.ui-textfield-system::-webkit-input-placeholder {
+color: #aaa
+}
+
+.ui-form-control {
+float: left;
+}
+
+.address-item-inner .contact-nam {
+color: #258e00;
+font-size: 12px;
+font-weight: bold;
+margin-bottom: 6px;
+}
+
+.dpl-table .escrow-status .aw-tooltip-question-mark, .item-status .aw-tooltip-question-mark, .aw-tooltip-question-mark {
+background: url("../images/order/cache.png") no-repeat scroll 0 0;
+margin-left: 3px;
+position: relative;
+width: 13px;
+height: 14px;
+cursor: pointer;
+top: 2px;
+}
+
+.addmore {
+position: absolute;
+width: 374px;
+border: 1px solid #bbb;
+left: 0px;
+top: 48px;
+background-color: #FFF;
+padding: 5px 0px 0px;
+line-height: 20px;
+max-height: 200px;
+overflow: hidden;
+overflow-y: auto;
+}
+
+.addmore li {
+padding: 0px 5px;
+cursor: pointer
+}
+
+.addmore li:hover {
+background-color: #b0fcff;
+}
+
+.addmore .morestyle {
+width: 100%;
+background-color: #00a63f;
+color: #FFF;
+height: 28px;
+line-height: 28px;
+text-align: center;
+}
+
+edit address
+.addmore {
+line-height: 16px;
+/*_height: expression( this.scrollHeight > 170 ? "170px" : "auto" ); !* sets max-height for IE6 *!*/
+max-height: 170px;
+border: 1px solid #aaaaaa;
+overflow-x: hidden;
+overflow-y: auto;
+position: absolute;
+background: #fff;
+}
+
+.addmore .ulCity, .addmore .ulPostCode, .addmore .ulCountry {
+line-height: 1.5;
+min-height: 0;
+}
+
+.addmore .ulCity .ui-corner-all, .addmore .ulPostCode .ui-corner-all, .addmore .ulCountry .ui-corner-all {
+display: block;
+padding: 2px 0.4em;
+text-decoration: none;
+color: #333;
+background: #fff;
+}
+
+.morestyle {
+padding: 2px 0.4em
+}
+
+.chosen-search {
+padding: 2px 0.4em;
+}
+.chosen-search input {
+    border: 1px solid #ccc;
+    display: block;
+    line-height: 22px;
+    padding: 2px;
+    width: 194px;
+    background: url(../images/order/searc.gif) no-repeat right center;
+}
+.addmore .morestyle {
+color: #fff;
+}
+
+.address-info-item #country, .address-info-item #city, .address-info-item #txtPostCode {
+background: url(../images/order/defaultdown.gif) no-repeat right center #fff;
+cursor: pointer;
+padding-right: 22px;
+}

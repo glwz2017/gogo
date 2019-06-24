@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in - PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/public.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="img/fonts/iconfont.css">
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /*头部样式*/
+        .header {
+            width: 100%;
+            height: 52px;
+            background-color: #2e2525;
+            min-width: 1280px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 102;
+        }
+
+        .header .header-logo {
+            float: left;
+            background: url("img/images/login-logo.png") no-repeat center;
+            width: 121px;
+            height: 26px;
+            margin-top: 14px;
+            overflow: hidden;
+        }
+
+        .header .header-logo > a {
+            text-indent: 9999999px;
+            width: 121px;
+            height: 26px;
+            line-height: 26px;
+        }
+
+        .header .nav {
+            float: right;
+        }
+
+        .header .nav > li {
+            height: 50px;
+            padding: 0 6px;
+            line-height: 50px;
+            float: left;
+            margin-left: 35px;
+            border-bottom: 2px solid transparent;
+            font-size: 12px;
+        }
+
+        .header .nav > li:first-child {
+            margin-left: 0;
+        }
+
+        .header .nav > li > a {
+            color: #ffffff;
+        }
+
+        .header .nav > li:hover > a {
+            color: #b21f1f;
+            border-bottom: 2px solid #b21f1f;
+        }
+
+        /*头部样式*/
+
+        /*视频*/
+        #video {
+            height: 695px;
+            width: 100%;
+            min-width: 1280px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #video .mask, .hide-mask {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            z-index: 99;
+        }
+
+        #video .mask {
+            background-color: rgba(0, 0, 0, 0);
+            top: 0;
+            height: 397px;
+            overflow: hidden;
+        }
+
+        #video .hide-mask {
+            height: 300px;
+            background-color: rgba(255, 255, 255, 1);
+            bottom: 0;
+        }
+
+        #video video {
+            width: 100%;
+        }
+
+        /*主体*/
+        .warp-content {
+            width: 100%;
+            min-width: 1280px;
+            margin: 0 auto;
+            position: absolute;
+            height: 725px;
+            top: 0;
+            z-index: 100;
+        }
+
+        .login-box {
+            width: 1024px;
+            margin: 125px auto 0;
+            height: 600px;
+            background-color: #fbfbfb;
+        }
+
+        .login-box .login-l {
+            float: left;
+            width: 50%;
+            height: 600px;
+            background-color: #fbfbfb;
+        }
+
+        .login-box .login-r {
+            float: right;
+            width: 50%;
+            height: 600px;
+            background-color: #fbfbfb;
+        }
+
+        /*右侧*/
+        .login-r > .login-r-title {
+            height: 70px;
+            margin-top: 80px;
+        }
+
+        .login-r > .login-r-title > .login-logo {
+            height: 70px;
+            text-align: center;
+        }
+
+        .login-r .welcome-back {
+            font-size: 24px;
+            color: #2e2525;
+            text-align: center;
+            font-family: 'Adobe 黑体 Std';
+        }
+
+        .login-r .new-customer {
+            font-size: 14px;
+            margin: 2px 0 0;
+            text-align: center;
+        }
+
+        .login-r .new-customer .join-free {
+            color: #b21f1f;
+            font-size: 14px;
+            text-decoration: underline;
+            padding-left: 12px;
+            font-family: 'Adobe 黑体 Std';
+        }
+
+        .login-r .login-form {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .login-r .login-form .form-item {
+            border-radius: 2px;
+            border: 1px solid #efefef;
+            height: 55px;
+            line-height: 55px;
+            width: 400px;
+            display: inline-block;
+            outline: none;
+            background-color: #ffffff;
+        }
+        .login-r .login-form .form-item:first-child{
+            border-bottom: none;
+        }
+        .login-r .login-form .form-item > span {
+            font-size: 18px;
+            vertical-align: middle;
+            color: #b5b5b6;
+        }
+        .login-r .login-form .form-item > .pwd{
+            font-size: 23px;
+        }
+
+        .login-r .login-form .email, .password {
+            height: 55px;
+            line-height: 55px;
+            display: inline-block;
+            outline: none;
+            background-color: #ffffff;
+            width: 355px;
+            float: right;
+            text-indent: 5px;
+        }
+        .login-r .login-form .sign-in-btn {
+            height: 55px;
+            background-color: #b21f1f;
+            line-height: 55px;
+            text-align: center;
+            width: 400px;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 18px;
+            transition: all 1s;
+            cursor: pointer;
+            margin: 30px 0 0 0;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.26);
+            display: inline-block;
+        }
+
+        .login-r .login-form .sign-in-btn:hover {
+            background-color: #ff1a4b;
+        }
+
+        .login-r .forget {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .login-r .forget a {
+            color: #b21f1f;
+            text-decoration: underline;
+        }
+
+        /*keep-box*/
+        .keep-box {
+            color: #727171;
+            font-size: 12px;
+            text-align: right;
+            width: 400px;
+            margin: 10px auto 0;
+        }
+
+        .keep-box > input {
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .bottom-p {
+            font-size: 12px;
+            text-align: center;
+            color: #999;
+            margin-top: 50px;
+            min-width: 1280px;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .login-box {
+                width: 1024px;
+                margin: 8% auto 0;
+                height: 600px;
+                background-color: #fbfbfb;
+            }
+
+            .login-box .login-l {
+                height: 600px;
+            }
+
+            .login-box .login-r {
+                height: 600px;
+            }
+
+            .bottom-p {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--视频-->
+<div id="video">
+    <div class="mask"></div>
+    <div class="hide-mask"></div>
+    <video playsinline="" autoplay="" muted="" loop="">
+        <source src="img/images/logo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+<!--视频-->
+<!--header-->
+<div class="header">
+    <div class="container_warp">
+        <div class="header-logo">
+            <a href="index.html">PCBgogo</a>
+        </div>
+        <ul class="nav">
+            <li class="active"><a href="index.html" class="home">Home</a></li>
+            <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+            <li class="assembly-menus">
+                <a href="PCBAssembly.html">PCB Assembly</a>
+            </li>
+            <li><a href="pcbLayout.html">PCB Layout</a></li>
+            <li class="capabilities-menus">
+                <a href="pcbCapabilities.html">Capabilities</a>
+            </li>
+            <li><a href="reviewList.html">Forum</a></li>
+            <li class="contact-menus">
+                <a href="aboutUs.html">About Us</a>
+            </li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<div class="warp-content">
+    <div class="login-box">
+        <div class="login-l">
+            <img src="img/images/logo-ads.png" alt="" width="512">
+        </div>
+        <!--右侧-->
+        <div class="login-r">
+            <div class="login-r-title">
+                <div class="login-logo">
+                    <img src="img/images/forum/big-user.png" alt="logo" width="60" height="60">
+                </div>
+            </div>
+            <div class="welcome-back">
+                Welcome back!
+            </div>
+            <div class="new-customer">
+                New Customer? <a href="register.html" class="join-free"> Join Free</a>
+            </div>
+            <div class="login-form">
+                <form action="#" method="post">
+                    <div class="form-item">
+                        <span class="iconfont ">&#xe60b;</span>
+                        <input type="text" class="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-item">
+                        <span class="iconfont pwd">&#xe60c;</span>
+                        <input type="password" class="password" placeholder="Password">
+                    </div>
+                    <!--记住密码-->
+                    <div class="keep-box">
+                        <input type="checkbox" id="keep-pwd"><label for="keep-pwd">Keep me signed in</label>
+                    </div>
+                    <!--记住密码-->
+                    <input type="button" class="sign-in-btn" value="SIGN IN">
+                </form>
+            </div>
+            <div class="forget">
+                <a href="Retrieve-password.html">Forget password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="bottom-p">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.Address: No. 15,
+    Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China</p>
+<script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        var getFlag = [];
+//        邮箱验证
+        $('.email').blur(function () {
+            var getEmail = $(this).val();
+//            var reg = /^([a-zA-Z0-9_-])+@+([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+            var reg = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+            if (reg.test(getEmail)) {
+                getFlag[0] = true;
+            } else {
+                getFlag[0] = false;
+            }
+        });
+//        初步验证密码【】
+        $('.password').blur(function () {
+            var getPassword = $(this).val();
+            if (getPassword.length < 6) {
+                getFlag[1] = false;
+            } else {
+                getFlag[1] = true;
+            }
+        });
+//        提交之前验证
+        $('.sign-in-btn').click(function () {
+            if (getFlag[0] !== true || getFlag[1] !== true) {
+                return false;
+            } else {
+                localStorage.setItem('email', $('.email').val().trim());
+                localStorage.setItem('pwd', $('.password').val().trim());
+                //链接到登录前的界面
+                var getUrl = window.location.href;
+                var splitIndex = getUrl.indexOf('?');
+                console.log(splitIndex);
+                var newUrl = getUrl.substr(splitIndex + 2);
+                var mm = uncompileStr(newUrl);
+                console.log(newUrl);
+                window.location.href = mm;
+            }
+        });
+
+//url地址解密
+        function uncompileStr(code) {
+            code = unescape(code);
+            var c = String.fromCharCode(code.charCodeAt(0) - code.length);
+            for (var i = 1; i < code.length; i++) {
+                c += String.fromCharCode(code.charCodeAt(i) - c.charCodeAt(i - 1));
+            }
+            return c;
+        }
+    })//end function
+</script>
+</body>
+</html>

@@ -1,0 +1,732 @@
+/* 主体*/
+.order-main:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+/*右侧*/
+.order-main .box-r {
+    width: 1080px;
+    padding-left: 276px;
+    padding-right: 80px;
+    background-color: #fff;
+}
+
+.box-r .r-title {
+    padding-top: 55px;
+    font-size: 24px;
+    color: #2e2525;
+    font-weight: bold;
+}
+
+/*会员等级*/
+.level-sample {
+    border: 1px solid #efefef;
+    height: 98px;
+    margin-top: 20px;
+    position: relative;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #f7f8f8;
+}
+
+.level-sample:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 3;
+    border-top: 2px solid #826c6b;
+}
+
+/*左侧*/
+.level-sample .level-l {
+    width: 640px;
+    float: left;
+    height: 96px;
+    position: relative;
+    border-right: 1px solid #efeff0;
+    margin-right: 20px;
+}
+
+/*会员级别*/
+.level-sample .icon-V0, .icon-V1, .icon-V2 {
+    color: #826c6b;
+}
+
+.level-sample .icon-V3, .icon-V4, .icon-V5 {
+    color: #d18c00;
+}
+
+.level-sample .icon-V6 {
+    color: #d0021b;
+}
+
+.level-sample .icon-VIP1 {
+    color: #f5a623;
+}
+
+.level-sample .level-l .iconfont {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 3;
+    font-size: 32px;
+}
+
+.level-sample .level-l .vip-logo .icon-VIP {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 3;
+    font-size: 20px;
+}
+.level-sample .level-l .points {
+    float: left;
+    margin-top: 36px;
+}
+
+.level-sample .level-l .numerical {
+    font-size: 24px;
+    color: #b21f1f;
+    font-weight: bold;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.level-sample .level-l .eligible {
+    float: left;
+    background-color: #ededed;
+    padding: 0 20px;
+    margin: 34px 0 0 20px;
+    height: 26px;
+    line-height: 26px;
+}
+/* VIP logo*/
+.vip-logo{
+    position: relative;
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    margin-top: 35px;
+    margin-left: 20px;
+    width: 190px;
+    color: #432d2e;
+    display: none;
+}
+.level-sample .level-l .percentage {
+    color: #b21f1f;
+}
+
+/*右侧*/
+.level-sample .level-r {
+    float: left;
+    width: 365px;
+    height: 96px;
+}
+
+.level-sample .level-r .icon-GObi {
+    font-size: 44px;
+    float: left;
+    color: #b09596;
+    margin-top: 20px;
+}
+
+.level-sample .level-r .gocoin-box {
+    float: left;
+    margin: 38px 0 0 30px;
+}
+
+.level-sample .level-r .coin {
+    font-size: 24px;
+    color: #b21f1f;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.level-sample .level-r .go-coin {
+    padding: 0 20px;
+    color: #ffffff;
+    background-color: #2e2525;
+    height: 26px;
+    line-height: 26px;
+    margin: 34px 0 0 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .25);
+    transition: all .3s;
+}
+
+.level-sample .level-r .go-coin:hover {
+    color: #b21f1f;
+}
+
+.interests-box {
+    border: 1px solid #efefef;
+    height: auto;
+    border-top: 0;
+}
+
+/*会员等级样式*/
+.level-box {
+    overflow: hidden;
+    font: 18px Sans-Serif;
+    border: 1px solid #efefef;
+    width: 1078px;
+    margin: 20px auto 0;
+}
+
+.level-box .item {
+    text-decoration: none;
+    background: #ffffff;
+    position: relative;
+    display: block;
+    float: left;
+    height: 80px;
+    width: 135px;
+    text-align: left;
+    font-size: 12px;
+    padding: 17px 0 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.level-box .item > span {
+    font-size: 18px;
+    color: #2e2525;
+    display: block;
+    position: relative;
+    z-index: 5;
+    text-indent: 20px;
+    padding-left: 24px;
+}
+
+.level-box .item p {
+    color: #826c6b;
+    font-size: 12px;
+    position: relative;
+    left: 30px;
+    z-index: 5;
+    width: 120px;
+    text-indent: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.level-box .item:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.level-box .item:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #efefef;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+/*first*/
+.level-box .item:first-child:before {
+    left: 100%;
+}
+.level-box .item:first-child:after {
+    left: 100%;
+}
+
+.level-box .item:first-child {
+    width: 106px;
+}
+.level-box .item:first-child span {
+    padding-left: 0;
+}
+.level-box .item:first-child p{
+    width: 125px;
+    left: 0;
+}
+/*last*/
+.level-box .item .last {
+    width: 90px;
+    font-size: 16px;
+    color: #0C0C0C;
+    text-align: left;
+    padding-left: 0;
+    margin: 3px 0 0 0;
+}
+
+/*最后等级*/
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item:before {
+    display: none;
+}
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item:after {
+    display: none;
+}
+/*最后等级*/
+
+/*兼容IE8*/
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item {
+    width: 155px;
+
+}
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item + .item {
+    width: 133px;
+    border-left: 1px solid #efefef;
+}
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item + .item p{
+    text-overflow: unset;
+    white-space: normal;
+    text-indent: 0;
+}
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item + .item:before {
+    display: none;
+}
+.level-box .item:first-child + .item + .item + .item + .item + .item + .item + .item:after{
+    display: none;
+}
+
+/*激活样式*/
+.level-box .active {
+    color: #ffffff;
+    background: #7db6fa;
+    position: relative;
+    display: block;
+    float: left;
+    height: 80px;
+    width: 135px;
+    text-align: left;
+    font-size: 12px;
+    padding: 17px 0 0 0;
+    box-sizing: border-box;
+}
+
+/*鼠标经过*/
+.level-box .active:hover:after {
+    border-left: 30px solid #6fa1dd;
+}
+
+.level-box .active:hover {
+    background: #6fa1dd;
+}
+
+.level-box .active:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #7db6fa;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.level-box .active:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #5e9ee9;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.level-box .active > span {
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    padding-left: 24px;
+}
+
+.level-box .active p {
+    color: #ffffff;
+    font-size: 12px;
+    width: 150px;
+    text-align: left;
+}
+
+.level-box .active:last-child {
+    background: linear-gradient(#ffd58e, #f8b443);
+    width: 133px;
+}
+.level-box .active:last-child p{
+    color: #ffffff;
+}
+/*兼容IE8*/
+.level-box .active:first-child + .active + .active + .active + .active + .active + .active + .active {
+    background: #f8b443;
+    width: 142px;
+    border-left: 1px solid #f8b443;
+    background: linear-gradient(#ffd691,#f8b443);
+}
+.level-box .active:first-child + .active + .active + .active + .active + .active + .active + .active p{
+    color: #ffffff;
+}
+/*兼容IE8*/
+.level-box .active:first-child{
+    width: 106px;
+}
+.level-box .active:first-child:before {
+    left: 100%;
+}
+.level-box .active:first-child:after {
+    left: 100%;
+}
+.level-box .active:first-child > span {
+    padding-left: 0;
+    color: #ffffff;
+}
+
+.level-box .active:first-child p {
+    width: 120px;
+    color: #ffffff;
+    left: 7px;
+}
+
+/*last*/
+.level-box .active .last {
+    width: 90px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/*会员等级样式*/
+.rewards-box {
+    padding-top: 20px;
+}
+
+.rewards-box .rewards-title {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 30px 0 18px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #64a2eb;
+    background: -webkit-linear-gradient(left, #4a90e2, #64a2eb); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #4a90e2, #64a2eb); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #4a90e2, #64a2eb); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #4a90e2, #64a2eb); /* 标准的语法（必须放在最后） */
+
+}
+
+.rewards-box .rewards-title:before {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 26px;
+    border-left: 2px solid #326db1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.rewards-box .rewards-title:after {
+    display: block;
+    content: '';
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+/*扣除盒子*/
+.deducting-box {
+    padding: 25px 13px;
+    box-sizing: border-box;
+}
+
+.deducting-box ul {
+    margin-left: -10px;
+}
+
+.deducting-box ul li {
+    float: left;
+    margin: 0 0 10px 10px;
+    border-radius: 6px;
+    border: 1px solid #efefef;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ededed;
+    cursor: pointer;
+}
+
+.deducting-box ul li a {
+    color: #000000;
+}
+
+.deducting-box ul li:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .25);
+}
+
+.deducting-box ul li .icon-icon_zhekou1 {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #9fa0a0;
+    margin-top: 34px;
+    display: inline-block;
+}
+
+.deducting-box ul li .deducting-text {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/*paypal*/
+.deducting-box ul .paypal {
+    background-color: #dfeeff;
+}
+
+.deducting-box ul .icon-paypal {
+    font-size: 36px;
+    color: #4a90e2;
+    margin-top: 30px;
+    margin-left: 36px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+
+.deducting-box ul .paypal .deducting-text {
+    float: left;
+    margin-top: 24px;
+}
+
+/*更多折扣*/
+.deducting-box ul .more-rewards {
+    background-color: #ffffff;
+}
+
+/*可选优惠*/
+.deducting-box ul .active {
+    border: 1px solid #dfeeff;
+    background-color: #dfeeff;
+}
+
+.deducting-box ul .active:hover {
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+.deducting-box ul .active .icon-icon_zhekou1 {
+    color: #4a90e2;
+}
+
+/*.deducting-box ul .active .deducting-text {*/
+    /*color: #4a90e2;*/
+/*}*/
+
+/*如何得到优惠*/
+.how-get {
+    border: 1px solid #efefef;
+    margin-top: 30px;
+}
+
+.how-get .how-title {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 25px;
+    border-bottom: 1px solid #efefef;
+}
+
+.how-get .points-item {
+    float: left;
+    width: 218px;
+    height: 300px;
+    border-left: 1px solid #efefef;
+    position: relative;
+    text-align: center;
+}
+
+.how-get .points-item:first-child {
+    border-left: 0;
+}
+
+.how-get .points-box .income-points {
+    width: 200px;
+    text-align: center;
+    background: url("../images/order/reward-logo.png") no-repeat center 38%;
+}
+
+.how-get .points-item h3 {
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.how-get .points-item h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.how-get .points-item h6 span {
+    font-size: 16px;
+    color: #b21f1f;
+}
+
+.how-get .points-item .operation-flag {
+    width: 28px;
+    height: 28px;
+    line-height: 29px;
+    line-height: 31px \9;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+    color: #ffffff;
+    position: absolute;
+    top: 14%;
+    right: -14px;
+    z-index: 6;
+}
+
+/*获取提示*/
+.how-get .points-item .operation-tips {
+    border: 1px solid #efefef;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -110px;
+    width: 220px;
+    height: 160px;
+    border-radius: 6px;
+    padding-top: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .25);
+}
+
+:root .how-get .points-item .operation-tips {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    min-height: 170px;
+    border-radius: 6px;
+    padding: 20px 30px 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+.how-get .points-item .operation-tips:after, .operation-tips:before {
+    display: block;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    z-index: 99;
+    margin-left: -5px;
+}
+
+.how-get .points-item .operation-tips:before {
+    border-bottom: 10px solid #d5d5d5;
+    top: -8px;
+}
+
+.how-get .points-item .operation-tips p {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: #727171;
+    line-height: 16px;
+    width: 150px;
+}
+:root .how-get .points-item .operation-tips p {
+    width: auto;
+}
+
+/*关于提示*/
+.about-points {
+    margin-top: 30px;
+}
+
+.about-points .about-title {
+    border-bottom: 1px solid #b21f1f;
+    height: 40px;
+    box-sizing: content-box;
+}
+
+.about-points li {
+    float: left;
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.about-points .active {
+    border: 1px solid #b21f1f;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+}
+.about-points .active:after{
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: 3;
+}
+.about-points .item-lists{
+    margin-top: 40px;
+    position: relative;
+    min-height: 250px;
+}
+.about-points .item-lists .item{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #ffffff;
+    min-height: 250px;
+}
+.about-points .item-lists p{
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.about-points .item-lists p a{
+    color: #4a90e2;
+}

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/memberTop.css">
+    <link rel="stylesheet" href="../img/css/unfinishedPay.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="top-nav">
+    <div class="nav-l">
+        <a href="orderIndex.html">
+            <img src="../img/images/order/orderlogo.png" alt="logo">
+        </a>
+    </div>
+    <div class="nav-r">
+        <!--右侧图标-->
+        <div class="shopping-box">
+            <ul class="hints js-hints">
+                <li class="active message-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-ai-message"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="active coupon-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-youhuiquan"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="active coupon-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-fukuan"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="car-box cared-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-gouwuche1"></span>
+                </a>
+                    <i class="round car-nums">99</i>
+                </li>
+            </ul>
+        </div>
+        <!--登录后-->
+        <div class="user-box">
+            <span class="hi-text"> Hi! The user...</span>
+            <div class="user-pic js-user-pic">
+                <i><img src="../img/images/user.png" alt=""></i>
+                <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+            </div>
+            <div class="user-item">
+                <div class="account" onclick="window.open('orderIndex.html','_self')">
+                    My Account
+                </div>
+                <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                    My Orders list
+                </div>
+                <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                    My Delivery Address
+                </div>
+                <div class="facebook-btn ">
+                    Bind FaceBook
+                </div>
+                <div class="out-btn " style="margin-top: 10px">
+                    Sign Out
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--二级菜单-->
+<div class="main-menu">
+    <div class="vip_warp">
+        <ul class="menu-list clear-fix">
+            <li class="active"><a href="orderIndex.html">My Account</a></li>
+            <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+            <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+            <li><a href="../reviewList.html">Forum</a></li>
+        </ul>
+        <!--面包屑-->
+        <div class="bread-crumbs">
+            <a href="javascript:void(0)">
+                <span class="iconfont icon-shouye1"></span>
+                <span>- Shopping Cart</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item "><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item "><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class=" item "><a href="myInvitation.html">
+                <span class="iconfont icon-daipingjiab"></span>
+                <span class="category-name">+Experience Share</span></a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="myInvitation.html">
+                    <span class="second-name">My Invitation</span>
+                </a>
+                <a href="promoteIndex.html">
+                    <span class="second-name">Share links</span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="javascript:void(0)">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name active-new">- Reward points</span></a></div>
+            <!--vip-->
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="essentialInformation.html">
+                    <span class="second-name">Basic Information</span></a>
+                <a href="receivingAddress.html">
+                    <span class="second-name">My Delivery Address</span>
+                </a>
+                <a href="changePassword.html">
+                    <span class="second-name">Change Password</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            ORDER DETAIL
+        </div>
+        <!--流程进度-->
+        <!--进度指示图-->
+        <div class="progress-map-box">
+            <ul class="progress-ul">
+                <li class="active">
+                    <span class="iconfont icon-gou-shi finish-pic"></span>
+                    <i class="progress-line">
+                        Review your Order
+                    </i>
+                </li>
+                <li class="active">
+                    <span class="iconfont icon-gou-shi finish-pic"></span>
+                    <i class="progress-line">
+                        Payment
+                    </i>
+                </li>
+                <li>
+                    <span class="iconfont icon-gou-shi finish-pic"></span>
+                    <i class="progress-line">
+                        Done
+                    </i>
+                </li>
+            </ul>
+        </div>
+        <!--支付方式选择-->
+        <div class="pay-box">
+            <div class="pay-l clear-fix">
+                <!--各个付款方式-->
+                <div class="pay js-pay clear-fix">
+                    <div class="pay-item active">
+                        <!---->
+                        <div class="pay-flag">
+
+                        </div>
+                        <div class="pay-logo">
+                            <img src="../img/images/order/pay-pal.png" alt="">
+                        </div>
+                        <p>Pay with Paypal</p>
+                    </div>
+                    <div class="pay-item">
+                        <div class="pay-logo">
+                            <img src="../img/images/order/icbc.png" alt="">
+                        </div>
+                        <p>Wireless Transfer</p>
+                        <!--银行提示-->
+                        <div class="pay-tips">
+                            <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                            <h3>Bank Transfer</h3>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Beneficiary:
+                                </div>
+                                <div class="info-r">
+                                    Shenzhen JDB Technology Co Ltd
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Bank:
+                                </div>
+                                <div class="info-r">
+                                    ICBC SHENZHEN BRANCH, SHENZHEN CHINA
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Bank Address:
+                                </div>
+                                <div class="info-r">
+                                    NORTH BLOCK FINANCIAL CENTER SHENNAN ROAD EAST,
+                                    SHENZHEN, 518000, CHINA
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Account No:
+                                </div>
+                                <div class="info-r">
+                                    4000027519200517444
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Swift Code:
+                                </div>
+                                <div class="info-r">
+                                    ICBKCNBJSZN
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Address:
+                                </div>
+                                <div class="info-r">
+                                    No.15,Zhongxing Road,Kengzi Street,Pingshan District,Shenzhen,518000,China
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+                            <p class="pay-text">Please send the receipt to your sales after you make payment
+                                when you use this
+                                kind of payment method so that we could arrange your order to production on
+                                time.</p>
+                        </div>
+                    </div>
+                    <div class="pay-item">
+                        <div class="pay-logo">
+                            <img src="../img/images/order/wu.png" alt="">
+                        </div>
+                        <p>Western Union</p>
+                        <!--银行提示-->
+                        <div class="pay-tips">
+                            <textarea type="text" class="hidden-tips js-hidden-tips"></textarea>
+                            <h3>Westen Union</h3>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    First Name:
+                                </div>
+                                <div class="info-r">
+                                    Xiao Ming
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Last Name:
+                                </div>
+                                <div class="info-r">
+                                    Wu
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Street
+                                </div>
+                                <div class="info-r">
+                                    Zhenhua Road 55,Futian District
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    City:
+                                </div>
+                                <div class="info-r">
+                                    Shenzhen
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Country:
+                                </div>
+                                <div class="info-r">
+                                    China
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-l">
+                                    Zip code
+                                </div>
+                                <div class="info-r">
+                                    518000
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="copy-btn js-copy-btn">Copy</a>
+                            <p class="pay-text">Please send the receipt to your sales after you make payment
+                                when you use this
+                                kind of payment method so that we could arrange your order to production on
+                                time.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="other-pay">If you need to pay by other means, please contact the sales representative
+                    via Email: <a href="javascript:void(0)">service@pcbgo.com.</a>
+                </p>
+                <div class="order-info">
+                    <p class="order-num">Order NO: A11302AS6</p>
+                    <p>Order time & date: 2017.06 .06 3:57:17 PM</p>
+                    <p>Order Status: <span>Awaiting Payment</span></p>
+                </div>
+            </div>
+            <div class="pay-r">
+                <!--优惠项-->
+                <ul class="discount-list">
+                    <li>
+                        <div class="list-l">
+                            <div class="list-state">
+                                <label class="label-bg js-pay-label active"></label>
+                                <input type="checkbox" class="js-pay-input">
+                            </div>
+                            <div class="list-name">
+                                <span>Account Balance：$</span>
+                                <span>100000.00</span>
+                            </div>
+                        </div>
+                        <div class="list-r">
+                            <span>-$<span>0.00</span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-l">
+                            <div class="list-state">
+                                <label class="label-bg js-pay-label"></label>
+                                <input type="checkbox" class="js-pay-input">
+                            </div>
+                            <div class="list-name">
+                                <span>Gocoin：</span>
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="list-r">
+                            <span class="pal-free">Paypal Fee</span><span>-3</span>
+                        </div>
+                    </li>
+                </ul>
+                <!--价格-->
+                <div class="ship-r">
+                    <dl>
+                        <dt>PCB Cost</dt>
+                        <dd>$500.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Shipping Cost</dt>
+                        <dd>$41.00</dd>
+                    </dl>
+                    <dl>
+                        <dt>Paypal Fee</dt>
+                        <dd>- $100.00</dd>
+                    </dl>
+                    <!--优惠价格-->
+                    <div class="the-price">
+                        <div class="price">
+                            <div class="price-left">Member Discount</div>
+                            <div class="price-right">-$50</div>
+                        </div>
+                    </div>
+                    <div class="total-amount">
+                        <div class="amount-l">Total Amount</div>
+                        <div class="amount-r">
+                            <span>$357.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--发票与支付按钮-->
+        <div class="button-group">
+            <a href="#" class="invoice">Invoice</a>
+            <input type="submit" class="pay-btn" value="Pay now">
+        </div>
+        <!--地址-->
+        <div class="delivery-ress">Delivery Address:</div>
+        <div class="delivery-box">
+            <dl>
+                <dt>Company:</dt>
+                <dd>Shenzhen JDB Technology Co., Ltd.</dd>
+            </dl>
+            <dl>
+                <dt>Name:</dt>
+                <dd>asdasdasd</dd>
+            </dl>
+            <dl>
+                <dt>Address:</dt>
+                <dd>4225 Executive Square,Level 7 La Jolla, CA 92037 AB KETTLEBY ,UNITED KINGDOM <img
+                        src="../img/images/order/ress-pic.png" alt="" style="vertical-align: middle"></dd>
+            </dl>
+            <dl>
+                <dt>Zip Code:</dt>
+                <dd>LE14 12</dd>
+            </dl>
+            <dl>
+                <dt>Tel:</dt>
+                <dd>00852-29976161</dd>
+            </dl>
+        </div>
+        <!--分割线-->
+        <div class="line-div" style="border-top: 1px solid #efefef;margin-top: 45px"></div>
+        <!--详细信息-->
+        <div class="delivery-ress">Order Detail:</div>
+        <!--表格盒子1-->
+        <div class="detail-box ie-float">
+            <div class="box-top">
+                <span class="box-title">PCB Prototrpe</span>
+                <span class="box-price">Total:  $5.00</span>
+            </div>
+            <div class="box-content">
+                <div class="content-l">
+                    <ul class="content-list">
+                        <li class="bg-text">Product No.</li>
+                        <li class="fg-text">W00010ASD207</li>
+                        <li class="bg-text">GerberFile</li>
+                        <li class="ot-text">The file name001.rar</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Board Type :</li>
+                        <li class="fg-text">Single PCB</li>
+                        <li class="bg-text">Panel Way</li>
+                        <li class="ot-text"></li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Size</li>
+                        <li class="fg-text">23.5 x 14.7 mm</li>
+                        <li class="bg-text">Quantity</li>
+                        <li class="fg-text">5</li>
+                        <li class="bg-text">Layers</li>
+                        <li class="fg-text">2layers</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Material</li>
+                        <li class="fg-text">FR-4 TG130</li>
+                        <li class="bg-text">Thickness</li>
+                        <li class="fg-text">1.6 mm</li>
+                        <li class="bg-text" style="line-height: 10px;padding-top: 10px;">Min Track/ <br>Spacing</li>
+                        <li class="fg-text">6/6mil</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Min Hole Size</li>
+                        <li class="fg-text">0.3</li>
+                        <li class="bg-text">Solder Mask</li>
+                        <li class="fg-text">Green</li>
+                        <li class="bg-text">Silkscreen</li>
+                        <li class="fg-text">White</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Gold fingers</li>
+                        <li class="fg-text">No</li>
+                        <li class="bg-text">Surface Finish</li>
+                        <li class="fg-text">HASL with lead</li>
+                        <li class="bg-text">Via Process</li>
+                        <li class="fg-text">Tenting vias</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Finished Copper</li>
+                        <li class="fg-text">1 oz Cu</li>
+                        <li class="bg-text" style="line-height: 10px;padding-top: 10px">Additional <br>Options</li>
+                        <li class="ot-text">Half-cut/Castellated Holes:Yes,</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CreateTime</li>
+                        <li class="fg-text">11/24/2017 3:58:38 PM</li>
+                        <li class="bg-text">Build Time</li>
+                        <li class="fg-text">2-3 days</li>
+                        <li class="bg-text" style="line-height: 12px;padding-top: 10px">Estimated Finish <br>Time
+                        </li>
+                        <li class="fg-text" style="line-height: 12px;padding-top: 10px">2017-11-27 China Time
+                            Zone(GMT+8)
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-r">
+                    Manufacturing
+                </div>
+            </div>
+        </div>
+        <!--表格盒子2-->
+        <div class="detail-box ie-float">
+            <div class="box-top">
+                <span class="box-title">PCB Assembly</span>
+                <span class="box-price">Total:  $5.00</span>
+            </div>
+            <div class="box-content">
+                <div class="content-l">
+                    <ul class="content-list">
+                        <li class="bg-text">Product No.</li>
+                        <li class="fg-text">T-D212W00010A</li>
+                        <li class="bg-text">BOMFile</li>
+                        <li class="fg-text"></li>
+                        <li class="bg-text">GerbersFile</li>
+                        <li class="fg-text"></li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CentroidFile</li>
+                        <li class="fg-text"></li>
+                        <li class="bg-text">3 flexible options</li>
+                        <li class="fg-text">Turnkey</li>
+                        <li class="bg-text">Quantity</li>
+                        <li class="fg-text">12</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text" style="padding-top: 10px;line-height: 10px">No. of Unique Parts</li>
+                        <li class="fg-text">3</li>
+                        <li class="bg-text">No. of SMT Parts</li>
+                        <li class="fg-text">3</li>
+                        <li class="bg-text" style="padding-top: 10px;line-height: 10px">No. of Through- Hole Parts
+                        </li>
+                        <li class="fg-text">3</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Board type</li>
+                        <li class="fg-text">Single pieces</li>
+                        <li class="bg-text">Assembly Side(s)</li>
+                        <li class="fg-text">Single Side</li>
+                        <li class="bg-text">Assembly request</li>
+                        <li class="fg-text">12</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Finished Copper</li>
+                        <li class="fg-text">1 oz Cu</li>
+                        <li class="bg-text" style="padding-top: 10px;line-height: 10px">Additional Options</li>
+                        <li class="ot-text">Half-cut/Castellated Holes:Yes,</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CreateTime</li>
+                        <li class="fg-text">11/24/2017 3:58:38 PM</li>
+                        <li class="bg-text">Build Time</li>
+                        <li class="fg-text">2-3 days</li>
+                        <li class="bg-text" style="line-height: 12px;padding-top: 10px">Estimated Finish <br>Time
+                        </li>
+                        <li class="fg-text" style="line-height: 12px;padding-top: 10px">2017-11-27 China Time
+                            Zone(GMT+8)
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-r">
+                    Manufacturing
+                </div>
+            </div>
+        </div>
+        <!--表格盒子3-->
+        <div class="detail-box ie-float">
+            <div class="box-top">
+                <span class="box-title">FPC instant quote</span>
+                <span class="box-price">Total:  $5.00</span>
+            </div>
+            <div class="box-content">
+                <div class="content-l">
+                    <ul class="content-list">
+                        <li class="bg-text">Product No.</li>
+                        <li class="fg-text">W00010ASD207</li>
+                        <li class="bg-text">GerberFile</li>
+                        <li class="ot-text">The file name001.rar</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Board Type :</li>
+                        <li class="fg-text">Single PCB</li>
+                        <li class="bg-text">Panel Way</li>
+                        <li class="ot-text"></li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Size</li>
+                        <li class="fg-text">23.5 x 14.7 mm</li>
+                        <li class="bg-text">Quantity</li>
+                        <li class="fg-text">5</li>
+                        <li class="bg-text">Layers</li>
+                        <li class="fg-text">2layers</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Material</li>
+                        <li class="fg-text">FR-4 TG130</li>
+                        <li class="bg-text">Thickness</li>
+                        <li class="fg-text">1.6 mm</li>
+                        <li class="bg-text" style="line-height: 10px;padding-top: 10px">Min Track/ Spacing</li>
+                        <li class="fg-text">6/6mil</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Min Hole Size</li>
+                        <li class="fg-text">0.3</li>
+                        <li class="bg-text">Solder Mask</li>
+                        <li class="fg-text">Blue</li>
+                        <li class="bg-text">Silkscreen</li>
+                        <li class="fg-text">White</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Gold fingers</li>
+                        <li class="fg-text">No</li>
+                        <li class="bg-text">Surface Finish</li>
+                        <li class="fg-text">HASL with lead</li>
+                        <li class="bg-text">Via Process</li>
+                        <li class="fg-text">Tenting vias</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Finished Copper</li>
+                        <li class="fg-text">1 oz Cu</li>
+                        <li class="bg-text" style="padding-top: 10px;line-height: 10px">Additional Options</li>
+                        <li class="ot-text">Half-cut/Castellated Holes:Yes,</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CreateTime</li>
+                        <li class="fg-text">11/24/2017 3:58:38 PM</li>
+                        <li class="bg-text">Build Time</li>
+                        <li class="fg-text">2-3 days</li>
+                        <li class="bg-text" style="line-height: 12px;padding-top: 10px">Estimated Finish <br>Time
+                        </li>
+                        <li class="fg-text" style="line-height: 12px;padding-top: 10px">2017-11-27 China Time
+                            Zone(GMT+8)
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-r">
+                    Manufacturing
+                </div>
+            </div>
+        </div>
+        <!--表格盒子4-->
+        <div class="detail-box ie-float">
+            <div class="box-top">
+                <span class="box-title">SMD-Stencil </span>
+                <span class="box-price">Total:  $5.00</span>
+            </div>
+            <div class="box-content">
+                <div class="content-l">
+                    <ul class="content-list">
+                        <li class="bg-text">Product No.</li>
+                        <li class="fg-text">T-D212W00010A</li>
+                        <li class="bg-text">GerberFile :</li>
+                        <li class="ot-text"></li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Board Type</li>
+                        <li class="fg-text"></li>
+                        <li class="bg-text">Size</li>
+                        <li class="fg-text">470 x 370 mm</li>
+                        <li class="bg-text">Quantity</li>
+                        <li class="fg-text">12</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Material</li>
+                        <li class="fg-text">SMD-stencil</li>
+                        <li class="bg-text">Thickness</li>
+                        <li class="fg-text">0.12mm</li>
+                        <li class="bg-text">Existing fiducials</li>
+                        <li class="fg-text">none</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Electropolishing</li>
+                        <li class="fg-text">No</li>
+                        <li class="bg-text" style="padding-top: 10px;line-height: 10px">Other Special request</li>
+                        <li class="ot-text">W00010ASD215：Single PCB;</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CreateTime</li>
+                        <li class="fg-text">11/24/2017 3:58:38 PM</li>
+                        <li class="bg-text">Build Time</li>
+                        <li class="fg-text">2-3 days</li>
+                        <li class="bg-text" style="line-height: 12px;padding-top: 10px">Estimated Finish <br>Time
+                        </li>
+                        <li class="fg-text" style="line-height: 12px;padding-top: 10px">2017-11-27 China Time
+                            Zone(GMT+8)
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-r">
+                    Manufacturing
+                </div>
+            </div>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box ">
+            Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+    <img src="../img/images/order/gotop.png" alt="">
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/layer-v3.1.1/layer/layer.js"></script>
+<script src="../img/js/public.js"></script>
+<script src="../img/js/unfinishedPay.js"></script>
+<!--套用相应修改-->
+
+<script>
+    $(function () {
+        $('.js-pay .pay-item').hover(function () {
+            $(this).find('.pay-tips').stop().fadeIn();
+        }, function () {
+            $(this).find('.pay-tips').stop().fadeOut();
+        });
+        //复制按钮
+        $('.js-copy-btn').click(function () {
+            var arr = [];
+            $(this).parent().find('.info-item').each(function () {
+                arr.push($(this).text().replace(/\s/g, ''));
+            });
+            $('.js-hidden-tips').val(arr.join('\n'));
+            var that = this;
+            if (document.execCommand('copy')) {
+                $('.js-hidden-tips').select();
+                document.execCommand('copy'); //复制内容到剪切板
+                layer.msg('Copy Succeeded<br>', {}, function () {
+                    $(that).parent().fadeOut();
+                });
+            }
+        });
+        $('.js-pay-input').click(function () {
+            $(this).prev().toggleClass('active');
+        });
+    })
+</script>
+</body>
+</html>

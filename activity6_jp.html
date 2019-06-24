@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title> China PCB Prototype Manufacture |Pcbgogo.com</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/public.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="img/fonts/iconfont.css">
+    <link rel="stylesheet" href="img/css/header.css">
+    <link rel="stylesheet" href="img/css/footer.css">
+    <link rel="stylesheet" href="img/css/animate/motion.min.css">
+    <style>
+        /*<!-- 活动字体-->*/
+        @font-face {
+            font-family: 'activeFont';
+            src: url("img/activeFonts/DIN-Condensed-Bold.ttf");
+        }
+
+        .main-box {
+
+        }
+
+        .banner-box {
+            background: url("img/images/activity/active6-banner.jpg") no-repeat center;
+            width: 100%;
+            min-width: 1280px;
+            height: 928px;
+            font-family: 'activeFont';
+        }
+
+        .banner-box .banner {
+            width: 1280px;
+            margin: 0 auto;
+            height: 900px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .balloon-box {
+            float: right;
+            background: url("img/images/activity/balloon-bg_jp.png") no-repeat center top;
+            width: 568px;
+            height: 890px;
+            position: relative;
+        }
+
+        .balloon-box .logoed {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 3;
+        }
+
+        .banner-box .floating {
+            position: absolute;
+            top: 40px;
+            right: 8px;
+            z-index: 4;
+        }
+
+
+        @keyframes slide-downed {
+            0% {
+                transform: translateY(-500px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .slide-down {
+            transition: all .3s;
+            animation: slide-downed 1s;
+        }
+
+        .t-box {
+            background: url("img/images/activity/gift6.png") no-repeat center;
+            width: 527px;
+            height: 512px;
+            position: absolute;
+            left: -30px;
+            top: 210px;
+            z-index: 3;
+        }
+
+        .t-name {
+            font-family: 'myfont', 'Arial';
+            font-size: 16px;
+            color: #853f00;
+            text-align: center;
+            position: absolute;
+            bottom: 80px;
+            left: 175px;
+            z-index: 3;
+        }
+
+        .banner-box .banner .couponsed {
+            position: absolute;
+            bottom: 330px;
+            left: 514px;
+            z-index: 3;
+        }
+
+        .t-logistics {
+            background: url("img/images/activity/logistics.jpg") no-repeat center;
+            width: 252px;
+            height: 369px;
+            position: absolute;
+            left: 492px;
+            bottom: 10px;
+            z-index: 3;
+        }
+
+        .logistics-box {
+            font-family: 'myfont', 'Arial';
+            font-size: 16px;
+            color: #853f00;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 542px;
+            z-index: 3;
+        }
+
+        .banner-box .banner .that-instructions {
+            position: absolute;
+            top: 515px;
+            right: 0;
+            z-index: 5;
+            width: 400px;
+            padding: 0 30px;
+            min-height: 200px;
+            color: #4c8800;
+            text-align: center;
+        }
+
+        .banner-box .banner .that-instructions .item {
+            font-size: 24px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        .banner-box .banner .that-instructions .item:hover {
+            text-decoration: underline;
+        }
+
+        .banner-box .banner .that-instructions .icon-jiahao {
+            font-size: 26px;
+            margin: 5px 0;
+        }
+
+        .banner-box .banner .that-instructions .text {
+            font-size: 26px;
+            color: #922822;
+        }
+
+        /*    优惠券*/
+        .coupons-box {
+            margin-top: 70px;
+        }
+
+        .coupons-box .coupons-title {
+            text-align: center;
+            width: 279px;
+            margin: 0 auto;
+            color: #922822;
+            font-size: 30px;
+        }
+
+        .coupons-box .coupons-items {
+            width: 1280px;
+            margin: 60px auto 0;
+        }
+
+        .coupons-box .coupons-items .parent {
+            margin-left: -20px;
+        }
+
+        .coupons-box .coupons-items .item {
+            float: left;
+            margin: 0 0 20px 20px;
+            background: url("img/images/activity/cpupon-bg_jp.png") no-repeat center;
+            width: 238px;
+            height: 320px;
+            transition: all .3s;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .coupons-box .coupons-items .item:hover {
+            background: url("img/images/activity/cpuponed-bg_jp.png") no-repeat center;
+            margin-top: -15px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+            transition: all .3s;
+        }
+
+        .coupons-box .coupons-items .item .price {
+            font-size: 60px;
+            color: #8e1f22;
+            font-family: 'activeFont';
+            margin-top: 100px;
+        }
+
+        .coupons-box .coupons-items .item .requirements {
+            font-size: 18px;
+            color: #864000;
+            margin-top: 25px;
+        }
+
+        .coupons-box .coupons-items .item .get-btn {
+            padding: 0 30px;
+            height: 40px;
+            line-height: 40px;
+            min-width: 130px;
+            border-radius: 100px;
+            background: #ffd192;
+            margin: 20px auto 0;
+            color: #864000;
+            transition: all .3s;
+        }
+
+        .coupons-box .coupons-items .item:hover .get-btn {
+            background: #864000;
+            color: #ffffff;
+        }
+
+        .coupons-box .coupons-items .tips {
+            text-align: center;
+            margin-top: 30px;
+            color: #db0006;
+        }
+
+        /*  免费购物*/
+        .free-shipping {
+            margin-top: 70px;
+            height: 470px;
+        }
+
+        .free-shipping .free-box {
+            margin: 0 auto;
+            width: 1280px;
+            background: url("img/images/activity/active6-wu.png") no-repeat right bottom #ffe8c2;
+            border-radius: 20px;
+            height: 350px;
+            text-align: center;
+            position: relative;
+        }
+
+        .free-shipping .free-box:after {
+            position: absolute;
+            bottom: -22px;
+            left: 183px;
+            z-index: 6;
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 30px solid #ffe8c2;
+            border-right: 30px solid transparent;
+        }
+
+        .free-shipping .free-box .wuLiu-box {
+            overflow: hidden;
+            width: 550px;
+            height: 350px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .free-shipping .free-box .wuLiu-left {
+            float: left;
+            width: 364px;
+            font-size: 24px;
+            color: #864000;
+            padding-top: 147px;
+            position: relative;
+        }
+
+        .free-shipping .free-box .wuLiu-left .left-move {
+            position: absolute;
+            right: -109px;
+            top: -10px;
+            z-index: 4;
+        }
+
+        .free-shipping .free-box .wuLiu-right {
+            float: right;
+            width: 364px;
+            font-size: 24px;
+            color: #864000;
+            padding-top: 147px;
+            position: relative;
+        }
+
+        .free-shipping .free-box .wuLiu-right .right-move {
+            position: absolute;
+            top: -55px;
+            left: -200px;
+            z-index: 4;
+        }
+
+        .free-shipping .free-box .wuLiu-box {
+            position: relative;
+        }
+
+        .free-shipping .free-box .wuLiu-box .wu-liu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            transition: all .3s;
+        }
+
+        .free-shipping .free-box .shipping-box {
+            width: 350px;
+            height: 160px;
+            margin: 100px auto 0;
+            position: relative;
+            z-index: 6;
+        }
+
+        .free-shipping .free-box .shipping-box:hover .bottom .left {
+            background-color: #b21f1f;
+        }
+
+        .free-shipping .free-box .shipping-box .top {
+            width: 100%;
+            height: 115px;
+            text-align: center;
+            background-color: #441314;
+            opacity: .8;
+            filter: alpha(opacity=80);
+            font-size: 30px;
+            color: #ffe8c3;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .free-shipping .free-box .shipping-box .bottom {
+            margin-top: 1px;
+            height: 38px;
+            opacity: .8;
+            filter: alpha(opacity=80);
+            color: #ffe8c3;
+        }
+
+        .free-shipping .free-box .shipping-box .bottom .left {
+            float: left;
+            width: 289px;
+            line-height: 38px;
+            font-size: 12px;
+            background-color: #441314;
+            color: #ffe8c3;
+        }
+
+        .free-shipping .free-box .shipping-box .bottom .right {
+            background: url("img/images/activity/car6.png") no-repeat center #441314;
+            width: 60px;
+            height: 38px;
+            float: right;
+        }
+
+        .free-shipping .free-box .wu-liu:hover {
+            transform: scale(1.03);
+        }
+
+        /*    提示*/
+        .free-shipping .tips {
+            width: 1280px;
+            margin: 40px auto 0;
+            text-align: center;
+            color: #db0006;
+            position: relative;
+            padding-left: 88px;
+            box-sizing: border-box;
+        }
+
+        .free-shipping .tips .components {
+            position: absolute;
+            top: -46px;
+            left: 86px;
+            z-index: 3;
+        }
+
+        /*    额外的*/
+        .extra-box {
+            margin-top: 60px;
+            background-color: #8e1f22;
+            height: 675px;
+            min-width: 1280px;
+            color: #ffe8c3;
+        }
+
+        .extra-box .extra {
+            width: 1280px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .extra-box .extra .big-gift {
+            position: absolute;
+            top: -20px;
+            left: 340px;
+            z-index: 3;
+        }
+
+        .extra-box .extra .small-gift {
+            position: absolute;
+            bottom: -80px;
+            left: 260px;
+            z-index: 3;
+        }
+
+        .extra-box .extra .gift-bg {
+            position: absolute;
+            top: -86px;
+            right: 230px;
+            z-index: 3;
+        }
+
+        .extra-box .extra .title {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 80px;
+        }
+
+        .extra-box .lists {
+            margin-top: 150px;
+            width: 100%;
+        }
+
+        .extra-box .lists li {
+            float: left;
+            width: 33.3%;
+            text-align: center;
+        }
+
+        .extra-box .lists li p {
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        .extra-box .lists .second {
+            margin-top: -140px;
+        }
+
+        .extra-box .lists .second p {
+            margin: -25px 0 0 40px;
+        }
+
+        .extra-box .lists .three {
+            margin-top: -16px;
+        }
+
+        .extra-box .lists .three p {
+            margin-left: 30px;
+        }
+
+        @keyframes tada {
+            0% {
+                -webkit-transform: scale(1);
+            }
+            10%, 20% {
+                -webkit-transform: scale(0.9) rotate(-3deg);
+            }
+            30%, 50%, 70%, 90% {
+                -webkit-transform: scale(1.1) rotate(3deg);
+            }
+            40%, 60%, 80% {
+                -webkit-transform: scale(1.1) rotate(-3deg);
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(0);
+            }
+        }
+
+        .extra-box .lists li img:hover {
+            cursor: pointer;
+            animation: tada 1s .2s ease both;
+        }
+
+        .extra-box .tips {
+            text-align: center;
+            margin-top: 30px;
+            height: 75px;
+            line-height: 75px;
+            border-top: 1px solid #ae262b;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--顶部-->
+    <div class="nav-info">
+        <div class="nav-left">
+            <img class="nav-logo" src="img/images/new-year.gif" alt="new-year" width="199" height="61">
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-qushuchakanshuxing2"></span>
+                    <span class="gerber">Online Gerber Viewer</span>
+                </a>
+            </li>
+            <li>
+                <a href="phone-display.html">
+                    <span class="iconfont icon-shouji1"></span>
+                    <span class="gerber">Mobile Website</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-Skype"></span>
+                </a>
+            </li>
+            <li><a href="mailto:service@pcbgogo.com">
+                <span class="iconfont icon-E-mail"></span>
+                <span class="mail-text">service@pcbgogo.com</span>
+            </a>
+            </li>
+            <li class="language"><span><img src="img/images/England.png" alt="country-flag"></span>&nbsp;&nbsp;English
+                <!--语言选择弹出层-->
+                <ul class="language-box">
+                    <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+                    </li>
+                    <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                            src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="top-box">
+        <!--左侧logo-->
+        <h1 class="logo">
+            <a href="index.html">
+                PCBgogo
+            </a>
+        </h1>
+        <!--nav-tips-->
+        <img src="img/images/logo-tips.jpg" alt="logo tips" width="340" height="34" class="nav-tips">
+        <!--日文-->
+        <!--<img src="img/images/logo-tips_jp.jpg" alt="logo tips" width="336" height="34" class="nav-tips-jp">-->
+        <!--nav-tips-->
+        <!--右侧登录-->
+        <div class="sign-box">
+            <ul class="sign-lists">
+                <li class="sign-in"><a href="javascript:void(0)">Sign in</a></li>
+                <li class="join"><a href="javascript:void(0)">Join Free</a></li>
+                <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+                    user...</strong></a></li>
+                <li class="joined">
+                    <i><img src="img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="img/images/down-pointer.png" alt=""></span>
+                    <!--登陆后-->
+                    <div class="user-item">
+                        <div class="account active">
+                            My Account
+                        </div>
+                        <div class="account">
+                            My Orders list
+                        </div>
+                        <div class="account">
+                            My Delivery Address
+                        </div>
+                        <div class="facebook-btn ">
+                            Bind FaceBook
+                        </div>
+                        <div class="out-btn " style="margin-top: 10px">
+                            Sign Out
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <!--<div class="container_warp">-->
+            <!--左侧列表-->
+            <ul class="nav-lists">
+                <li class="active"><a href="index.html" class="home">Home</a></li>
+                <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+                <li class="assembly-menus">
+                    <a href="PCBAssembly.html">PCB Assembly</a>
+                    <ol class="next-item">
+                        <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+                        <li><a href="pcbaCapabilitiesProcess.html">PCBA process</a></li>
+                    </ol>
+                </li>
+                <li><a href="pcbLayout.html">PCB Layout</a></li>
+                <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+                    <ol class="capa-sub-menus">
+                        <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+                        <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+                        <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+                        <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+                        <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+                    </ol>
+                </li>
+                <li><a href="reviewList.html">Forum</a></li>
+                <li class="contact-menus"><a href="aboutUs.html">About Us</a>
+                    <ol class="contact-sub-menus">
+                        <li><a href="whyUs.html">Why us</a></li>
+                        <li><a href="methodPayment.html">Method of payment</a></li>
+                        <li><a href="Introduction.html">Introduction</a></li>
+                        <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                        <li><a href="orderGuide.html">Order guide</a></li>
+                        <li><a href="shippingMethod.html">Shipping method guide</a></li>
+                        <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+                        <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+                    </ol>
+                </li>
+                <!--后续添加-->
+                <!--<li><a href="forum.html">Blog</a></li>-->
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="js-hints">
+                    <li class="active"><a href="member/newsed.html" title="Message">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/coupon-page.html" title="Coupons">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point"></i>
+                    </li>
+                    <li class="active"><a href="member/awaiting-payment.html" title="Awaiting payment">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point now-hide"></i>
+                    </li>
+                    <li class="car-box"><a href="member/shopping-car.html" title="Shopping cart">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">10</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="main-box">
+    <div class="banner-box">
+        <div class="banner">
+            <!--右侧动画-->
+            <div class="balloon-box">
+                <img class="logoed" src="img/images/activity/logo6.png" alt="">
+                <img class="floating slide-down" src="img/images/activity/move6.png" alt="">
+            </div>
+            <!--T恤-->
+            <div class="t-box float animation"></div>
+            <div class="t-name">
+                PCBGOGO特製定規
+                <br>PCBGOGOTシャツ
+            </div>
+            <img class="couponsed animation heartbeat" src="img/images/activity/coupons6_jp.png" alt="">
+            <div class="t-logistics  animation"></div>
+            <div class="logistics-box">
+                実装案件なら送料無料
+                <br>今すぐお見積り
+            </div>
+            <!--            介绍-->
+            <div class="that-instructions">
+                <div class="item" id="coupon">
+                    クーポン券
+                </div>
+                <i class="iconfont icon-jiahao"></i>
+                <div class="item" id="free">
+                    送料無料
+                </div>
+                <i class="iconfont icon-jiahao"></i>
+                <div class="item" id="gift">
+                    プレゼント
+                </div>
+                <i class="iconfont icon-jiahao"></i>
+                <p class="text">PCBGOGOの4周年記念をお祝い、
+                    <br> 三重の特典を用意しております。</p>
+            </div>
+        </div>
+    </div>
+    <!--    优惠券-->
+    <div class="coupons-box">
+        <div class="coupons-title">
+            PCB SPECIALS -
+            COUPON GIVEAWAY
+        </div>
+        <div class="coupons-items" id="coupons-items">
+            <div class="parent clear-fix">
+                <div class="item">
+                    <div class="price">
+                        $5
+                    </div>
+                    <div class="requirements">
+                        $50
+                        <br>以上のご購入で取得
+                    </div>
+                    <a href="下单" class="get-btn">
+                        自動見積へ
+                    </a>
+                </div>
+                <div class="item">
+                    <div class="price">
+                        $10
+                    </div>
+                    <div class="requirements">
+                        $150
+                        <br>以上のご購入で取得
+                    </div>
+                    <a href="下单" class="get-btn">
+                        自動見積へ
+                    </a>
+                </div>
+                <div class="item">
+                    <div class="price">
+                        $20
+                    </div>
+                    <div class="requirements">
+                        $300
+                        <br>以上のご購入で取得
+                    </div>
+                    <a href="下单" class="get-btn">
+                        自動見積へ
+                    </a>
+                </div>
+                <div class="item">
+                    <div class="price">
+                        $30
+                    </div>
+                    <div class="requirements">
+                        $500
+                        <br>以上のご購入で取得
+                    </div>
+                    <a href="下单" class="get-btn">
+                        自動見積へ
+                    </a>
+                </div>
+                <div class="item">
+                    <div class="price">
+                        $50
+                    </div>
+                    <div class="requirements">
+                        $1000
+                        <br>以上のご購入で取得
+                    </div>
+                    <a href="下单" class="get-btn">
+                        自動見積へ
+                    </a>
+                </div>
+            </div>
+            <!-- 提示-->
+            <div class="tips">
+                <span class="iconfont icon-tishi1"></span>
+                PS: &nbsp;&nbsp;&nbsp;ご発註になった後、クーポン券は自動的に会員アカウントに送付されます。
+            </div>
+        </div>
+    </div>
+    <!--    free shipping-->
+    <div class="free-shipping" id="freeShipping">
+        <div class="free-box">
+            <div class="wuLiu-left">
+                送料が$30以下であれば
+                <br>送料無料
+                <img class="left-move animation float" src="img/images/activity/left-move.png" alt="">
+            </div>
+            <div class="wuLiu-box">
+                <img class="wu-liu" src="img/images/activity/free-bg.jpg" alt="">
+                <div class="shipping-box">
+                    <div class="top">
+                        実装案件なら送料無料
+                        <br>今すぐお見積り
+                    </div>
+                    <div class="bottom">
+                        <a href="javascript:void(0)" class="left">
+                            現在見積り
+                        </a>
+                        <div class="right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wuLiu-right">
+                送料が$30以上であれば
+                <br>$30引き
+                <img class="right-move animation float" src="img/images/activity/right-move.png" alt="">
+            </div>
+        </div>
+        <!--        提示-->
+        <div class="tips" id="components">
+            <img class="components" src="img/images/activity/components.png" alt="">
+            <span class="iconfont icon-tishi1"></span>
+            PS: &nbsp;&nbsp;&nbsp;1、キャンベン期間中に、$100以上の実装加工費を注文すること；    2、部品代とメタルマスク代は計算の対象外です。
+        </div>
+    </div>
+    <!--    Extra-->
+    <div class="extra-box">
+        <div class="extra">
+            <img class="big-gift animation heartbeat" src="img/images/activity/big-gift.png" alt="">
+            <img class="small-gift" src="img/images/activity/small-gift.png" alt="">
+            <img class="gift-bg" src="img/images/activity/gift-bg.png" alt="">
+            <div class="title">
+                特典のプレゼント
+            </div>
+            <ul class="lists clear-fix">
+                <li>
+                    <img src="img/images/activity/makeup.png" alt="">
+                    <p>特別なパズル</p>
+                </li>
+                <li class="second">
+                    <img src="img/images/activity/t.png" alt="">
+                    <p>PCBGOGOTシャツ</p>
+                </li>
+                <li class="three">
+                    <img src="img/images/activity/rulers.png" alt="">
+                    <p>PCBGOGO特製定規</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 提示-->
+        <div class="tips">
+            <span class="iconfont icon-tishi1"></span>
+            PS: 1、キャンベン期間中に、$200以上ご注文頂くこと：   2、どのプレゼントが欲しいか備考にご記載ください。
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="footer clear-float">
+    <!--一级导航-->
+    <div class="footer-title clear-float">
+        <div class="container_warp">
+            <ul class="footer-title-ul">
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-icon-test1"></span>
+                        </dt>
+                        <dd>
+                            100% <br>Quality <br>Guarantees
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-DHLshandian"></span>
+                        </dt>
+                        <dd>
+                            3-5days' <br>Delivery <br>(DHL)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-ISO"></span>
+                        </dt>
+                        <dd>
+                            International <br>Organization <br>forStandardization
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="iconfont icon-UL"></span>
+                        </dt>
+                        <dd>
+                            Underwriter <br>Laboratories <br>Inc.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--二级列表-->
+    <div class="links-type clear-float">
+        <div class="container_warp">
+            <div class="left-box" style="float: left">
+                <ul class="links-title clear-float">
+                    <li>
+                        <p>LEARN</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="aboutUs.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB
+                                    Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="pcbaCapabilities.html">PCBA Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB Layout
+                                    Capabilities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="PCBPrototype.html">PCB Prototype </a>
+                            </li>
+                            <li>
+                                <a href="PCBAssembly.html">PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="pcbLayout.html"> PCB Layout </a>
+                            </li>
+                            <li>
+                                <a href="FPCInstantQuote.html">PCB Instant Quote</a>
+                            </li>
+                            <li>
+                                <a href="sitemap.xml" title="https://www.pcbgogo.com/sitemap(1).xml">Site Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="forum/forum.html">Engineering </a>
+                            </li>
+                            <li>
+                                <a href="dynamic.html">Feedback </a>
+                            </li>
+                            <li>
+                                <a href="old-process/pcbaAssemblyFaq.html">PCBA FAQs </a>
+                            </li>
+                            <li>
+                                <a href="whyUs.html">Why us </a>
+                            </li>
+                            <li>
+                                <a href="privacyPolicy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="keywordSearch.html">PCB Glossary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="orderGuide.html">Order Guide </a>
+                            </li>
+                            <li>
+                                <a href="contactUs.html">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="register.html">Create an Account </a>
+                            </li>
+                            <li>
+                                <a href="qualityGurrantee.html">Quality Gurrantee </a>
+                            </li>
+                            <li>
+                                <a href="gogoDelivery.html">PCBGOGO Delivery</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-item-icon">
+                    <li><a href="javascript:void(0)"><img src="img/images/paypal.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/hsbc.png" alt="HBSC"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/china.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/dhl.png" alt="DHL"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/post.png" alt="POST"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/ups.png" alt="UPS"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/images/ems.png" alt="EMS"></a></li>
+                </ul>
+            </div>
+
+            <!--右侧表单-->
+            <div class="send-from">
+                <p>QUICK CONTACT</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                           onblur="if(this.value==='')this.value='Name'">
+                    <input type="text" placeholder="Email" value="Email"
+                           onfocus="if(this.value==='Email')this.value=''"
+                           onblur="if(this.value==='')this.value='Email'">
+                    <textarea type="text" class="message-input" placeholder="Message"
+                              onfocus="if(this.value==='Message')this.value=''"
+                              onblur="if(this.value==='')this.value='Message'"></textarea>
+                    <input type="button" class="btn-submit " value="Send Message">
+                </form>
+            </div>
+            <!--右侧表单-->
+        </div>
+    </div>
+    <!--底部表单-->
+    <div class="footer-from clear-float">
+        <div class="container_warp">
+            <!--底部列表-->
+            <div class="footer-item">
+                <ul class="footer-item-ul">
+                    <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                        Ltd. <br>
+                        Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                    </li>
+                    <li>
+                        Whatsapp <br>+8618665922549
+                    </li>
+                    <li>
+                        Mail <br>service@pcbgogo.com
+                    </li>
+                    <li>
+                        Tel <br>+86-755-33066136
+                    </li>
+                    <li class="footer-last-item">
+                        <div class="share-box">
+                            <a target="_blank" href="#"><img
+                                    src="img/images/twitter.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/google.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/facebook.png" alt=""></a>
+                            <a target="_blank"
+                               href="#"><img
+                                    src="img/images/instagram.png" alt=""></a>
+                            <a target="_blank" href="#"><img
+                                    src="img/images/Linkedln.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+
+        $('#coupon').click(function () {
+            var tempTop=$('.coupons-box')[0].offsetTop;
+            $('html,body').animate({scrollTop:tempTop});
+        });
+        $('#free').click(function () {
+            var tempTop=$('#freeShipping')[0].offsetTop-60;
+            $('html,body').animate({scrollTop:tempTop});
+        });
+        $('#gift').click(function () {
+            var tempTop=$('.extra-box')[0].offsetTop-100;
+            $('html,body').animate({scrollTop:tempTop});
+        });
+
+
+        //优惠券
+        var coupons = $('#coupons-items')[0].offsetTop;
+        $(window).scroll(function () {
+            var documentClientHeight = document.documentElement.clientHeight || window.innerHeight;
+            var top = $(this).scrollTop();
+            if (documentClientHeight + top >= coupons) {
+                $('#coupons-items').find('.item').each(function () {
+                    $(this).addClass('scale-in animation');
+                })
+            } else {
+                $('#coupons-items').find('.item').each(function () {
+                    $(this).removeClass('scale-in animation');
+                })
+            }
+        });
+    });//
+
+
+</script>
+</body>
+</html>

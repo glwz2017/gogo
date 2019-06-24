@@ -1,0 +1,389 @@
+/*主体样式*/
+.main-box {
+    /*margin-top: 40px;*/
+    height: auto;
+}
+
+/*左侧分割线*/
+.left-split {
+    float: left;
+    max-width: 66.9%;
+    width: 66.9%;
+    min-width: 66.9%;
+    border-top: 1px solid #efefef;
+    position: relative;
+    top: 149px;
+    top: 150px \9;
+}
+
+/*顶部阴影*/
+.top-shadow {
+    width: 100%;
+    border-top: 2px solid #efefef \9;
+    position: relative;
+    top: 210px;;
+    min-width: 1280px;
+    box-shadow: 0 -1px 3px 1px rgba(0, 0, 0, 0.08);
+}
+
+.main-box .main-l {
+    width: 960px;
+    display: inline-block;
+    float: left;
+    height: auto;
+    border-right: 1px solid #efefef;
+    padding-top: 40px;
+    padding-bottom: 500px;
+}
+
+.main-l .main-title-l {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 25px 0 55px 0;
+}
+
+.time-box {
+    height: 58px;
+    border-top: 1px solid #efefef;
+    /*border-bottom: 1px solid #efefef;*/
+}
+
+.time-l {
+    width: 840px;
+    height: 58px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.split-line {
+    margin: 0 20px;
+}
+
+.time-r {
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 120px;
+    /*color: #727171;*/
+}
+
+.time-r .return-feedback {
+    padding: 0 20px;
+    line-height: 22px;
+    font-weight: normal;
+    height: 22px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    color: #5b5a5a;
+}
+
+.time-r .return-feedback:hover {
+    background-color: #ffffff;
+}
+
+/*图文展示盒子*/
+.show-pic-box {
+    margin-top: 55px;
+    color: #727171;
+}
+
+.show-pic-box .good-stars {
+    height: 12px;
+    margin-bottom: 12px;
+}
+
+.show-pic-box .good-stars li {
+    float: left;
+    width: 10px;
+    height: 12px;
+    margin-right: 2px;
+    background-image: url(../images/order/stars.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.show-pic-box {
+    margin-top: 35px;
+
+}
+
+.water-box {
+    margin-top: 68px;
+    border-top: 1px solid #efefef;
+    padding-top: 40px;
+}
+
+.water-box .water-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*瀑布流内容*/
+.water1, .water2, .water3 {
+    float: left;
+}
+
+.box-list {
+    width: 299px;
+    border: 1px solid #efefef;
+    /*float: left;*/
+    padding: 20px;
+    /*padding: 20px 0 20px 20px;*/
+    box-sizing: border-box;
+    margin: 20px 20px 0 0;
+}
+
+.fall-title {
+    padding: 15px 0 15px 0;
+}
+
+.fall-title .fall-l {
+    height: 30px;
+    color: #727171;
+    font-size: 12px;
+}
+
+.fall-title .header-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.fall-title .national-flag {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.fall-title .fall-text {
+    margin-top: 20px;
+    border-top: 1px solid #efefef;
+    color: #3e3a39;
+}
+
+.good-stars {
+    height: 12px;
+    margin-bottom: 12px;
+}
+
+.good-stars li {
+    float: left;
+    width: 10px;
+    height: 12px;
+    margin-right: 2px;
+    background-image: url(../images/order/stars.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-text {
+    font-weight: bold;
+    color: #2e2525;
+    word-break: break-all;
+    /*word-wrap: break-word;*/
+}
+
+.list-text > a {
+    color: #2e2525;
+}
+
+/*主体右侧*/
+.main-r {
+    float: left;
+    width: 319px;
+    height: auto;
+    padding-top: 40px;
+}
+
+.main-r .right-top {
+    height: 167px;
+    /*border-bottom: 1px solid #efefef;*/
+    text-align: center;
+}
+
+.person-img {
+    width: 60px;
+    height: 60px;
+}
+
+.country-flag {
+    width: 20px;
+    height: 11px;
+}
+
+.box-list > img {
+    width: 255px;
+}
+
+/*返回顶部*/
+.go-btn {
+    position: fixed;
+    right: 10px;
+    top: 450px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.user-wave {
+    font-size: 12px;
+    color: #2e2525;
+    margin: 10px 0 5px 0;
+}
+
+.right-ul {
+    width: 319px;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.quote-box {
+    width: 240px;
+    height: 355px;
+    border: 1px solid #efefef;
+    padding: 30px 0 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.pcb-text {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.quotes {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    border: 1px solid #efefef;
+    margin-bottom: 10px;
+}
+
+.layer-box {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #efefef;
+    margin-left: 4px;
+    text-indent: 15px;
+    outline: none;
+}
+
+.down-box {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.down-val {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    background-image: url(../images/downed-pointer.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    border: 1px solid #efefef;
+}
+
+.down-ul {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 200px;
+    background-color: #ffffff;
+    height: 190px;
+    overflow-y: scroll;
+    text-align: left;
+    border: 1px solid #efefef;
+    display: none;
+    z-index: 99;
+}
+
+.down-ul li {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 15px;
+    background-color: #ffffff;
+}
+
+.down-ul li:hover {
+    background-color: #b0fcff;
+}
+
+.quote-btn {
+    width: 240px;
+    height: 40px;
+    background-color: #b21f1f;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/*返回顶部*/
+.go-btn {
+    position: fixed;
+    right: 10px;
+    top: 650px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/*底部列表*/
+.footer {
+    height: 120px;
+    padding-top: 30px;
+    background-color: #271e1e;
+    width: 100%;
+    min-width: 1280px;
+    /*margin-top: 500px;*/
+}
+
+.footer-item .footer-item-ul {
+    padding: 30px 0;
+    color: #826c6c;
+    font-size: 12px;
+}
+
+.footer-item .footer-item-ul > li {
+    float: left;
+    border-right: 1px dotted #877070;
+    padding: 0 20px;
+}
+
+.footer-item .footer-item-ul .ban-quan {
+    padding-left: 0;
+}
+
+.footer-item .footer-item-ul .footer-last-item {
+    border-right: none;
+    box-sizing: border-box;
+}
+
+.min-logo {
+    margin-left: 100px;
+}
+
+.min-logo img {
+    vertical-align: middle;
+}
+
+.footer-item .footer-item-icon {
+    padding-top: 35px;
+    padding-bottom: 108px;
+}
+
+.footer-item .footer-item-icon > li {
+    float: left;
+    margin-right: 1px;
+}

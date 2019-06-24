@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/memberTop.css">
+    <link rel="stylesheet" href="../img/css/shopping-car.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../img/js/public.js"></script>
+    <script src="../img/js/shopping-car.js"></script>
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../reviewList.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Shopping Cart</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item active"><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            SHOPPING CART
+        </div>
+        <div class="order-stats-box">
+            <!--空数据元素-->
+            <div class="empty-item" style="display: none">
+                    <span>
+                        <img src="../img/images/order/empty-cart.png" alt="Your shopping cart is empty! " width="128"
+                             height="107">
+                    </span>
+                <div class="empty-tips">Your shopping cart is empty!</div>
+                <a href="../PCBPrototype.html" class="empty-link">Place order now! </a>
+            </div>
+            <!--第三个列表Under Review-->
+            <div class="under-review-box js-boxed">
+                <!--列表2-->
+                <div class="tabed-item1">
+                    <!--标题-->
+                    <p class="item-title">Add Time: 2018-04-10</p>
+                    <!--列表-->
+                    <ul class="item-boxed">
+                        <li class="item1">Order Details</li>
+                        <li class="item2">Size (mm)</li>
+                        <li class="item3">Qty</li>
+                        <li class="item4">Sub Total</li>
+                        <li class="item5">Files Name</li>
+                        <li class="item6">Status</li>
+                    </ul>
+                    <!--软硬结合板-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div class="list1" data="5417">
+                            <div class="my-selected">
+                                <!--不可选按钮-->
+                                <!--<i class="not-optional"></i>-->
+                            </div>
+                            <!--1-->
+                            <div class="imgs">
+                                <img src="../img/images/order/rigidflex.png" alt="">
+                                <div class="imgs-text">
+                                    <p>Order No: PW00126A47 <br>[PCB Assembly]</p>
+                                    <p class="days">
+                                        <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                    <p class="view">
+                                        <span class="iconfont icon-icon-xiangqing"></span>
+                                        <a onclick="ViewOrder(4,509)">View Detail</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--2-->
+                            <div class="size"></div>
+                            <!--3-->
+                            <div class="qty">
+                                2
+                            </div>
+                            <!--4-->
+                            <div class="sub-total">
+                                <span>$1</span><span>88.00</span>
+                                <!--新加成本计价-->
+                                <div class="assembly-cost">
+                                    <i>SMT cost: $<span>5888</span></i>
+                                    <i>Components cost: $<span>99.00</span></i>
+                                    <i>(<span>0.5</span>kg)</i>
+                                </div>
+                            </div>
+                            <!--5-->
+                            <div class="gerber">
+
+                                <div class="stats1">
+                                    <div class="add-file" onclick="UpGerber(2889)">
+                                        <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                    </div>
+                                </div>
+                            </div>
+                            <!--6-->
+                            <div class="del-box">
+                                <div class="piced">
+                                    <span class="iconfont icon-shanchu del-pic"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--新加计价总计-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div class="list1" data="5417">
+                            <div class="my-selected">
+                                <!--不可选按钮-->
+                                <!--<i class="not-optional"></i>-->
+                            </div>
+                            <!--1-->
+                            <div class="imgs">
+                                <img src="../img/images/order/assembly.png" alt="">
+                                <div class="imgs-text">
+                                    <p>Order No: PW00126A47 <br>[PCB Assembly]</p>
+                                    <p class="days">
+                                        <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                    <p class="view">
+                                        <span class="iconfont icon-icon-xiangqing"></span>
+                                        <a onclick="ViewOrder(4,509)">View Detail</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--2-->
+                            <div class="size"></div>
+                            <!--3-->
+                            <div class="qty">
+                                2
+                            </div>
+                            <!--4-->
+                            <div class="sub-total">
+                                <span>$1</span><span>88.00</span>
+                                <!--新加成本计价-->
+                                <div class="assembly-cost">
+                                    <i>SMT cost: $<span>5888</span></i>
+                                    <i>Components cost: $<span>99.00</span></i>
+                                    <i>(<span>0.5</span>kg)</i>
+                                </div>
+                            </div>
+                            <!--5-->
+                            <div class="gerber">
+
+                                <div class="stats1">
+                                    <div class="add-file" onclick="UpGerber(2889)">
+                                        <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                    </div>
+                                </div>
+                            </div>
+                            <!--6-->
+                            <div class="del-box">
+                                <div class="piced">
+                                    <span class="iconfont icon-shanchu del-pic"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--新加计价总计-->
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="4509">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/smd.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: SW00126A48 <br>[SMD-Stencil]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    1
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>15.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <div class="stats1">
+                                        <div class="add-file" onclick="UpGerber(2890)">
+                                            <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="5417">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/assembly.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: PW00126A47 <br>[PCB Assembly]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    2
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>88.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+
+                                    <div class="stats1">
+                                        <div class="add-file" onclick="UpGerber(2889)">
+                                            <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+
+                        <div>
+                            <div class="list1" data="21612">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/prototype.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: W00126ASA46 <br>[PCB Production]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                    22 x 2
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    10
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>5.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <div class="stats1">
+                                        <div class="add-file" onclick="UpGerber(2888)">
+                                            <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="21609">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/prototype.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: PW00126ASA45 <br>[PCB Production]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                    2 x 2
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    10
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>5.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <!--状态2-->
+                                    <div class="stats2">
+                                        <div><a target="_blank"
+                                                href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/gerber/18/04/10/1724197546251.zip&amp;realName=PW00126ASA45_Gerber3.zip"
+                                                title="PW00126ASA45_Gerber3.zip">PW00126ASA45_Gerber3.zip</a></div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="review"><img src="../img/images/order/under-review.png" alt="">Under
+                                        Review
+                                    </div>
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="5416">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/assembly.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: TW00126A44 <br>[PCB Assembly]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    1
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>88.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+
+                                    <div class="stats1">
+                                        <div class="add-file" onclick="UpGerber(2884)">
+                                            <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="21598">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/prototype.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: PW00126ASA40 <br>[PCB Production]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                    8 x 8
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    5
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>5.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <!--状态2-->
+                                    <div class="stats2">
+                                        <div><a target="_blank"
+                                                href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/gerber/18/04/06/1410563762525.zip&amp;realName=PW00126ASA40_Gerber12.zip"
+                                                title="PW00126ASA40_Gerber12.zip">PW00126ASA40_Gerber12.zip</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="review"><img src="../img/images/order/under-review.png" alt="">Under
+                                        Review
+                                    </div>
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="item-title">Add Time: 2018-04-06</p>
+                    <!--列表-->
+                    <ul class="item-boxed">
+                        <li class="item1">Order Details</li>
+                        <li class="item2">Size (mm)</li>
+                        <li class="item3">Qty</li>
+                        <li class="item4">Sub Total</li>
+                        <li class="item5">Gerber File</li>
+                        <li class="item6">Status</li>
+                    </ul>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <label class="label-bg js-label-bg active" itemoney="88.0000" itemweight="0.5">
+                            </label><input type="checkbox" class="js-input-val" style="top:0" checked=""
+                                           onclick="ClickCheckOrder(this)">
+                        </div>
+                        <div>
+                            <div class="list1" data="5414">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/assembly.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: TW00126A42 <br>[PCB Assembly]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    1
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>88.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+
+                                    <div class="stats2">
+                                        <div>
+                                            <a href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/gerber/18/04/06/1520290746314.zip&amp;realName=Gerber3.zip"
+                                               target="_blank" title="Gerber3.zip">Gerber3.zip</a></div>
+                                    </div>
+                                    <div class="stats2">
+                                        <div>
+                                            <a href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/bom/18/04/06/1520308880342.zip&amp;realName=BOM3.zip"
+                                               target="_blank" title="BOM3.zip">BOM3.zip</a></div>
+                                    </div>
+                                    <div class="stats2">
+                                        <div>
+                                            <a href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/centroid/18/04/06/1520318396418.zip&amp;realName=Optional.zip"
+                                               target="_blank" title="Optional.zip">Optional.zip</a></div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="review" style="color: #397ECC"><img class="js-failed-pic"
+                                                                                    src="../img/images/order/blue-right.png"
+                                                                                    alt="">Pass, Payment
+                                    </div>
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="item-title">Add Time: 2018-04-05</p>
+                    <!--列表-->
+                    <ul class="item-boxed">
+                        <li class="item1">Order Details</li>
+                        <li class="item2">Size (mm)</li>
+                        <li class="item3">Qty</li>
+                        <li class="item4">Sub Total</li>
+                        <li class="item5">Gerber File</li>
+                        <li class="item6">Status</li>
+                    </ul>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+
+
+                        <div>
+                            <div class="list1" data="21597">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/prototype.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: PW00126ASA39 <br>[PCB Production]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                    12 x 12
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    10
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>5.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <div class="stats1">
+                                        <!--<input type="file">-->
+                                        <div class="add-file" onclick="UpGerber(2867)">
+                                            <span class="iconfont icon-shangchuanwenjian"></span>ADD GERBER FILE
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="item-title">Add Time: 2018-04-04</p>
+                    <!--列表-->
+                    <ul class="item-boxed">
+                        <li class="item1">Order Details</li>
+                        <li class="item2">Size (mm)</li>
+                        <li class="item3">Qty</li>
+                        <li class="item4">Sub Total</li>
+                        <li class="item5">Gerber File</li>
+                        <li class="item6">Status</li>
+                    </ul>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="21596">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/prototype.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: PW00126ASA37 <br>[PCB Production]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                    5 x 5
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    5
+                                </div>
+                                <!--4-->
+                                <div class="item-price price-promo-seller">
+                                    <!--当出现改价后addclass"price-promo-seller"-->
+                                    <div class="price-content">
+                                        <div class="price-line">
+                                            <em class="price-original">$5.00</em>
+                                        </div>
+                                        <div class="price-line">
+                                            <em class="price-now">$50.00</em>
+                                        </div>
+                                    </div>
+                                    <div class="promo-main promo-seller">
+                                        <!-- hover addclass" promo-hover"-->
+                                        <div class="promo-content">Changed<span class="arrow icon-sprite"></span>
+                                        </div>
+                                        <div class="promo-detail-tips" style="left:0;min-width:150px;">
+                                            <p>extra charge for V-CUT;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <!--状态2-->
+                                    <div class="stats2">
+                                        <div><a target="_blank"
+                                                href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/gerber/18/04/04/1503404747467.zip&amp;realName=PW00126ASA37_Gerber12.zip"
+                                                title="PW00126ASA37_Gerber12.zip">PW00126ASA37_Gerber12.zip</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="review"><img src="../img/images/order/under-review.png" alt="">Under
+                                        Review
+                                    </div>
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="item-title">Add Time: 2018-04-03</p>
+                    <!--列表-->
+                    <ul class="item-boxed">
+                        <li class="item1">Order Details</li>
+                        <li class="item2">Size (mm)</li>
+                        <li class="item3">Qty</li>
+                        <li class="item4">Sub Total</li>
+                        <li class="item5">Gerber File</li>
+                        <li class="item6">Status</li>
+                    </ul>
+                    <!--具体每一项-->
+                    <!--0-->
+                    <div class="item-content" style="position: relative">
+                        <div class="my-selected" style="position: absolute;top:50%;left: 12px">
+                            <!--不可选按钮-->
+                            <i class="not-optional"></i>
+                        </div>
+                        <div>
+                            <div class="list1" data="21588">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/prototype.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: PW00126ASA30 <br>[PCB Production]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+                                    2 x 2
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    10
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>5.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+                                    <!--状态2-->
+                                    <div class="stats2">
+                                        <div><a target="_blank"
+                                                href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/gerber/18/04/03/1546070700103.zip&amp;realName=PW00126ASA30_Gerber.zip"
+                                                title="PW00126ASA30_Gerber.zip">PW00126ASA30_Gerber.zip</a></div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="review" style="color: #397ECC"><img class="js-failed-pic"
+                                                                                    src="../img/images/order/blue-right.png"
+                                                                                    alt="">Pass, Payment
+                                    </div>
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list1" data="5411">
+                                <div class="my-selected">
+                                    <!--不可选按钮-->
+                                    <!--<i class="not-optional"></i>-->
+                                </div>
+                                <!--1-->
+                                <div class="imgs">
+                                    <img src="../img/images/order/assembly.png" alt="">
+                                    <div class="imgs-text">
+                                        <p>Order No: TW00126A31 <br>[PCB Assembly]</p>
+                                        <p class="days">
+                                            <span class="iconfont icon-shijian"></span>Build Time: 1-2 days</p>
+                                        <p class="view">
+                                            <span class="iconfont icon-icon-xiangqing"></span>
+                                            <a onclick="ViewOrder(4,509)">View Detail</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="size">
+
+                                </div>
+                                <!--3-->
+                                <div class="qty">
+                                    2
+                                </div>
+                                <!--4-->
+                                <div class="sub-total">
+                                    $ <span>88.00</span>
+                                </div>
+                                <!--5-->
+                                <div class="gerber">
+
+                                    <div class="stats2">
+                                        <div>
+                                            <a href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/gerber/18/04/03/1546070700103.zip&amp;realName=Gerber.zip"
+                                               target="_blank" title="Gerber.zip">Gerber.zip</a></div>
+                                    </div>
+                                    <div class="stats2">
+                                        <div>
+                                            <a href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/bom/18/04/03/1546090478806.zip&amp;realName=BOM1.zip"
+                                               target="_blank" title="BOM1.zip">BOM1.zip</a></div>
+                                    </div>
+                                    <div class="stats2">
+                                        <div>
+                                            <a href="/Common/DownLoadFile?sourceName=https://pcbwayfile.s3-us-west-2.amazonaws.com/centroid/18/04/03/1546100356553.zip&amp;realName=Optional.zip"
+                                               target="_blank" title="Optional.zip">Optional.zip</a></div>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="del-box">
+                                    <div class="review"><img src="../img/images/order/under-review.png" alt="">Under
+                                        Review
+                                    </div>
+                                    <div class="piced">
+                                        <span class="iconfont icon-shanchu del-pic"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--具体每一项-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+    <!--物流选择盒子-->
+    <div class="address-item">
+        <div class="address-box">
+            <div class="address-l">
+                <!--全选按钮-->
+                <div class="all-btn">
+                    <label class="label-bg js-all-label-bg active"></label>
+                    <input type="checkbox" class="js-all-val" checked="">
+                    <br>
+                    All Selected
+                </div>
+                <!--添加订单包-->
+                <div class="order-package clear-fix">
+                    <input name="selGroup" id="selGroup" type="hidden" value="0">
+                    <input type="button" value="+Add To Old Order" class="search-btn js-order-search"
+                           readonly="" onclick="SelectGroup()">
+                    <i class="add-numbers">
+                                    <span class="number-span">
+                                        Group No:<p id="groupNoSpan1">W12356A</p>
+                                        <span class="iconfont icon-guanbi"></span>
+                                    </span>
+                    </i>
+                    <i class="add-numbers">
+                                    <span class="number-span">
+                                        Group No:<p id="groupNoSpan1">W12356A</p>
+                                        <span class="iconfont icon-guanbi"></span>
+                                    </span>
+                    </i>
+                    <i class="add-numbers">
+                                    <span class="number-span">
+                                        Group No:<p id="groupNoSpan1">W12356A</p>
+                                        <span class="iconfont icon-guanbi"></span>
+                                    </span>
+                    </i>
+                </div>
+            </div>
+            <div class="address-c">
+                <ul class="costs-box">
+                    <li>
+                        <span>2</span>
+                        <p>Order Selected</p>
+                    </li>
+                    <li>
+                        <span class="costs-price">-$459.00</span>
+                        <p>Member Discount</p>
+                    </li>
+                    <li>
+                        <span class="costs-price">$459.00</span>
+                        <p>Amount (Without freight)</p>
+                    </li>
+                </ul>
+                <!--按钮-->
+                <input class="proceed-btn" value="Proceed to checkout" disabled type="submit">
+            </div>
+        </div>
+        <!--底部提示-->
+        <div class="bottom-tips">
+            <p>01. We must review your order before proceeding with payment. We review orders between 9:00am to
+                12:00pm for BeiJing Time.</p>
+            <p>02. Tips: You should pay the tax when the product is shipped to your country. If you need low value
+                declaration in invoice, please contact us free: service@pcbgogo.com
+            </p>
+        </div>
+    </div>
+    <!--遮罩层弹出-->
+    <div class="open-mask js-confirm-box">
+        <div class="confirm-box">
+            <p>Do you confirm this operation?</p>
+            <div class="confirm-btn">
+                <input type="button" value="YES" class="yes-btn">
+                <input type="button" value="NO" class="no-btn">
+            </div>
+        </div>
+    </div>
+    <!--操作成功弹窗-->
+    <div class="do-success">
+        Password modification successful!
+    </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+    <img src="../img/images/order/gotop.png" alt="">
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+

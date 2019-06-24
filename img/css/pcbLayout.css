@@ -1,0 +1,454 @@
+/*banner图*/
+.pcb-banner {
+    width: 100%;
+    min-width: 1280px;
+    height: 540px;
+    background: url("../images/layoutbg.jpg") no-repeat center black;
+    background-size: cover;
+}
+
+.banner-text {
+    padding-top: 120px;
+    height: auto;
+    width: 650px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.banner-item {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item-text {
+    margin-top: 30px;
+}
+
+.banner-btn-box {
+    margin-top: 25px;
+}
+
+.banner-btn {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 22px;
+}
+
+.quote-btn {
+    background-color: #b21f1f;
+}
+.quote-btn:hover{
+    background-color: #d52424;
+}
+.contact-us {
+    background-color: #877070;
+}
+.contact-us:hover{
+    background-color: #a08989;
+}
+
+/*主体*/
+/*<!--流程指示图-->*/
+.indicator-diagram {
+    height: 500px;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+
+.indicator-diagram .diagram-title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.diagram-box {
+    margin-top: 30px;
+    border-top: 1px solid #efefef;
+}
+
+.box-item {
+    height: 90px;
+}
+
+.box-item > li {
+    text-align: center;
+    height: 88px;
+    float: left;
+    width: 160px;
+    background: url("../images/back-right.png") no-repeat 100% center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.box-list {
+    height: 100px;
+}
+
+.box-list > li {
+    width: 159px;
+    height: 98px;
+    line-height: 125px;
+    float: left;
+    border: 1px solid #efefef;
+    border-right: none;
+    position: relative;
+    text-align: center;
+    background-color: #f7f8f8;
+    cursor: pointer;
+}
+.box-list > li>img{
+    transition: all .9s;
+}
+.box-list > li:hover>img{
+    transform: rotate(360deg);
+}
+.box-list > li > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+}
+
+/*制作盒子*/
+.make-box {
+    width: 100%;
+    min-width: 1280px;
+    height: 400px;
+    background-color: #503535;
+
+}
+
+.make-box .make-item {
+    height: 400px;
+    background: url(../images/makebg.jpg) no-repeat right center;
+    box-sizing: border-box;
+    padding-top: 120px;
+    color: #ffffff;
+}
+
+/*制作文字介绍*/
+.text-box {
+    width: 100%;
+    min-width: 1280px;
+    background-color: #684848;
+    color: #ffffff;
+    height: 300px;
+}
+
+.text-box .text-ul {
+    height: 300px;
+}
+
+.text-box .text-ul li {
+    width: 320px;
+    height: 300px;
+    float: left;
+    padding: 60px 29px 0 40px;
+    box-sizing: border-box;
+}
+
+.text-box .text-ul li > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-box .text-ul li > div {
+    margin-top: 25px;
+    line-height: 25px
+}
+
+/*表格展示*/
+.table-show {
+    width: 100%;
+    min-width: 1280px;
+    background-color: #ffffff;
+}
+
+.capacities-box {
+    padding-top: 150px;
+}
+
+.capacities-box .capacities-l {
+    display: inline-block;
+    width: 640px;
+    height: auto;
+    float: left;
+}
+.capacities-box .capacities-l>p{
+    font-size: 30px;
+}
+
+.capacities-box .capacities-l > .item-box {
+    margin-top: 40px;
+    width: 620px;
+    border: 1px solid #efefef;
+}
+
+.capacities-box .capacities-l > .item-box > .item-list {
+    height: 58px;
+    line-height: 58px;
+    width: 620px;
+}
+
+.capacities-box .item-box > .item-list > .list-l, .list-r {
+    height: 57px;
+    text-indent: 40px;
+    float: left;
+    display: inline-block;
+}
+
+.capacities-box .item-box > .item-list > .list-l {
+    width: 300px;
+    font-size: 12px;
+    background-color: #f7f8f8;
+    border-bottom: 1px solid #efefef;
+}
+
+.capacities-box .item-box > .item-list > .list-r {
+    width: 320px;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #efefef;
+}
+
+.more-text {
+    font-size: 12px;
+    color: #727171;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+/*右侧*/
+.capacities-box .capacities-r {
+    display: inline-block;
+    width: 620px;
+    height: auto;
+    float: right;
+}
+.capacities-box .capacities-r>p{
+    font-size: 30px;
+}
+.capacities-box .capacities-r .list-box {
+    margin-top: 40px;
+    width: 620px;
+    height: auto;
+    border: 1px solid #efefef;
+}
+
+.capacities-box .capacities-r .list-box .period-box {
+    height: 58px;
+    line-height: 58px;
+    width: 620px;
+}
+
+.capacities-box .capacities-r .list-box .period-l {
+    width: 300px;
+    border-right: 1px solid #efefef;
+}
+
+.capacities-box .capacities-r .list-box .period-r {
+    width: 319px;
+}
+
+.capacities-box .capacities-r .list-box .period-l, .period-r {
+    height: 57px;
+    text-indent: 40px;
+    float: left;
+    display: inline-block;
+    border-bottom: 1px solid #efefef;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*注册链接*/
+.region-box {
+    height: 120px;
+    margin-top: 70px;
+}
+
+/*产品滚动展示*/
+.case-show-box {
+    width: 100%;
+    min-width: 1280px;
+    margin-top: 80px;
+    height: 700px;
+    background-color: #271e1e;
+    padding-top: 125px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*售后与条款*/
+.comprehensive-box {
+    margin-top: 130px;
+    margin-bottom: 120px;
+    height: auto;
+}
+
+.service-box, .clause-box {
+    display: inline-block;
+    float: left;
+    width: 640px;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 60px;
+}
+
+.service-top, .clause-top {
+    font-size: 30px;
+    color: #2e2525;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    margin-bottom: 56px;
+}
+
+.service-top {
+    background-image: url("../images/service-pic.png");
+}
+
+.clause-top {
+    background-image: url("../images/clause-pic.png");
+}
+
+.service-item {
+    padding: 25px 0;
+    border-top: 1px solid #efefef;
+    box-sizing: border-box;
+    width: 505px;
+    height: auto;
+}
+
+.service-index {
+    background: url("../images/item-bg.png") no-repeat left center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+
+.service-index-text {
+    float: left;
+    width: 420px;
+    margin-left: 25px;
+}
+
+/*新加轮播图*/
+.factory-box {
+    border-top: 1px dashed #2e2525;
+    padding-top: 20px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.factory-box > p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.factory-show {
+    background-size: 100% auto;
+    width: 100%;
+}
+
+.factory-show .full {
+    width: 100%;
+    overflow: hidden;
+    min-width: 1280px;
+}
+
+.change-btn {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 610px;
+}
+
+.factory-show .content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.factory-show .swiper-container {
+    overflow: hidden;
+    height: 290px;
+}
+
+.factory-show .swiper-slide {
+    width: 300px;
+    height: 290px;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    background-color: #2e2525;
+    float: left;
+}
+
+.factory-show .swiper-slide > a {
+    background-color: black;
+    width: 280px;
+    height: 220px;
+}
+
+.factory-show .swiper-slide img {
+    max-width: 100%;
+    opacity: 0.7;
+    -webkit-transition: all linear 300ms;
+    transition: all linear 300ms;
+}
+
+.factory-show .swiper-slide a:hover img {
+    opacity: 1;
+}
+
+.factory-show .swiper-slide p {
+    margin-top: 15px;
+}
+
+.factory-show .arrow-left {
+    background: url(../images/back-left.png) no-repeat left center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 50px;
+    z-index: 15;
+}
+.factory-show .arrow-left:hover{
+    background: url(../images/backed-left.png) no-repeat left center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 50px;
+    z-index: 15;
+}
+.factory-show .arrow-right {
+    background: url(../images/back-right.png) no-repeat right center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 50px;
+    z-index: 15;
+}
+.factory-show .arrow-right:hover{
+    background: url(../images/backed-right.png) no-repeat right center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 50px;
+    z-index: 15;
+}

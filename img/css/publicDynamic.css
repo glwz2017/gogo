@@ -1,0 +1,383 @@
+/*导航样式*/
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #000;
+
+    /*很关键：将默认的select选择框样式清除*/
+    /*appearance:none;*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    /*background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;*/
+    background: url("../images/downed-pointer.png") no-repeat scroll 96% center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 2px;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+
+/*设置输入框颜色*/
+input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input:-moz-placeholder {
+    color: #999999;
+}
+
+input::-moz-placeholder {
+    color: #999999;
+}
+
+input:-ms-input-placeholder {
+    color: #999999;
+}
+
+.layer-box {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #efefef;
+    text-indent: 15px;
+    outline: none;
+}
+
+@-moz-document url-prefix() {
+    .layer-box {
+        width: 200px;
+        height: 40px;
+        border: 1px solid #efefef;
+        text-indent: 5px;
+        outline: none;
+    }
+}
+
+.top {
+    min-width: 1280px;
+    background-color: #312927;
+    color: #ffffff;
+    height: 30px;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.banner-top {
+    /*width: 100%;*/
+    height: 30px;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.banner-right {
+    display: inline-block;
+    height: auto;
+    float: right;
+}
+
+.banner-right > li {
+    float: left;
+    height: 14px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.banner-right .top-line {
+    padding: 0 20px;
+    color: #271e1e;
+}
+
+.banner-right > li > a {
+    color: #ffffff;
+}
+
+.banner-right > li:hover a {
+    color: red;
+}
+
+/*顶部*/
+.banner-nav {
+    width: 100%;
+    min-width: 1280px;
+    height: 80px;
+    background-color: #271e1e;
+}
+
+.banner-nav .nav-box {
+    width: 100%;
+    height: 80px;
+    padding: 0 60px;
+    box-sizing: border-box;
+    /*position: relative;*/
+}
+
+.banner-nav .nav-box .nav-l {
+    background-image: url("../../img/images/forum/forum-logo.png");
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 50px;
+    background-position: center 20%;
+    float: left;
+    margin: 20px 80px 0 0;
+    cursor: pointer;
+}
+
+.banner-nav .nav-box .lists-box {
+    height: 80px;
+    line-height: 78px;
+    display: inline-block;
+    float: left;
+}
+
+.banner-nav .nav-box .lists-box > ul > li {
+    float: left;
+    margin-right: 60px;
+}
+
+.banner-nav .nav-box .lists-box > ul > li a {
+    color: #ffffff;
+}
+
+.banner-nav .nav-box .lists-box > ul > li .active {
+    color: #b21f1f;
+    border-bottom: 2px solid #b21f1f;
+}
+
+.lists-box > ul > li:hover a {
+    color: #b21f1f;
+}
+
+.banner-nav .nav-box .lists-box > ul > li:hover a {
+    color: #b21f1f;
+    border-bottom: 2px solid #b21f1f;
+}
+
+/*登录前*/
+.nav-box .no-user-box {
+    float: right;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.nav-box .no-user-box > div {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.nav-box .no-user-box .sg-in {
+    border: 1px solid rgba(103, 103, 103, 0.33);
+    border: 1px solid #f5f5f5 \9;
+    filter: alpha(opacity=30);
+    -ms-opacity: .3;
+    background-color: #271e1e;
+}
+
+.nav-box .no-user-box .join-free {
+    background-color: #877070;
+}
+
+/*鼠标进入样式*/
+.nav-box .no-user-box .sg-in:hover {
+    background-color: #2c1f1f;
+}
+
+.nav-box .no-user-box .join-free:hover {
+    background-color: #7f6868;
+}
+
+/*登录后*/
+.nav-box .user-box {
+    float: right;
+    height: 80px;
+    color: #fff;
+    position: relative;
+    display: none;
+}
+
+.nav-box .user-box .hi-text {
+    float: left;
+    margin-top: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.nav-box .user-box .user-pic {
+    margin-top: 20px;
+    float: left;
+}
+
+.nav-box .user-box .user-pic i {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.nav-box .user-box .user-pic i img{
+    width: 100%;
+    height: 100%;
+}
+.nav-box .user-box .user-pic .down-pointer {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 11px;
+    height: 6px;
+}
+.nav-box .user-box .user-pic .down-pointer>img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-box .user-box .user-item {
+    width: 160px;
+    border: 1px solid #efefef;
+    position: absolute;
+    top: 65px;
+    z-index: 12;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: none;
+}
+
+.nav-box .user-box .user-item .account {
+    height: 40px;
+    text-indent: 15px;
+    line-height: 40px;
+    background-color: #fff;
+    color: #2e2525;
+    font-size: 12px;
+    border: 1px solid #efefef;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: -1px;
+}
+
+.nav-box .user-box .user-item .active {
+    background-color: #efefef;
+}
+
+.nav-box .user-box .user-item .facebook-btn, .out-btn {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 12px;
+    /*border: 1px solid #efefef;*/
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-box .user-box .user-item .account:hover {
+    background-color: #efefef;
+}
+
+.nav-box .user-box .user-item .facebook-btn {
+    background-color: #3b5897;
+    margin-top: 12px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09)
+}
+
+.nav-box .user-box .user-item .facebook-btn:hover {
+    background-color: #4a7bc9;
+}
+
+.nav-box .user-box .user-item .out-btn {
+    background-color: #fff;
+    color: #b21f1f;
+    margin-top: 12px;
+    border: 1px solid #dcdddd;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09)
+}
+
+.nav-box .user-box .user-item .out-btn:hover {
+    background-color: #f7f8f8;
+}
+
+/*搜索图标*/
+.forum-search {
+    width: 50px;
+    height: 30px;
+    float: right;
+    margin-top: 25px;
+    line-height: 30px;
+    margin-right: 10px;
+    background: url("../images/forum/search-icon.png") no-repeat center;
+    transition: all .5s;
+}
+
+.forum-search:hover {
+    transform: rotate(360deg);
+}
+
+/*底部列表*/
+.footer {
+    height: 120px;
+    padding-top: 30px;
+    background-color: #271e1e;
+    width: 100%;
+    min-width: 1280px;
+    /*margin-top: 500px;*/
+}
+
+.footer-item .footer-item-ul {
+    padding: 30px 0;
+    color: #826c6c;
+    font-size: 12px;
+}
+
+.footer-item .footer-item-ul > li {
+    float: left;
+    border-right: 1px dotted #877070;
+    padding: 0 20px;
+}
+
+.footer-item .footer-item-ul .ban-quan {
+    padding-left: 0;
+}
+
+.footer-item .footer-item-ul .footer-last-item {
+    border-right: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.min-logo {
+    margin-left: 100px;
+}
+
+.min-logo img {
+    vertical-align: middle;
+}
+
+/*顶部返回小火箭*/
+.go-btn {
+    position: fixed;
+    right: 10px;
+    top: 700px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*.footer-item .footer-item-icon {*/
+/*padding-top: 35px;*/
+/*padding-bottom: 108px;*/
+/*}*/
+
+/*.footer-item .footer-item-icon > li {*/
+/*float: left;*/
+/*margin-right: 1px;*/
+/*}*/
+/*底部结束*/

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PCB Printed Circuit Board Manufacturing & Assembly|Pcbgogo.com</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="img/css/public.css">
+    <link rel="stylesheet" href="img/css/header.css">
+    <link rel="stylesheet" href="img/css/aboutUs.css">
+    <link rel="stylesheet" href="img/css/footer.css">
+    <script src="img/js/jquery/jquery-1.11.3.min.js"></script>
+    <!--<script src="img/js/public.js"></script>-->
+    <script src="img/js/header.js"></script>
+    <script>
+        $(function () {
+//            二级元素定位
+            $('.js-tab-box .menus-item').click(function () {
+                var index = $(this).index();
+                var getObject=$('html,body');
+                $(this).addClass('active-tab').siblings('.menus-item').removeClass('active-tab');
+                switch (index) {
+                    case 0:
+                        getObject.animate({scrollTop: $('.sp1')[0].offsetTop});
+                        break;
+                    case 1:
+                        getObject.animate({scrollTop: $('.sp2')[0].offsetTop});
+                        break;
+                    case 2:
+                        getObject.animate({scrollTop: $('.sp3')[0].offsetTop});
+                        break;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!--头部-->
+<div class="header clear-float">
+    <div class="top-box">
+        <div class="container_warp">
+            <!--左侧logo-->
+            <h1 class="logo">
+                <a href="index.html">
+                    PCBgogo
+                </a>
+            </h1>
+            <!--右侧登录-->
+            <div class="sign-box">
+                <ul class="sign-lists">
+                    <li>
+                        <img src="img/images/message-box.png" alt="" class="align-pic">
+                        <a class="pcb-link" href="javascript:void(0)">service@pcbgogo.com</a>
+                    </li>
+                    <li>
+                        <img src="img/images/tel-phone.png" alt="">
+                        +86-755-33066136
+                    </li>
+                    <li class="split-line">|</li>
+                    <li class="language">
+                        <img src="img/images/England.png" alt="">&nbsp;
+                        <img src="img/images/down-pointer.png" alt="">
+                        <!--语言选择弹出层-->
+                        <ul class="language-box">
+                            <li onclick="window.open('index.html','_self')"><img src="img/images/England.png" alt="">&nbsp;&nbsp;English
+                            </li>
+                            <li onclick="window.open('https://www.pcbgogo.jp/','_blank')"><img
+                                    src="img/images/Japan.png" alt="">&nbsp;&nbsp;Japanese
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sign-in" ><a href="javascript:void(0)">Sign in</a></li>
+                    <li class="join" ><a href="javascript:void(0)">Join Free</a></li>
+                    <li class="hi-in"><a href="javascript:void(0)"><strong>Hi! The
+                        user...</strong></a></li>
+                    <li class="joined">
+                        <i><img src="img/images/user.png" alt="" width="40" height="40"></i><span class="pointer">
+                        <img src="img/images/down-pointer.png" alt=""></span>
+                        <!--登陆后-->
+                        <div class="user-item">
+                            <div class="account active">
+                                My Account
+                            </div>
+                            <div class="account">
+                                My Orders list
+                            </div>
+                            <div class="account">
+                                My Delivery Address
+                            </div>
+                            <div class="facebook-btn ">
+                                Bind FaceBook
+                            </div>
+                            <div class="out-btn " style="margin-top: 10px">
+                                Sign Out
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="nav-box">
+            <div class="container_warp">
+                <!--左侧列表-->
+                <ul class="nav-lists">
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="PCBPrototype.html">PCB Instant Quote</a></li>
+                    <li class="assembly-menus">
+                        <a href="PCBAssembly.html">PCB Assembly</a>
+                        <ol class="next-item">
+                            <li><a href="PCBAssembly.html">PCB Assembly</a></li>
+                            <li><a href="old-process/pcbaCapabilitiesProcess.html">PCBA process</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="pcbLayout.html">PCB Layout</a></li>
+                    <li class="capabilities-menus"><a href="pcbCapabilities.html">Capabilities</a>
+                        <ol class="capa-sub-menus">
+                            <li><a href="pcbCapabilities.html">PCB Capabilities</a></li>
+                            <li><a href="pcbaCapabilities.html">PCBA Capabilities</a></li>
+                            <li><a href="pcbLayoutCapabilities.html">PCB Layout capabilities</a></li>
+                            <li><a href="PCBPCBAQuickturnService.html">PCB& PCBA quickturn service</a></li>
+                            <li><a href="PCBPrototypeMassProduction.html">PCB Prototype& Mass production</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="reviewList.html">Forum</a></li>
+                    <li class="contact-menus active"><a href="aboutUs.html">About Us</a>
+                        <ol class="contact-sub-menus">
+                            <li><a href="whyUs.html">Why us</a></li>
+                            <li><a href="methodPayment.html">Method of payment</a></li>
+                            <li><a href="Introduction.html">Intoduction</a></li>
+                            <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                            <li><a href="orderGuide.html">Order guide</a></li>
+                            <li><a href="shippingMethod.html">Shipping method guide</a></li>
+                            <li><a href="qualityGurrantee.html">Quality gurrantee</a></li>
+                            <li><a href="gogoDelivery.html">PCBgogo delivery</a></li>
+                        </ol>
+                    </li>
+                    <!--后续添加-->
+                    <!--<li><a href="forum.html">Blog</a></li>-->
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+                <!--右侧图标-->
+                <div class="shopping-box">
+                    <ul class="js-hints">
+                        <li class="active"><a href="member/newsed.html">
+                            <img src="img/images/message.png" alt="" width="20" height="18"></a>
+                            <i class="round">1</i>
+                        </li>
+                        <li class="active"><a href="member/coupon-page.html">
+                            <img src="img/images/coupon.png" alt="" width="22" height="20"></a>
+                            <i class="round">2</i>
+                        </li>
+                        <li class="active "><a href="member/awaiting-payment.html">
+                            <img src="img/images/for-the-payment.png" alt="" width="22" height="20"></a>
+                            <i class="round now-hide">0</i>
+                        </li>
+                        <li class="car-box"><a href="member/shopping-car.html">
+                            <img src="img/images/shopping-car.png" alt="" width="22" height="20"></a>
+                            <i class="round car-nums">10</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="main-about">
+    <!--banner图-->
+    <div class="banner-about"></div>
+    <!--具体内容-->
+    <div class="about-content">
+        <div class="container_warp">
+            <div class="about-l js-about-l">
+                <div class="about-l-top">
+                    ABOUT US
+                </div>
+                <a href="contactUs.html" class="left-item ">
+                    - CONTACT US
+                </a>
+                <a href="methodPayment.html" class="left-item ">
+                    - METHOD OF PAYMENT
+                </a>
+                <a href="Introduction.html" class="left-item ">
+                    - INTRODUCTION
+                </a>
+                <a href="privacyPolicy.html" class="left-item ">
+                    - PRIVACY POLICY
+                </a>
+                <a href="orderGuide.html" class="left-item active-item">
+                    - Order Guide
+                </a>
+                <a href="shippingMethod.html" class="left-item ">
+                    - Shipping Method Guide
+                </a>
+                <a href="qualityGurrantee.html" class="left-item">
+                    - Quality Gurrantee
+                </a>
+                <a href="gogoDelivery.html" class="left-item">
+                    - PCBGOGO Delivery
+                </a>
+                <!--分享链接-->
+                <div class="share-box">
+                    <a target="_blank" href="https://twitter.com/PCBGOGOofficial"><img src="img/images/twitter.png" alt=""></a>
+                    <a target="_blank" href="https://plus.google.com/u/0/108456342889573911576/posts"><img src="img/images/google.png" alt=""></a>
+                    <a target="_blank" href="https://www.facebook.com/Pcbgogo-1623727847885541/timeline/"><img src="img/images/facebook.png" alt=""></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/10159025?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10159025%2Cidx%3A1-1-1%2CtarId%3A1442555194895%2Ctas%3Apcbgogo"><img src="img/images/instagram.png" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/pcbgogo1870/?hl=zh-cn"><img src="img/images/Linkedln.png" alt=""></a>
+                </div>
+            </div>
+            <!--右侧-->
+            <div class="about-r">
+                <p class="about-r-title">ORDER GUIDE</p>
+                <div class="title-sign-box">
+                    <i class="title-sign">
+                        <img src="img/images/right-round.png" alt="">
+                    </i>
+                </div>
+                <!--如何下单-->
+                <div class="how-order">
+                    <div class="how-title">
+                        How to Place an Order in PCBGOGO?
+                    </div>
+                    <!--sub切换-->
+                    <div class="sub-menus js-tab-box">
+                        <div class="menus-item active-tab">
+                            NO.1 PCB Prototype Process
+                        </div>
+                        <div class="menus-item">
+                            NO.2 PCB Assembly Process
+                        </div>
+                        <div class="menus-item">
+                            NO.3 PCB Layout Service
+                        </div>
+                    </div>
+                    <!--流程图-->
+                    <div class="flow-chart-box"></div>
+                    <!--具体流程-->
+                    <div class="step-box">
+                        <div class="step-title sp1">
+                            Step 1: Register.
+                        </div>
+                        <p>
+                            Click “Join Free”button which is on the upper right corner, fill in the email, password and
+                            click “create account”. Then you will get a vip member account in PCBGOGO and get XXXUSD PCB
+                            coupons immediately.
+                        </p>
+                        <div class="registered-img">
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step 2: Instant Quote and Upload Gerber or Eagle file.
+                        </div>
+                        <p>
+                            Click “PCB Instant Quote”and fill in all datas which are requires on the PCB Instant Quote
+                            website page. Then press “Quote now”, you will see  an instant quote price. The price is
+                            nearly 99% accurate. But it will be different price after audit if there is special
+                            technology as 0.2mm drill data, 4mil track, panelization and so on. After that, you could
+                            press”Add to Basket”to upload the PCB file.
+                        </p>
+                        <p>
+                            Although RS274-X format Gerber data is our standard manufacturing data, we also accept Eagle
+                            format design files. Please note we will convert your Eagle file to Gerber data and then ask
+                            for your confirmation before put the job into PCB production line.
+                        </p>
+                        <div class="step2-box">
+
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step3: Order review.
+                        </div>
+                        <p>
+                            After you uploaded the Gerber or Eagle file, our engineer will review the order ASAP. If any
+                            issues were found, we will contact you by email or online chat. Please make sure the email
+                            address you filled on our website is valid..
+                        </p>
+                        <div class="step3-box">
+
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step4: How to pay.
+                        </div>
+                        <p>
+                            Once the PCB order pass our audit, then you can choose the shipping method and make the
+                            payment online by PayPal or choose the other payment methods (We also accept bank transfer,
+                            Aliexpress pay, western union and so on. Please contact us (service@pcbgogo.com ) for the
+                            details if you choose these payment methods). Before paying, please confirm your shipping
+                            address is correct and accurate, especially the city name and the corresponding post code.
+                        </p>
+                        <div class="step4-box">
+
+                        </div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title">
+                            Step5: PCB Fabrication.
+                        </div>
+                        <p>
+                            The PCB fabrication job will be started immediately once the payment is received. You can
+                            check the manufacture process on the production status at our website.
+                        </p>
+                        <p>
+                            <span style="font-weight: bold"> ● Delivery:</span><br>
+                            Once the parcel shipped out, the tracking number will be shown on our website and you can
+                            click it to track the parcel.
+                        </p>
+                        <p>
+                            Please note the customs tax fee is different in different countries, before shipping you
+                            may consult with your local DHL company or customs office to check the detailed information.
+                            And please note the order will be declared as real value or customer requirement, please let
+                            us know once after placing order (you can change the declared value once you make the
+                            payment), or any import duties occur are on buyers’ account
+                        </p>
+                        <p>
+                            Finally, if you still have problem with the order process, please feel free to contact us by
+                            online chat or by email: service@PCBGOGO.com or by Skype: service@PCBGOGO.com, we will reply
+                            you as soon as possible within 24 hours. We hope to make our ordering procedure as simple
+                            and flexible as possible.
+                        </p>
+                        <div class="step5-box"></div>
+                        <p style="font-weight: bold">
+                            ● How to Re-order in PCBGOGO?
+                        </p>
+                        <p>
+                            <span style="font-weight: bold">A. Why do you need to re-order?</span><br>
+                            As we know, different engineers will deal with PCB file in different way so that some
+                            details of your new PCB orders will be different. If you want to order the same boards as
+                            the samples which you placed in PCBGOGO, you need to re-order it instead of placing new order. So
+                            that your order will be dealt with by the same engineer as your sample order and it will be
+                            same as your sample.
+                        </p>
+                        <p>
+                            <span style="font-weight: bold"> B.  How to reorder in PCBGOGO?</span><br>
+                            If you need to reorder the boards which you have sample order from PCBGOGO, you only do the
+                            steps below. Make sure there is no any change in design of your new order and it is same as
+                            Previous orders.
+                            Firstly, you log in your account in PCBGOGO website.
+                            Secondly, you could click the “completed”
+                        </p>
+                        <div class="step51-box"></div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title sp2">
+                            2.PCB Assembly Process
+                        </div>
+                        <p>
+                            Firstly, you should be ready the PCB file, Bom list, Pick and place file. Please note that
+                            Gerber, AD, PADs, and Eagle file as PCB file will be accepted by PCBGOGO. If your PCB file
+                            is other form, please export the Gerber file to us for PCB fabrication. And Bom list is a
+                            file that contains all components with part number, manufacturer number, specifications,
+                            quantity, packages, legends as well.
+                        </p>
+                        <p>
+                            Secondly, please offer us those files as mentioned above via email: service@pcbgogo.com. The
+                            quotation will come out within 48-72 hours which depends on your components and PCB complex
+                            and difficulty degree.
+                        </p>
+                        <div class="step6-box"></div>
+                    </div>
+                    <div class="step-box">
+                        <div class="step-title sp3">
+                            3.PCB Layout Service
+                        </div>
+                        <p>
+                            ● Files needed: Schematic(DSN or powerlogic), netlist, package, structure chart(DXF),
+                            Components file, layout requirements etc.
+                            <br>● Layout and wiring judgement: according to the design standard, design instruction,
+                            customer's design requirements and related checklist.
+                            <br>● Layout check and confirm: provide layout file and structure file for customer for
+                            check if the layout makes sense and confirm the stack-up program, impedance program,
+                            structure and package, also confirm the trace specification.
+                            <br>● Layout file output: PCB original file, gerber file, pick and place file, framed
+                            stencil file and structure file etc.If you have PCB layout job need to do, don’t hesitate to
+                            contact us: service@pcbgogo.com.
+                        </p>
+                    </div>
+                </div>
+                <!--底部衬托-->
+                <div style="height: 200px;"></div>
+            </div>
+            <!--清浮动-->
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <!--计价盒子-->
+    <div class="valuation-box">
+        <div class="mask"></div>
+        <div class="container_warp valuation-item">
+            <p style="font-size: 30px;">Instant Quote & Order Online </p>
+            <p class="your-files">Upload your PCB Files</p>
+            <p class="got-project">Got project ready to assembly? Contact us: <a href="#">service@pcbgogo.com</a>
+            </p>
+            <a href="PCBPrototype.html" class="pcb-now-btn">GET PCB QUOTATION NOW</a>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer clear-float">
+        <!--一级导航-->
+        <div class="footer-title clear-float">
+            <div class="container_warp">
+                <ul class="footer-title-ul">
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="img/images/baifenbai.png" alt="" width="58" height="51">
+                            </dt>
+                            <dd>
+                                100% <br>Quality <br>Guarantees
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="img/images/hands.png" alt="" width="58" height="51">
+                            </dt>
+                            <dd>
+                                3-5days' <br>Delivery <br>(DHL)
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="img/images/iso.png" alt="iso" width="58" height="51">
+                            </dt>
+                            <dd>
+                                International <br>Organization <br>forStandardization
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="img/images/UL.png" alt="" width="58" height="51">
+                            </dt>
+                            <dd>
+                                Underwriter <br>Laboratories <br>Inc.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--二级列表-->
+        <div class="links-type clear-float">
+            <div class="container_warp">
+                <ul class="links-title clear-float">
+                    <li>
+                        <p>LEARN</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#"> PCB Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="#">PCBA Capabilities</a>
+                            </li>
+                            <li>
+                                <a href="#"> PCB Layout Capabilities</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="#">PCB Prototype </a>
+                            </li>
+                            <li>
+                                <a href="#">PCB Assembly</a>
+                            </li>
+                            <li>
+                                <a href="#"> PCB Layout </a>
+                            </li>
+                            <li>
+                                <a href="#">PCB Instant Quote</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="#">Engineering </a>
+                            </li>
+                            <li>
+                                <a href="#">Feedback </a>
+                            </li>
+                            <li>
+                                <a href="#">PCBA FAQs </a>
+                            </li>
+                            <li>
+                                <a href="#">Why us </a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">PCB Glossary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <a href="#">Order Guide </a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="#">Create an Account </a>
+                            </li>
+                            <li>
+                                <a href="#">Quality Gurrantee </a>
+                            </li>
+                            <li>
+                                <a href="#">PCBGOGO Delivery</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部表单-->
+        <div class="footer-from clear-float">
+            <div class="container_warp">
+                <div class="send-from clear-float">
+                    <label for="form1" class="from-name">Quick <br>Contact</label>
+                    <form action="#" method="get" id="form1" class="message-from">
+                        <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                               onblur="if(this.value==='')this.value='Name'">
+                        <input type="email" placeholder="Email" value="Email"
+                               onfocus="if(this.value==='Email')this.value=''"
+                               onblur="if(this.value==='')this.value='Email'">
+                        <input type="text" class="message-input" placeholder="Message" value="Message"
+                               onfocus="if(this.value==='Message')this.value=''"
+                               onblur="if(this.value==='')this.value='Message'">
+                        <input type="submit" class="btn-submit " value="Send Message">
+                    </form>
+                </div>
+                <!--底部列表-->
+                <div class="footer-item">
+                    <ul class="footer-item-ul">
+
+                        <li class="ban-quan">Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,
+                            Ltd. <br>
+                            Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+                        </li>
+                        <li>
+                            Whatsapp <br>+8618665922549
+                        </li>
+                        <li>
+                            Mail <br>service@pcbgogo.com
+                        </li>
+                        <li>
+                            Tel <br>+86-755-33066136
+                        </li>
+                        <li class="footer-last-item">
+                            <div class="share-box">
+                                <a target="_blank" href="https://twitter.com/PCBGOGOofficial"><img
+                                        src="img/images/twitter.png" alt=""></a>
+                                <a target="_blank" href="https://plus.google.com/u/0/108456342889573911576/posts"><img
+                                        src="img/images/google.png" alt=""></a>
+                                <a target="_blank" href="https://www.facebook.com/Pcbgogo-1623727847885541/timeline/"><img
+                                        src="img/images/facebook.png" alt=""></a>
+                                <a target="_blank"
+                                   href="https://www.linkedin.com/company/10159025?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10159025%2Cidx%3A1-1-1%2CtarId%3A1442555194895%2Ctas%3Apcbgogo"><img
+                                        src="img/images/instagram.png" alt=""></a>
+                                <a target="_blank" href="https://www.instagram.com/pcbgogo1870/?hl=zh-cn"><img
+                                        src="img/images/Linkedln.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="footer-item-icon">
+                        <li><a href="javascript:void(0)"><img src="img/images/paypal.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="img/images/hsbc.png" alt="HBSC"></a></li>
+                        <li><a href="javascript:void(0)"><img src="img/images/china.png" alt=""></a></li>
+                        <li><a href="javascript:void(0)"><img src="img/images/dhl.png" alt="DHL"></a></li>
+                        <li><a href="javascript:void(0)"><img src="img/images/post.png" alt="POST"></a></li>
+                        <li><a href="javascript:void(0)"><img src="img/images/ups.png" alt="UPS"></a></li>
+                        <li><a href="javascript:void(0)"><img src="img/images/ems.png" alt="EMS"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

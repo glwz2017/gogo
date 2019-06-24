@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $('.js-close-pic').click(function () {
+                $('.js-up-file-box').hide();
+            });
+        });//end function
+    </script>
+    <style>
+        /*上传文件弹窗*/
+        .upload-file-box {
+            width: 940px;
+            height: 455px;
+            border: 1px solid #efefef;
+            background-color: #ffffff;
+        }
+        .currently-text {
+            font-size: 12px;
+            margin-top: 25px;
+            padding-left: 30px;
+            box-sizing: border-box;
+            color: #727171;
+        }
+
+        .currently-num-box {
+            width: 880px;
+            height: 70px;
+            line-height: 90px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+        .upload-file-box .files-add {
+            width: 880px;
+            height: auto;
+            margin: 0 auto;
+            border-top: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
+            padding: 20px 0;
+        }
+
+        .upload-file-box .files-add .add-item {
+            width: 280px;
+            height: 80px;
+            float: left;
+            margin-right: 17px;
+            position: relative;
+            border: 1px solid #efefef;
+        }
+
+        .upload-file-box .files-add .add-item .show-file {
+            width: 100%;
+            height: 30px;
+            background-color: #f7f8f8;
+            border: 1px solid #efefef;
+            box-shadow: 0 1px 1px 0px #efefef;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        .upload-file-box .files-add .add-item .show-file input[type="file"] {
+            opacity: 0;
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            z-index: 99;
+            left: 0;
+            filter: Alpha(opacity=0);
+            line-height: 30px;
+        }
+
+        .upload-file-box .files-add .add-item .add-success, .add-failed, .add-uploading {
+            width: 153px;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            margin-left: -70px;
+        }
+
+        .upload-file-box .files-add .add-item .add-success {
+            color: #397ecc;
+            display: none;
+            text-decoration: underline;
+        }
+
+        .upload-file-box .files-add .add-item .add-failed {
+            color: #b21f1f;
+            display: none;
+        }
+        .upload-file-box .files-add .add-item  .add-uploading{
+            display: block;
+        }
+        .upload-file-box .files-add .add-item  .add-uploading .total-length {
+            width: 100px;
+            height: 10px;
+            background-color: #f7f8f8;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .upload-file-box .files-add .add-item  .add-uploading  .now-length {
+            width: 20px;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fdbb2d;
+            border-radius: 15px;
+        }
+
+        .upload-file-box .save-tips {
+            color: #fdbb2d;
+            width: 880px;
+            margin: 30px auto;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .upload-file-box .summit-order {
+            width: 280px;
+            height: 40px;
+            background-color: #b21f1f;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 2px;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.26);
+        }
+    </style>
+</head>
+<body>
+<div class="upload-file-box js-up-file-box">
+    <p class="currently-text">Currently we only accept .pcb .pcbdoc .cam Gerber files and Eagle files(please
+        zipped them and upload.) for PCB fabrication.</p>
+    <!--订单编号-->
+    <div class="currently-num-box">
+        <i>Order Number: A11302AS6</i>
+        <i style="font-size: 12px;float: right"> .rar or .zip Maximum 10M (.pcb .pcbdoc .cam and gerber files )</i>
+    </div>
+    <!--上传盒子-->
+    <div class="files-add">
+        <div class="add-item">
+            <!--上传成功-->
+            <i class="add-success">
+                <img src="../img/images/order/up-success.png" alt="">
+                The file name001.rar
+            </i>
+            <!--上传失败-->
+            <i class="add-failed">
+                <img src="../img/images/wrong.png" alt="" style="margin-right: 20px">
+                Upload failed
+            </i>
+            <!--上传中-->
+            <i class="add-uploading">
+                <i class="total-length">
+                    <i class="now-length"></i>
+                </i>
+                20%
+            </i>
+            <i class="show-file">
+                <input type="file">
+                + Add Gerber file
+            </i>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="save-tips">
+        <img src="../img/images/safe-tips.png" alt="" style="vertical-align: middle;margin-right: 15px">
+        <span>
+                   Are you having problems uploading? You can skip this step and email your data files to <a
+                href="#" style="color: #fdbb2d;text-decoration: underline">service@PCBGOGO.com</a>
+               </span>
+    </div>
+    <div style="text-align: center">
+        <input type="button" class="summit-order" value="Submit order now">
+    </div>
+</div>
+
+</body>
+</html>

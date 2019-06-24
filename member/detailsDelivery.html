@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <link rel="stylesheet" href="../img/css/memberTop.css">
+    <link rel="stylesheet" href="../img/css/detailsDelivery.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="top-nav">
+    <div class="nav-l">
+        <a href="orderIndex.html">
+            <img src="../img/images/order/orderlogo.png" alt="logo">
+        </a>
+    </div>
+    <div class="nav-r">
+        <!--右侧图标-->
+        <div class="shopping-box">
+            <ul class="hints js-hints">
+                <li class="active message-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-ai-message"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="active coupon-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-youhuiquan"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="active coupon-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-fukuan"></span>
+                </a>
+                    <i class="point "></i>
+                </li>
+                <li class="car-box cared-li"><a href="javascript:void(0)">
+                    <span class="iconfont icon-gouwuche1"></span>
+                </a>
+                    <i class="round car-nums">99</i>
+                </li>
+            </ul>
+        </div>
+        <!--登录后-->
+        <div class="user-box">
+            <span class="hi-text"> Hi! The user...</span>
+            <div class="user-pic js-user-pic">
+                <i><img src="../img/images/user.png" alt=""></i>
+                <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+            </div>
+            <div class="user-item">
+                <div class="account" onclick="window.open('orderIndex.html','_self')">
+                    My Account
+                </div>
+                <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                    My Orders list
+                </div>
+                <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                    My Delivery Address
+                </div>
+                <div class="facebook-btn ">
+                    Bind FaceBook
+                </div>
+                <div class="out-btn " style="margin-top: 10px">
+                    Sign Out
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--二级菜单-->
+<div class="main-menu">
+    <div class="vip_warp">
+        <ul class="menu-list clear-fix">
+            <li class="active"><a href="orderIndex.html">My Account</a></li>
+            <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+            <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+            <li><a href="../reviewList.html">Forum</a></li>
+        </ul>
+        <!--面包屑-->
+        <div class="bread-crumbs">
+            <a href="javascript:void(0)">
+                <span class="iconfont icon-shouye1"></span>
+                <span>- Shopping Cart</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <!--左侧-->
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item "><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item "><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class=" item "><a href="myInvitation.html">
+                <span class="iconfont icon-daipingjiab"></span>
+                <span class="category-name">+Experience Share</span></a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="myInvitation.html">
+                    <span class="second-name">My Invitation</span>
+                </a>
+                <a href="promoteIndex.html">
+                    <span class="second-name">Share links</span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="javascript:void(0)">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name active-new">- Reward points</span></a></div>
+            <!--vip-->
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a></div>
+            <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+            <div class="second-item ">
+                <a href="essentialInformation.html">
+                    <span class="second-name">Basic Information</span></a>
+                <a href="receivingAddress.html">
+                    <span class="second-name">My Delivery Address</span>
+                </a>
+                <a href="changePassword.html">
+                    <span class="second-name">Change Password</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="box-r">
+        <div class="r-title">
+            ORDER DETAIL
+        </div>
+        <!--选项卡展示-->
+        <ul class="pay-shows">
+            <li>
+                <img src="../img/images/order/payment.png" alt="">
+                <p>Payment</p>
+                <img src="../img/images/order/line1.png" alt="" class="line-pic">
+            </li>
+            <li>
+                <img src="../img/images/order/fabrication.png" alt="">
+                <p>Fabrication</p>
+                <img src="../img/images/order/line2.png" alt="" class="line-pic">
+            </li>
+            <li>
+                <img src="../img/images/order/delivery.png" alt="">
+                <p>Delivery</p>
+                <img src="../img/images/order/line3.png" alt="" class="line-pic">
+            </li>
+            <li>
+                <img src="../img/images/order/confirmreceived.png" alt="">
+                <p>Confirm Received</p>
+                <img src="../img/images/order/line4.png" alt="" class="line-pic">
+            </li>
+            <li style="border-right: 1px solid #efefef">
+                <img src="../img/images/order/shard.png" alt="">
+                <p>Shared</p>
+                <img src="../img/images/order/line5.png" alt="" class="line-pic">
+            </li>
+        </ul>
+        <!--订单进度-->
+        <div class="order-progress">
+            <div class="progress-text">
+                <p style="font-weight: bold">Order NO: A11302AS6</p>
+                <p style="margin-top: 15px;font-size: 12px">Order time & date: 2017.06 .06 3:57:17 PM </p>
+                <p style="font-size: 12px;margin-top: 10px">Order Status: <span
+                        style="color: #fdbb2d">Production status</span>
+                </p>
+            </div>
+            <div class="invi-btn">
+                <a href="#">INVOICE</a>
+                <a href="#" style="background-color:#271e1e;">CONFIRM</a>
+            </div>
+        </div>
+        <!--物流指示-->
+        <div class="logistics-box">
+            <ul class="logistics-ul">
+                <li>International Shipping Company
+                    <p>DHL Express</p>
+                </li>
+                <li>Tracking Number
+                    <p>1234567890</p>
+                </li>
+                <li>Shipping Time
+                    <p>2018.03.08</p>
+                </li>
+                <li class="logistics-tips">
+                    <img src="../img/images/safe-tips.png" alt="">
+                    <span>Follow-up information is updated in 1-3 days. Please continue your order in DHL.</span>
+                </li>
+            </ul>
+        </div>
+        <!--分割线-->
+        <div class="ship-box" style="height: 45px;border-bottom: 1px solid #efefef"></div>
+        <!--地址-->
+        <div class="delivery-ress">Delivery Address:</div>
+        <div class="delivery-box">
+            <dl>
+                <dt>Company:</dt>
+                <dd>Shenzhen JDB Technology Co., Ltd.</dd>
+            </dl>
+            <dl>
+                <dt>Name:</dt>
+                <dd>asdasdasd</dd>
+            </dl>
+            <dl>
+                <dt>Address:</dt>
+                <dd>4225 Executive Square,Level 7 La Jolla, CA 92037 AB KETTLEBY ,UNITED KINGDOM <img
+                        src="../img/images/order/ress-pic.png" alt="" style="vertical-align: middle"></dd>
+            </dl>
+            <dl>
+                <dt>Zip Code:</dt>
+                <dd>LE14 12</dd>
+            </dl>
+            <dl>
+                <dt>Tel:</dt>
+                <dd>00852-29976161</dd>
+            </dl>
+        </div>
+        <!--分割线-->
+        <div class="ship-box" style="height: 45px;border-bottom: 1px solid #efefef"></div>
+        <!--详细信息-->
+        <div class="delivery-ress">Order Detail:</div>
+        <!--表格盒子1-->
+        <div class="detail-box ie-float">
+            <div class="box-top">
+                <span class="box-title">PCB Prototrpe</span>
+                <span class="box-price">Total:  $5.00</span>
+            </div>
+            <div class="box-content">
+                <div class="content-l">
+                    <ul class="content-list">
+                        <li class="bg-text">OrderNO</li>
+                        <li class="fg-text">A11302AS6</li>
+                        <li class="bg-text">GerberFile</li>
+                        <li class="ot-text">The file name001.rar</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Length</li>
+                        <li class="fg-text">10 mm</li>
+                        <li class="bg-text">Width</li>
+                        <li class="fg-text">10 mm</li>
+                        <li class="bg-text">Quantity</li>
+                        <li class="fg-text">10</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Layers</li>
+                        <li class="fg-text">2 layers</li>
+                        <li class="bg-text">Thickness</li>
+                        <li class="fg-text">1.6 mm</li>
+                        <li class="bg-text">Surface Finish</li>
+                        <li class="fg-text">HASL with lead</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Finished Copper</li>
+                        <li class="fg-text">1 oz Cu</li>
+                        <li class="bg-text">Solder Mask</li>
+                        <li class="fg-text">Green</li>
+                        <li class="bg-text">Silkscreen</li>
+                        <li class="fg-text">White</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CreateTime</li>
+                        <li class="fg-text">2017.11.23 13:41:11</li>
+                        <li class="bg-text">Delivery Type</li>
+                        <li class="fg-text">2-3 days</li>
+                        <li class="bg-text">Delivery Date</li>
+                        <li class="fg-text">2017.11.25</li>
+                    </ul>
+                </div>
+                <div class="content-r">
+                    Manufacturing
+                </div>
+            </div>
+        </div>
+        <!--表格盒子2-->
+        <div class="detail-box ie-float">
+            <div class="box-top">
+                <span class="box-title">SMD-Stencil</span>
+                <span class="box-price">Total:  $5.00</span>
+            </div>
+            <div class="box-content">
+                <div class="content-l">
+                    <ul class="content-list">
+                        <li class="bg-text">Stencil type</li>
+                        <li class="fg-text">Non-framework</li>
+                        <li class="bg-text">GerberFile</li>
+                        <li class="ot-text">The file name001.rar</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Stencil Side</li>
+                        <li class="fg-text">Bottom</li>
+                        <li class="bg-text">Size</li>
+                        <li class="ot-text">370x470mm (Valid area 190×290mm)</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">Quantity</li>
+                        <li class="fg-text">1 Pieces</li>
+                        <li class="bg-text">Existing fiducials</li>
+                        <li class="fg-text">none</li>
+                        <li class="bg-text">Electropolishing</li>
+                        <li class="fg-text">NO</li>
+                    </ul>
+                    <ul class="content-list">
+                        <li class="bg-text">CreateTime</li>
+                        <li class="fg-text">2017.11.23 13:41:11</li>
+                        <li class="bg-text">Delivery Type</li>
+                        <li class="fg-text">2-3 days</li>
+                        <li class="bg-text">Delivery Date</li>
+                        <li class="fg-text">2017.11.25</li>
+                    </ul>
+                </div>
+                <div class="content-r">
+                    Manufacturing
+                </div>
+            </div>
+        </div>
+        <!--总计盒子-->
+        <div class="total-box">
+            <ul class="total-ul ie-float">
+                <li>PCB Cost</li>
+                <li>Coupon Savings</li>
+                <li>Shipping Cost</li>
+                <li>Paypal Fee</li>
+                <li style="font-weight: bold">Total Amount</li>
+            </ul>
+            <ol class="total-ol ie-float">
+                <li>$500.00</li>
+                <li>-$100.00</li>
+                <li>$41.00</li>
+                <li>$2.00</li>
+                <li style="color: #b21f1f;font-size: 18px">$357.00</li>
+            </ol>
+        </div>
+        <!--版权说明-->
+        <div class="copy-right-box ">
+            <p>Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+                Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+            </p>
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+    <img src="../img/images/order/gotop.png" alt="">
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+<script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="../img/js/public.js"></script>
+<script src="../img/js/detailsDelivery.js"></script>
+</body>
+</html>

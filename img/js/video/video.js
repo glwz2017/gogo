@@ -13419,7 +13419,7 @@
     Component.registerComponent('LiveDisplay', LiveDisplay);
 
     /**
-     * @file 3dMove.js
+     * @file slider.js
      */
     /**
      * The base functionality for a slider. Can be vertical or horizontal.

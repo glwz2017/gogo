@@ -1,0 +1,460 @@
+.bbs-banner {
+    height: 300px;
+    width: 100%;
+    background: url("../../images/forum/bbs-bg.jpg") no-repeat center #0a194c;
+    background-size: cover;
+    min-width: 1280px;
+    overflow: hidden;
+}
+
+.information-box {
+    padding-top: 120px;
+}
+
+.information-box:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.info-left {
+    float: left;
+    height: 63px;
+}
+
+.info-left .img-left {
+    float: left;
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.info-left .img-left>img{
+    width: 100%;
+    height: 100%;
+}
+.info-left .img-right {
+    padding-top: 13px;
+    float: left;
+    font-size: 12px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.info-left .img-right > p > span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.info-left .img-right > a {
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.info-right {
+    float: right;
+}
+
+.info-right > a {
+    float: left;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #b21f1f;
+    margin-left: 2px;
+    text-align: center;
+    border-radius: 2px;
+    color: #ffffff;
+    transition: all 1s;
+}
+.info-right > a:hover{
+    background-color: #ee2323;
+}
+/*类型列表*/
+.bbs-banner .style-list {
+    margin-top: 67px;
+}
+
+.bbs-banner .style-list > li {
+    float: left;
+    width: 174px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #877070;
+    margin-right: 1px;
+    transition: all .3s;
+}
+
+.bbs-banner .style-list > li > a {
+    color: #ffffff;
+}
+
+/*鼠标经过样式*/
+.bbs-banner .style-list > li:hover {
+    background-color: #ffffff;
+    height: 55px;
+    line-height: 55px;
+    margin-top: -5px;
+}
+
+.bbs-banner .style-list > li:hover a {
+    color: #271e1f;
+}
+
+/*选中的类样式*/
+.bbs-banner .style-list .active-list {
+    background-color: #ffffff;
+    height: 55px;
+    line-height: 55px;
+    margin-top: -5px;
+}
+
+.bbs-banner .style-list .active-list > a {
+    color: #271e1f;
+}
+
+/*主体*/
+.main-box {
+    padding-top: 70px;
+}
+
+.main-box .categories-box {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #dcdddd;
+}
+
+.main-box .categories-box > li {
+    width: 198px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid #dcdddd;
+    float: left;
+    background-color: #efefef;
+}
+.main-box .categories-box > li:first-child{
+    border-right:none;
+}
+.main-box .categories-box > li > a {
+    color: #271e1f;
+}
+
+/*选中样式*/
+.main-box .categories-box .active-li {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/*发布盒子*/
+.main-box .release-box {
+    width: 928px;
+    margin: 60px auto 0;
+
+    /*border-top: 1px solid red;*/
+}
+
+.main-box .release-box .leave-name {
+    background: url("../../images/forum/leave-bg.png") no-repeat center;
+    height: 179px;
+}
+
+.main-box .release-box .leave-name > h5 {
+    text-align: center;
+    color: #fdbc00;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.main-box .release-box .leave-name .name-box {
+    margin-top: 30px;
+    text-align: center;
+    height: 40px;
+    padding-left: 225px;
+    position: relative;
+}
+
+.release-box .leave-name .name-box label {
+    float: left;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.release-box .leave-name .name-box #first-name {
+    height: 39px;
+    line-height: 39px;
+    width: 310px;
+    float: left;
+    outline: none;
+    text-indent: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border: 1px solid #ccc;
+}
+
+.release-box .leave-name .name-box .submit-btn {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #271e1f;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 2px;
+    float: left;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.26);
+    transition: all 1s;
+}
+
+/**/
+.release-box .input-tips {
+    font-size: 12px;
+    color: #d50018;
+    margin: 5px 0 0 305px;
+    display: none;
+}
+
+.release-box .leave-name .name-box .submit-btn:hover {
+    background-color: #4d4042;
+}
+
+.main-box .edit-item {
+    margin: 60px auto 0;
+    width: 918px;
+    position: relative;
+}
+
+/*标签遮罩*/
+.tags-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 83%;
+    background-color: #ffffff;
+    opacity: .5;
+    z-index: 19;
+    filter: alpha(opacity=50);
+}
+
+.main-box .edit-item .release-title {
+    font-size: 14px;
+    color: #271e1f;
+}
+
+.main-box .edit-item .release-title > span {
+    color: #9fa0a0;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.main-box .edit-item .title-input {
+    border: 1px solid #efefef;
+    padding: 20px;
+    margin: 10px 0 30px 0;
+}
+
+.main-box .edit-item .title-input > input {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    text-indent: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    background-color: #fff;
+}
+
+/*富文本编辑区*/
+.main-box .edit-item .edit-box {
+    margin-top: 5px;
+}
+
+.main-box .edit-item .tags-box {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.edit-item .tags-box .tags-title > span {
+    font-size: 12px;
+}
+
+.edit-item .tags-box .tags-hot {
+    padding: 25px 15px;
+    border: 1px solid #efefef;
+    margin-top: 10px;
+}
+
+.edit-item .tags-box .tags-hot > input {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: 1px solid #efefef;
+    outline: none;
+    text-indent: 15px;
+    box-shadow: 0 -1px 1px 0 #dcdddd;
+    overflow: hidden;
+}
+
+.edit-item .tags-box .tags-tips {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.edit-item .tags-box .tags-tips > a {
+    color: #b21f1f;
+    text-decoration: underline;
+}
+
+.edit-item .tags-box .btn-group {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.edit-item .tags-box .btn-group > a {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 24px;
+    border-radius: 2px;
+    transition: all 1s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.26);
+}
+
+.edit-item .tags-box .btn-group .rest-btn {
+    background-color: #271e1f;
+    margin-bottom: 170px;
+}
+
+.edit-item .tags-box .btn-group .rest-btn:hover {
+    background-color: #3f3435;
+}
+
+.edit-item .tags-box .btn-group .submit-btn {
+    background-color: #b21f1f;
+}
+
+.edit-item .tags-box .btn-group .submit-btn:hover {
+    background-color: #ee2323;
+}
+
+.tags-input {
+    min-height: 34px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.tags-input>ul:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+}
+/*动态标签样式开始*/
+.ui-item {
+    float: left;
+    list-style: none outside none;
+    padding: 0;
+    cursor: default;
+}
+
+.ui-item input {
+    font: 13px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 9px 0;
+    float: right;
+    text-indent: 15px;
+}
+/*.ui-item*/
+.ui-lists {
+    background: linear-gradient(#f3faff, #e3f4ff);
+    border: 1px solid #bed6e5;
+    box-shadow: 0 4px 3px -3px #dde9f2, 0 1px 0 0 #fff inset;
+    position: relative;
+    border-radius: 2px;
+    margin-bottom: 0;
+    margin-top: 4px;
+    color: #232323;
+    display: inline-block;
+    filter: none;
+    float: left;
+    height: 23px;
+    cursor: default;
+    line-height: 23px;
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+}
+
+.ui-item {
+    float: left;
+    list-style: none outside none;
+    padding: 0;
+    margin-left: 5px;
+    cursor: default;
+}
+
+.ui-text {
+    cursor: default;
+    float: left;
+    margin: 0 25px 6px 0;
+    max-width: 83%;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*.ui-item */
+.ui-lists .delete-button {
+    background-position: -66px -1631px;
+    border-left: 1px solid #bed6e5;
+    border-radius: 0 4px 4px 0;
+    height: 23px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    right: 0;
+    top: 0;
+    width: 25px;
+}
+
+.icon-sprite {
+    background: url("../../images/forum/icon.png") no-repeat 0 0;
+    display: inline-block;
+}
+
+/*动态标签样式结束*/
+/*未审核的原因提示*/
+.release-box .reasons-box {
+    background: url("../../images/forum/release-img.png") no-repeat center;
+    height: 79px;
+    line-height: 79px;
+    font-size: 14px;
+    color: #fdbc00;
+    padding-left: 35px;
+    position: relative;
+}
+
+.release-box .reasons-box .close-btn {
+    background: url("../../images/forum/forum-close.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 25%;
+    left: 95%;
+    cursor: pointer;
+}

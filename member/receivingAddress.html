@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account -PCBgogo</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../img/images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../img/css/public.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="../img/fonts/iconfont.css">
+    <link rel="stylesheet" href="../img/css/memberTop.css">
+    <link rel="stylesheet" href="../img/css/receivingAddress.css">
+    <script src="../img/js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../img/js/public.js"></script>
+    <script src="../img/js/receivingAddress.js"></script>
+</head>
+<body>
+<div class="the-top">
+    <!--顶部导航-->
+    <div class="top-nav">
+        <div class="nav-l">
+            <a href="orderIndex.html">
+                <img src="../img/images/order/orderlogo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-r">
+            <!--右侧图标-->
+            <div class="shopping-box">
+                <ul class="hints js-hints">
+                    <li class="active message-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-ai-message"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-youhuiquan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="active coupon-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-fukuan"></span>
+                    </a>
+                        <i class="point "></i>
+                    </li>
+                    <li class="car-box cared-li"><a href="javascript:void(0)">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </a>
+                        <i class="round car-nums">99</i>
+                    </li>
+                </ul>
+            </div>
+            <!--登录后-->
+            <div class="user-box">
+                <span class="hi-text"> Hi! The user...</span>
+                <div class="user-pic js-user-pic">
+                    <i><img src="../img/images/user.png" alt=""></i>
+                    <i class="down-pointer"><img src="../img/images/down-pointer.png" alt=""></i>
+                </div>
+                <div class="user-item">
+                    <div class="account" onclick="window.open('orderIndex.html','_self')">
+                        My Account
+                    </div>
+                    <div class="account" onclick="window.open('awaiting-payment.html','_self')">
+                        My Orders list
+                    </div>
+                    <div class="account" onclick="window.open('essentialInformation.html','_self')">
+                        My Delivery Address
+                    </div>
+                    <div class="facebook-btn ">
+                        Bind FaceBook
+                    </div>
+                    <div class="out-btn " style="margin-top: 10px">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级菜单-->
+    <div class="main-menu">
+        <div class="vip_warp">
+            <ul class="menu-list clear-fix">
+                <li class="active"><a href="orderIndex.html">My Account</a></li>
+                <li><a href="../PCBPrototype.html">PCB Instant Quote</a></li>
+                <li><a href="../PCBAssembly.html">PCB Assembly</a></li>
+                <li><a href="../reviewList.html">Forum</a></li>
+            </ul>
+            <!--面包屑-->
+            <div class="bread-crumbs">
+                <a href="javascript:void(0)">
+                    <span class="iconfont icon-shouye1"></span>
+                    <span>- Shopping Cart</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--主体-->
+<div class="order-main">
+    <!--字体图标分割线-->
+    <div class="font-line"></div>
+    <div class="box-l">
+        <div class="category js-category-index">
+            <div class="item "><a href="shopping-car.html">
+                <span class="iconfont icon-gouwuche2"></span>
+                <span class="category-name">-Shopping Cart</span></a></div>
+            <div class="item"><a href="awaiting-payment.html">
+                <span class="iconfont icon-dingdan"></span>
+                <span class="category-name">-My Orders</span></a></div>
+            <div class="item"><a href="memberList.html">
+                <span class="iconfont icon-icon_fapinglun-xian"></span>
+                <span class="category-name">-Comments</span></a></div>
+            <div class="item">
+                <a href="myInvitation.html">
+                    <span class="iconfont icon-daipingjiab"></span>
+                    <span class="category-name">+Experience Share</span>
+                </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item">
+                    <a class="second-active" href="myInvitation.html">
+                        <span class="second-name">My Invitation</span>
+                    </a>
+                    <a href="promoteIndex.html">
+                        <span class="second-name">Share links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item "><a href="account-page.html">
+                <span class="iconfont icon-34"></span>
+                <span class="category-name">-Cash and Coupon</span></a></div>
+            <!--vip-->
+            <div class="item ">
+                <a href="integral.html">
+                    <span class="iconfont icon-v"></span>
+                    <span class="category-name active-new">
+                    <span class="iconfont icon-new"></span>
+                    - Reward points
+                </span>
+                </a>
+            </div>
+            <!--vip-->
+            <div class="item "><a href="newsed.html">
+                <span class="iconfont icon-liuyanpinglun"></span>
+                <span class="category-name">-Message</span>
+            </a></div>
+            <div class="item active"><a href="essentialInformation.html">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span class="category-name">+My Profile</span>
+            </a>
+                <!--&lt;!&ndash;二级列表&ndash;&gt;-->
+                <div class="second-item ">
+                    <a  href="essentialInformation.html">
+                        <span class="second-name">Basic Information</span></a>
+                    <a class="second-active" href="receivingAddress.html">
+                        <span class="second-name">My Delivery Address</span>
+                    </a>
+                    <a href="changePassword.html">
+                        <span class="second-name">Change Password</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+        <div class="box-r">
+            <div class="r-title">
+                My DELIVERY ADDRESS
+            </div>
+            <!--新加地址-->
+            <div class="add-address-box">
+                <button class="address-title">Add a new address</button>
+                <div class="address-content">
+                    <!--空数据元素-->
+                    <div class="empty-item">
+                        <img src="../img/images/order/empty-order.png" alt="" class="align-pic">
+                        <span class="empty-tips">There is no delivery address, please complete it here.  </span>
+                    </div>
+                    <!--具体地址-->
+                    <div class="add-boxs">
+                        <ul class="ress-box js-ress-box">
+                            <li>
+                                <div class="now-address"></div>
+                                <dl>
+                                    <dt>Address:</dt>
+                                    <dd>
+                                        4225 Executive Square, Level 7 La Jolla,
+                                        CA 92037
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Name:</dt>
+                                    <dd>
+                                        zhangyi
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Tel:</dt>
+                                    <dd>
+                                        00852-29976161
+                                    </dd>
+                                </dl>
+                                <div class="edit-box">
+                                    <i><img src="../img/images/order/ress-pic.png" alt=""></i>
+                                    <span class="edit-btn js-del"><img src="../img/images/order/del.png" alt=""></span>
+                                    <span class="edit-btn set-default">Set Default</span>
+                                    <span class="edit-btn js-edit">Edit</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="now-address"></div>
+                                <dl>
+                                    <dt>Address:</dt>
+                                    <dd>
+                                        4225 Executive Square, Level 7 La Jolla,
+                                        CA 92037
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Name:</dt>
+                                    <dd>
+                                        zhangyi
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Tel:</dt>
+                                    <dd>
+                                        00852-29976161
+                                    </dd>
+                                </dl>
+                                <div class="edit-box">
+                                    <i><img src="../img/images/order/ress-pic.png" alt=""></i>
+                                    <span class="edit-btn js-del"><img src="../img/images/order/del.png" alt=""></span>
+                                    <span class="edit-btn set-default">Set Default</span>
+                                    <span class="edit-btn js-edit">Edit</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="now-address"></div>
+                                <dl>
+                                    <dt>Address:</dt>
+                                    <dd>
+                                        4225 Executive Square, Level 7 La Jolla,
+                                        CA 92037
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Name:</dt>
+                                    <dd>
+                                        zhangyi
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Tel:</dt>
+                                    <dd>
+                                        00852-29976161
+                                    </dd>
+                                </dl>
+                                <div class="edit-box">
+                                    <i><img src="../img/images/order/ress-pic.png" alt=""></i>
+                                    <span class="edit-btn js-del"><img src="../img/images/order/del.png" alt=""></span>
+                                    <span class="edit-btn set-default">Set Default</span>
+                                    <span class="edit-btn js-edit">Edit</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="now-address"></div>
+                                <dl>
+                                    <dt>Address:</dt>
+                                    <dd>
+                                        4225 Executive Square, Level 7 La Jolla,
+                                        CA 92037
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Name:</dt>
+                                    <dd>
+                                        zhangyi
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Tel:</dt>
+                                    <dd>
+                                        00852-29976161
+                                    </dd>
+                                </dl>
+                                <div class="edit-box">
+                                    <i><img src="../img/images/order/ress-pic.png" alt=""></i>
+                                    <span class="edit-btn js-del"><img src="../img/images/order/del.png" alt=""></span>
+                                    <span class="edit-btn set-default">Set Default</span>
+                                    <span class="edit-btn js-edit">Edit</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="now-address"></div>
+                                <dl>
+                                    <dt>Address:</dt>
+                                    <dd>
+                                        4225 Executive Square, Level 7 La Jolla,
+                                        CA 92037
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Name:</dt>
+                                    <dd>
+                                        zhangyi
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Tel:</dt>
+                                    <dd>
+                                        00852-29976161
+                                    </dd>
+                                </dl>
+                                <div class="edit-box">
+                                    <i><img src="../img/images/order/ress-pic.png" alt=""></i>
+                                    <span class="edit-btn js-del"><img src="../img/images/order/del.png" alt=""></span>
+                                    <span class="edit-btn set-default">Set Default</span>
+                                    <span class="edit-btn js-edit">Edit</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--清浮动-->
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+            </div>
+            <!--编辑地址层-->
+            <div class="open-mask js-address-mask">
+                <div class="edit-address">
+                    <div class="edit-title">
+                        <div class="edit-l">
+                            Add a new address
+                        </div>
+                        <div class="edit-r">
+                            <img src="../img/images/order/closed.png" alt="" class="close">
+                        </div>
+                    </div>
+                    <!--内容-->
+                    <div class="edit-content">
+                        <div class="inputs-box">
+                            <div class="input-l">
+                                <label>Company Name</label>
+                                <input type="text" class="inputs">
+                            </div>
+                            <div class="input-r">
+                                <label>Email Address</label>
+                                <input type="email" class="inputs">
+                            </div>
+                        </div>
+                        <div class="inputs-box">
+                            <div class="input-l">
+                                <label>Your Name</label>
+                                <input type="text" class="inputs" style="margin-left: 31px">
+                            </div>
+                            <div class="input-r">
+                                <label>Telephone No.</label>
+                                <input type="email" class="inputs">
+                            </div>
+                        </div>
+                        <div class="inputs-box">
+                            <div class="input-l">
+                                <label>Country/Region.</label>
+                                <input type="text" class="inputs region js-region-input">
+                                <ul class="region-ul js-region-ul">
+                                    <li> URUGUAY1</li>
+                                    <li> URUGUAY2</li>
+                                    <li> URUGUAY3</li>
+                                    <li> URUGUAY4</li>
+                                </ul>
+                            </div>
+                            <div class="input-r">
+                                <label style="text-align: left;display: inline-block;width: 88px;">City.</label>
+                                <input type="email" class="inputs region js-city-input">
+                                <ul class="region-ul js-city-ul" style="left: 91px">
+                                    <li> City1</li>
+                                    <li> City2</li>
+                                    <li> City3</li>
+                                    <li> City4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--文本框-->
+                        <div class="info-box">
+                            <dl>
+                                <dt style="float: left;font-weight: normal">Address</dt>
+                                <dd style="float: right">
+                                    <textarea class="address-area"></textarea>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="inputs-box">
+                            <div class="input-l">
+                                <label>Postcode</label>
+                                <input type="text" class="inputs" style="margin-left: 45px">
+                            </div>
+                        </div>
+                        <!--更新地址-->
+                        <div class="update-address">
+                            <div class="update-btn">
+                                update Address
+                            </div>
+                            <span style="margin-left: 50px;color: #b21f1f;text-decoration: underline">
+                            Set Default
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--版权说明-->
+            <div class="copy-right-box">
+                Copyright © 2015 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co., Ltd.
+                Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+            </div>
+        </div>
+</div>
+<!--返回顶部-->
+<div class="go-btn">
+    <img src="../img/images/order/gotop.png" alt="">
+</div>
+<!--右侧显示-->
+<div class="business-pic">
+    <div class="business-l">
+        <ul>
+            <li>
+                <a href="#" class="top-pics"><img src="../img/images/order/business-img.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff">
+                    Liu...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/skype.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/images/order/emails-icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="business-r">
+        <ul>
+            <li><img src="../img/images/order/stars.png" alt=""></li>
+            <li><a href="#">
+                Daphne Liu
+            </a></li>
+            <li><a href="#">
+                pcbway.service
+            </a></li>
+            <li><a href="#">
+                service@pcbway.com
+            </a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
