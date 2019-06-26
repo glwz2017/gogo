@@ -94,7 +94,7 @@
             color: #853f00;
             text-align: center;
             position: absolute;
-            bottom: 80px;
+            bottom: 68px;
             left: 175px;
             z-index: 3;
         }
@@ -114,6 +114,15 @@
             left: 492px;
             bottom: 10px;
             z-index: 3;
+        }
+
+        .up-to {
+            position: absolute;
+            top: -56px;
+            left: 120px;
+            z-index: 3;
+            font-size: 18px;
+            color: #853f00;
         }
 
         .logistics-box {
@@ -271,7 +280,9 @@
             cursor: pointer;
             float: left;
         }
-
+        .free-shipping .free-box .color{
+            color: #ba2227;
+        }
         .free-shipping .free-box .wuLiu-left {
             float: left;
             width: 364px;
@@ -339,6 +350,12 @@
             color: #ffe8c3;
             padding-top: 20px;
             box-sizing: border-box;
+        }
+
+        .free-name {
+            font-size: 30px;
+            color: #8e1f22;
+            font-family: 'activeFont';
         }
 
         .free-shipping .free-box .shipping-box .bottom {
@@ -662,11 +679,14 @@
             <div class="t-name">
                 PCBGOGO T-shirt
                 <br>Custom PCB rule
+                <br>A special jigsaw
             </div>
             <img class="couponsed animation heartbeat" src="img/images/activity/coupons6.png" alt="">
-            <div class="t-logistics  animation"></div>
+            <div class="t-logistics  animation">
+                <span class="up-to">up to</span>
+            </div>
             <div class="logistics-box">
-                Free Shipping
+                <span class="free-name"> Free Shipping</span>
                 <br>for PCB Assembly
             </div>
             <!--            介绍-->
@@ -702,10 +722,10 @@
                         $5
                     </div>
                     <div class="requirements">
-                        Orders ≥ $50
+                        PCB costs ≥ $50
                     </div>
                     <a href="下单" class="get-btn">
-                        Get it
+                        Quote Now
                     </a>
                 </div>
                 <div class="item">
@@ -713,10 +733,10 @@
                         $10
                     </div>
                     <div class="requirements">
-                        Orders ≥ $150
+                        PCB costs ≥ $150
                     </div>
                     <a href="下单" class="get-btn">
-                        Get it
+                        Quote Now
                     </a>
                 </div>
                 <div class="item">
@@ -724,10 +744,10 @@
                         $20
                     </div>
                     <div class="requirements">
-                        Orders ≥ $300
+                        PCB costs ≥ $300
                     </div>
                     <a href="下单" class="get-btn">
-                        Get it
+                        Quote Now
                     </a>
                 </div>
                 <div class="item">
@@ -735,10 +755,10 @@
                         $30
                     </div>
                     <div class="requirements">
-                        Orders ≥ $500
+                        PCB costs ≥ $500
                     </div>
                     <a href="下单" class="get-btn">
-                        Get it
+                        Quote Now
                     </a>
                 </div>
                 <div class="item">
@@ -746,10 +766,10 @@
                         $50
                     </div>
                     <div class="requirements">
-                        Orders ≥ $1000
+                        PCB costs ≥ $1000
                     </div>
                     <a href="下单" class="get-btn">
-                        Get it
+                        Quote Now
                     </a>
                 </div>
             </div>
@@ -764,16 +784,16 @@
     <div class="free-shipping" id="freeShipping">
         <div class="free-box">
             <div class="wuLiu-left">
-                Under $30
-                <br>Free shipping
+                <span class="color">Free shipping</span>
+                <br>Under $30
                 <img class="left-move animation float" src="img/images/activity/left-move.png" alt="">
             </div>
             <div class="wuLiu-box">
                 <img class="wu-liu" src="img/images/activity/free-bg.jpg" alt="">
                 <div class="shipping-box">
                     <div class="top">
-                        FREE SHIPPING
-                        <br> FOR PCB ASSEMBLY
+                       FREE SHIPPING
+                        <br>FOR PCB ASSEMBLY
                     </div>
                     <div class="bottom">
                         <a href="javascript:void(0)" class="left">
@@ -784,8 +804,8 @@
                 </div>
             </div>
             <div class="wuLiu-right">
-                Over $30
-                <br>$30 off
+               <span class="color">$30 off</span>
+                <br>Over $30
                 <img class="right-move animation float" src="img/images/activity/right-move.png" alt="">
             </div>
         </div>
@@ -793,8 +813,8 @@
         <div class="tips" id="components">
             <img class="components" src="img/images/activity/components.png" alt="">
             <span class="iconfont icon-tishi1"></span>
-            PS: &nbsp;&nbsp;&nbsp;Up to $100 on your PCB assembly orders. There are not components and stencil fee in
-            your PCB assembly order.
+            PS: &nbsp;&nbsp;&nbsp;1. Up to $100 on your PCB assembly costs
+            <br>2.The components and stencil fee are not in your PCB assembly order.
         </div>
     </div>
     <!--    Extra-->
@@ -824,7 +844,7 @@
         <!-- 提示-->
         <div class="tips">
             <span class="iconfont icon-tishi1"></span>
-            PS: 1. Up to $200 on all orders； 2. Take notes of the gifts which you like.
+            PS: 1. Up to $200 on your orders； 2. Take notes of the gifts which you like.
         </div>
     </div>
 </div>
@@ -1039,16 +1059,16 @@
     $(function () {
 
         $('#coupon').click(function () {
-            var tempTop=$('.coupons-box')[0].offsetTop;
-            $('html,body').animate({scrollTop:tempTop});
+            var tempTop = $('.coupons-box')[0].offsetTop;
+            $('html,body').animate({scrollTop: tempTop});
         });
         $('#free').click(function () {
-            var tempTop=$('#freeShipping')[0].offsetTop-60;
-            $('html,body').animate({scrollTop:tempTop});
+            var tempTop = $('#freeShipping')[0].offsetTop - 60;
+            $('html,body').animate({scrollTop: tempTop});
         });
         $('#gift').click(function () {
-            var tempTop=$('.extra-box')[0].offsetTop-100;
-            $('html,body').animate({scrollTop:tempTop});
+            var tempTop = $('.extra-box')[0].offsetTop - 100;
+            $('html,body').animate({scrollTop: tempTop});
         });
 
 
