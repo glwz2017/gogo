@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no">
+    <!--动态计算-->
+    <script src="lib/ydui/ydui.flexible.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/total-price.css">
+    <!--弹窗-->
+    <link rel="stylesheet" href="lib/dialog/dialog.css">
+</head>
+<body>
+<!--头部-->
+<header class="inner-header">
+    <div class="header-left">
+        <a href="javascript:void(0)" class="back-btn" onclick="window.history.back(-1);">
+            <img src="img/back.png" alt="">
+        </a>
+        <span>PCB Prototype</span>
+    </div>
+    <div class="header-right"></div>
+</header>
+<!--主体-->
+<div class="main-box">
+    <!--PCB Build time-->
+    <div class="build-box">
+        <h2>PCB Build time</h2>
+        <ul class="js-build-time">
+            <li class="active-time">
+                <div class="time-box">
+                    <span class="iconfont icon-yduizhengqueshixin "></span>
+                    <span class="time">2-3 days</span>
+                </div>
+                <span>$5</span>
+            </li>
+            <li>
+                <div class="time-box">
+                    <span class="iconfont icon-yduizhengqueshixin "></span>
+                    <span class="time">24hours</span>
+                    <span class="iconfont icon-Express"></span>
+                </div>
+                <span>$38</span>
+            </li>
+        </ul>
+    </div>
+    <!--Shipping costs-->
+    <div class="shipping-box">
+        <h2>Shipping costs</h2>
+        <!--物流选择-->
+        <select name="">
+            <option value="">FedEx-IE</option>
+            <option value="">FedEx-IP</option>
+            <option value="">DHL</option>
+            <option value="">HK DHL</option>
+            <option value="">EMS</option>
+            <option value="">HK post</option>
+            <option value="">China Post</option>
+            <option value="">E-packet</option>
+            <option value="">SF Express</option>
+            <option value="">Other shipping way</option>
+        </select>
+        <!--国家选择-->
+        <select name="selShipCountry" id="selShipCountry">
+            <option value="0">Choose Country</option>
+            <option pic="15" value="1">ANDORRA</option>
+            <option pic="222" value="2">UNITED ARAB EMIRATES</option>
+            <option pic="11" value="3">AFGHANISTAN</option>
+            <option pic="19" value="4">ANTIGUA</option>
+            <option pic="17" value="5">ANGUILLA</option>
+            <option pic="12" value="6">ALBANIA</option>
+            <option pic="21" value="7">ARMENIA</option>
+            <option pic="16" value="8">ANGOLA</option>
+            <option pic="20" value="9">ARGENTINA</option>
+            <option pic="14" value="10">AMERICAN SAMOA</option>
+            <option pic="24" value="11">AUSTRIA</option>
+            <option pic="23" value="12">AUSTRALIA</option>
+            <option pic="22" value="13">ARUBA</option>
+            <option pic="25" value="14">AZERBAIJAN</option>
+            <option pic="247" value="15">BOSNIA AND HERZEGOVINA</option>
+            <option pic="29" value="16">BARBADOS</option>
+            <option pic="28" value="17">BANGLADESH</option>
+            <option pic="31" value="18">BELGIUM</option>
+            <option pic="44" value="19">BURKINA FASO</option>
+            <option pic="43" value="20">BULGARIA</option>
+            <option pic="27" value="21">BAHRAIN</option>
+            <option pic="45" value="22">BURUNDI</option>
+            <option pic="33" value="23">BENIN</option>
+            <option pic="34" value="24">BERMUDA</option>
+            <option pic="42" value="25">BRUNEI</option>
+            <option pic="36" value="26">BOLIVIA</option>
+            <option pic="40" value="27">BRAZIL</option>
+            <option pic="26" value="28">BAHAMAS</option>
+            <option pic="35" value="29">BHUTAN</option>
+            <option pic="38" value="30">BOTSWANA</option>
+            <option pic="30" value="31">BELARUS</option>
+            <option pic="32" value="32">BELIZE</option>
+            <option pic="2" value="33">CANADA</option>
+            <option pic="236" value="34">CONGO, THE DEMOCRATIC REPUBLIC OF</option>
+            <option pic="50" value="35">CENTRAL AFRICAN REPUBLIC</option>
+            <option pic="57" value="36">CONGO</option>
+            <option pic="206" value="37">SWITZERLAND</option>
+            <option pic="246" value="38">COTE D IVOIRE</option>
+            <option pic="58" value="39">COOK ISLANDS</option>
+            <option pic="52" value="40">CHILE</option>
+            <option pic="47" value="41">CAMEROON</option>
+            <option pic="55" value="43">COLOMBIA</option>
+            <option pic="59" value="44">COSTA RICA</option>
+            <option pic="62" value="45">CUBA</option>
+            <option pic="48" value="46">CAPE VERDE</option>
+            <option pic="63" value="47">CYPRUS</option>
+            <option pic="64" value="48">CZECH REPUBLIC, THE</option>
+            <option pic="89" value="49">GERMANY</option>
+            <option pic="66" value="50">DJIBOUTI</option>
+            <option pic="65" value="51">DENMARK</option>
+            <option pic="67" value="52">DOMINICA</option>
+            <option pic="13" value="54">ALGERIA</option>
+            <option pic="70" value="55">ECUADOR</option>
+            <option pic="75" value="56">ESTONIA</option>
+            <option pic="71" value="57">EGYPT</option>
+            <option pic="74" value="58">ERITREA</option>
+            <option pic="197" value="59">SPAIN</option>
+            <option pic="76" value="60">ETHIOPIA</option>
+            <option pic="80" value="61">FINLAND</option>
+            <option pic="79" value="62">FIJI</option>
+            <option pic="77" value="63">FALKLAND ISLANDS</option>
+            <option pic="142" value="64">MICRONESIA, FEDERATED STATES OF</option>
+            <option pic="78" value="65">FAROE ISLANDS</option>
+            <option pic="81" value="66">FRANCE</option>
+            <option pic="86" value="67">GABON</option>
+            <option pic="9" value="68">UNITED KINGDOM</option>
+            <option pic="94" value="69">GRENADA</option>
+            <option pic="88" value="70">GEORGIA</option>
+            <option pic="83" value="71">FRENCH GUYANA</option>
+            <option pic="90" value="73">GHANA</option>
+            <option pic="91" value="74">GIBRALTAR</option>
+            <option pic="93" value="75">GREENLAND</option>
+            <option pic="87" value="76">GAMBIA</option>
+            <option pic="98" value="77">GUINEA REPUBLIC</option>
+            <option pic="95" value="78">GUADELOUPE</option>
+            <option pic="73" value="79">GUINEA-EQUATORIAL</option>
+            <option pic="92" value="80">GREECE</option>
+            <option pic="97" value="81">GUATEMALA</option>
+            <option pic="96" value="82">GUAM</option>
+            <option pic="99" value="83">GUINEA-BISSAU</option>
+            <option pic="100" value="84">GUYANA (BRITISH)</option>
+            <option pic="103" value="86">HONDURAS</option>
+            <option pic="61" value="87">CROATIA</option>
+            <option pic="101" value="88">HAITI</option>
+            <option pic="104" value="89">HUNGARY</option>
+            <option pic="4" value="91">INDONESIA</option>
+            <option pic="109" value="92">IRELAND, REPUBLIC OF</option>
+            <option pic="110" value="93">ISRAEL</option>
+            <option pic="106" value="94">INDIA</option>
+            <option pic="108" value="95">IRAQ</option>
+            <option pic="107" value="96">IRAN (ISLAMIC REPUBLIC OF)</option>
+            <option pic="105" value="97">ICELAND</option>
+            <option pic="111" value="98">ITALY</option>
+            <option pic="112" value="100">JAMAICA</option>
+            <option pic="114" value="101">JORDAN</option>
+            <option pic="113" value="102">JAPAN</option>
+            <option pic="116" value="103">KENYA</option>
+            <option pic="119" value="104">KYRGYZSTAN</option>
+            <option pic="46" value="105">CAMBODIA</option>
+            <option pic="117" value="106">KIRIBATI</option>
+            <option pic="56" value="107">COMOROS</option>
+            <option pic="162" value="109">KOREA, THE D.P.R OF (NORTH K.)</option>
+            <option pic="240" value="110">KOREA, REPUBLIC OF (SOUTH K.)</option>
+            <option pic="118" value="112">KUWAIT</option>
+            <option pic="49" value="113">CAYMAN ISLANDS</option>
+            <option pic="115" value="114">KAZAKHSTAN</option>
+            <option pic="245" value="115">LAO PEOPLES DEMOCRATIC REPUBLIC</option>
+            <option pic="122" value="116">LEBANON</option>
+            <option pic="0" value="117">ST. LUCIA</option>
+            <option pic="126" value="118">LIECHTENSTEIN</option>
+            <option pic="198" value="119">SRI LANKA</option>
+            <option pic="124" value="120">LIBERIA</option>
+            <option pic="123" value="121">LESOTHO</option>
+            <option pic="127" value="122">LITHUANIA</option>
+            <option pic="128" value="123">LUXEMBOURG</option>
+            <option pic="121" value="124">LATVIA</option>
+            <option pic="0" value="125">LIBYA</option>
+            <option pic="147" value="126">MOROCCO</option>
+            <option pic="143" value="127">MOLDOVA, REPUBLIC OF</option>
+            <option pic="243" value="128">MONTENEGRO, REPUBLIC OF</option>
+            <option pic="131" value="129">MADAGASCAR</option>
+            <option pic="136" value="130">MARSHALL ISLANDS</option>
+            <option pic="130" value="131">MACEDONIA, REPUBLIC OF</option>
+            <option pic="134" value="132">MALI</option>
+            <option pic="149" value="133">MYANMAR</option>
+            <option pic="145" value="134">MONGOLIA</option>
+            <option pic="0" value="136">COMMONWEALTH NO. MARIANA ISLANDS</option>
+            <option pic="137" value="137">MARTINIQUE</option>
+            <option pic="138" value="138">MAURITANIA</option>
+            <option pic="146" value="139">MONTSERRAT</option>
+            <option pic="135" value="140">MALTA</option>
+            <option pic="139" value="141">MAURITIUS</option>
+            <option pic="133" value="142">MALDIVES</option>
+            <option pic="132" value="143">MALAWI</option>
+            <option pic="141" value="144">MEXICO</option>
+            <option pic="6" value="145">MALAYSIA</option>
+            <option pic="148" value="146">MOZAMBIQUE</option>
+            <option pic="150" value="147">NAMIBIA</option>
+            <option pic="155" value="148">NEW CALEDONIA</option>
+            <option pic="158" value="149">NIGER</option>
+            <option pic="159" value="150">NIGERIA</option>
+            <option pic="157" value="151">NICARAGUA</option>
+            <option pic="153" value="152">NETHERLANDS, THE</option>
+            <option pic="164" value="153">NORWAY</option>
+            <option pic="152" value="154">NEPAL</option>
+            <option pic="151" value="155">NAURU, REPUBLIC OF</option>
+            <option pic="160" value="156">NIUE</option>
+            <option pic="156" value="157">NEW ZEALAND</option>
+            <option pic="165" value="158">OMAN</option>
+            <option pic="168" value="159">PANAMA</option>
+            <option pic="171" value="160">PERU</option>
+            <option pic="169" value="162">PAPUA NEW GUINEA</option>
+            <option pic="172" value="163">PHILIPPINES, THE</option>
+            <option pic="166" value="164">PAKISTAN</option>
+            <option pic="174" value="165">POLAND</option>
+            <option pic="176" value="166">PUERTO RICO</option>
+            <option pic="175" value="167">PORTUGAL</option>
+            <option pic="167" value="168">PALAU</option>
+            <option pic="170" value="169">PARAGUAY</option>
+            <option pic="177" value="170">QATAR</option>
+            <option pic="178" value="171">REUNION, ISLAND OF</option>
+            <option pic="179" value="172">ROMANIA</option>
+            <option pic="241" value="173">SERBIA, REPUBLIC OF</option>
+            <option pic="180" value="174">RUSSIAN FEDERATION, THE</option>
+            <option pic="181" value="175">RWANDA</option>
+            <option pic="188" value="176">SAUDI ARABIA</option>
+            <option pic="194" value="177">SOLOMON ISLANDS</option>
+            <option pic="190" value="178">SEYCHELLES</option>
+            <option pic="201" value="179">SUDAN</option>
+            <option pic="205" value="180">SWEDEN</option>
+            <option pic="7" value="181">SINGAPORE</option>
+            <option pic="0" value="182">SAINT HELENA</option>
+            <option pic="193" value="183">SLOVENIA</option>
+            <option pic="192" value="184">SLOVAKIA</option>
+            <option pic="191" value="185">SIERRA LEONE</option>
+            <option pic="186" value="186">SAN MARINO</option>
+            <option pic="189" value="187">SENEGAL</option>
+            <option pic="195" value="188">SOMALIA</option>
+            <option pic="202" value="189">SURINAME</option>
+            <option pic="187" value="191">SAO TOME AND PRINCIPE</option>
+            <option pic="72" value="192">EL SALVADOR</option>
+            <option pic="0" value="193">SYRIA</option>
+            <option pic="204" value="194">SWAZILAND</option>
+            <option pic="218" value="195">TURKS AND CAICOS ISLANDS</option>
+            <option pic="51" value="196">CHAD</option>
+            <option pic="211" value="197">TOGO</option>
+            <option pic="210" value="198">THAILAND</option>
+            <option pic="208" value="199">TAJIKISTAN</option>
+            <option pic="69" value="200">EAST TIMOR</option>
+            <option pic="215" value="201">TUNISIA</option>
+            <option pic="213" value="202">TONGA</option>
+            <option pic="216" value="203">TURKEY</option>
+            <option pic="219" value="205">TUVALU</option>
+            <option pic="209" value="207">TANZANIA</option>
+            <option pic="221" value="208">UKRAINE</option>
+            <option pic="224" value="210">URUGUAY</option>
+            <option pic="225" value="211">UZBEKISTAN</option>
+            <option pic="228" value="213">VENEZUELA</option>
+            <option pic="230" value="214">VIRGIN ISLANDS (BRITISH)</option>
+            <option pic="231" value="215">VIRGIN ISLANDS (US)</option>
+            <option pic="229" value="216">VIETNAM</option>
+            <option pic="226" value="217">VANUATU</option>
+            <option pic="185" value="218">SAMOA</option>
+            <option pic="234" value="226">YEMEN, REPUBLIC OF</option>
+            <option pic="140" value="227">MAYOTTE</option>
+            <option pic="196" value="228">SOUTH AFRICA</option>
+            <option pic="237" value="229">ZAMBIA</option>
+            <option pic="238" value="230">ZIMBABWE</option>
+            <option pic="10" value="231">UNITED STATES OF AMERICA</option>
+        </select>
+        <!--联动信息-->
+        <ul class="link-info">
+            <li>
+                <i><img src="img/usa-falg.png" alt=""></i>
+                <span>UNITED STATES OF AMERICA</span>
+            </li>
+            <li>
+                10-15 days , Weight: 0.50 kg
+            </li>
+        </ul>
+    </div>
+    <!--Email-->
+    <div class="email-box">
+        <h2>E-mail</h2>
+        <input type="email">
+    </div>
+    <!--合计价格-->
+    <div class="cost-box">
+        <!--pcb-->
+        <div class="cost" style="display: block">
+            PCB Cost
+            <span>$ 38</span>
+        </div>
+        <!--stencil-->
+        <div class="cost">
+            Stencil Cost
+            <span>$ 38</span>
+        </div>
+        <!--Assembly-->
+        <div class="cost">
+            Assembly Cost
+            <span>$ 38</span>
+        </div>
+        <!--运费-->
+        <div class="cost" style="display: block">
+            Shipping
+            <span>$ 21</span>
+        </div>
+        <!--分割线-->
+        <div class="split-line">
+            <hr>
+        </div>
+        <p class="cost-tips">Note: Accurate price will be confirmed after Geber files review</p>
+    </div>
+</div>
+<!--底部-->
+<footer class="price-footer">
+    <div class="item-left">
+        <span>Total</span>
+        <span class="price">$ 59</span>
+    </div>
+    <div class="item-right">
+        <span>Calculate</span>
+    </div>
+</footer>
+<!--弹窗模板-->
+<div class="popup-box ">
+
+</div>
+<!--zepto-->
+<script src="lib/zepto/zepto.js"></script>
+<!--dailog-->
+<script src="lib/dialog/dialog.js"></script>
+<script src="js/global.js"></script>
+<script>
+    $(function () {
+        //物流时间选择
+        $('.js-build-time li').click(function () {
+            $(this).addClass('active-time').siblings('li').removeClass('active-time');
+        });
+    });// end function
+</script>
+</body>
+</html>
