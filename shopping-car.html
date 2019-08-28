@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no">
+    <!--动态计算-->
+    <script src="lib/ydui/ydui.flexible.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/shopping-car.css">
+    <!--弹窗-->
+    <link rel="stylesheet" href="lib/dialog/dialog.css">
+</head>
+<body>
+<!--头部-->
+<header class="inner-header">
+    <div class="header-left">
+        <a href="javascript:void(0);" class="back-btn" onclick="window.history.back(-1);">
+            <img src="img/back.png" alt="">
+        </a>
+        <span>My Cart</span>
+    </div>
+    <div class="header-right"></div>
+</header>
+<!--主体-->
+<section class="main-box">
+    <div class="orders js-orders">
+        <form action="#">
+            <!--空状态  无数据显示 默认隐藏-->
+            <div class="empty-state">
+                <a href="pcb-order.html">
+                    <div class="empty-info">
+                        <div class="empty-car">
+                            <img src="img/empty-cart.png" alt="">
+                        </div>
+                        <div class="empty-text">
+                            <p>The shopping cart is empty,now go shopping</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--订单项 添加 active-order 类名为选中-->
+            <!--pcb订单-->
+            <div class="order-item active-order">
+                <!--头部-->
+                <div class="order-title ">
+                    <input type="text">
+                    <span class="iconfont icon-yduizhengqueshixin"></span>
+                    <div class="order-info">
+                        <p>Product No: A60005ASF54</p>
+                        <p>Add Time: 2018-10-29</p>
+                    </div>
+                    <!--状态-->
+                    <div class="order-status">
+                    </div>
+                </div>
+                <!--中间-->
+                <div class="order-table">
+                    <table>
+                        <tr>
+                            <td class="order-img">
+                                <img src="img/pcb.png">
+                            </td>
+                            <td class="order-text">
+                                <p>[PCB Production]</p>
+                                <p>Build Time: <span>14-15</span> days</p>
+                                <p> Size (mm)：<span>1 x 1</span></p>
+                                <p> Qty：<span>5</span></p>
+                            </td>
+                            <td class="order-price">
+                                <span>$300.00</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--底部-->
+                <div class="order-btns">
+                    <div class="del-box">
+                        <span class="iconfont icon-yduishanchu js-del-btn"></span>
+                    </div>
+                    <div class="btns">
+                        <a href="pcb-detail.html" class="view-detail">View Detail</a>
+                        <a href="javascript:void(0)" class="add-file js-add-file" data="11">Add Gerber file</a>
+                    </div>
+                </div>
+            </div>
+            <!--Assembly订单-->
+            <div class="order-item ">
+                <!--头部-->
+                <div class="order-title ">
+                    <input type="text">
+                    <span class="iconfont icon-yduizhengqueshixin"></span>
+                    <div class="order-info">
+                        <p>Product No: A60005ASF54</p>
+                        <p>Add Time: 2018-10-29</p>
+                    </div>
+                    <div class="order-status">
+                        <div class="under-review">
+                            Under Review
+                        </div>
+                    </div>
+                </div>
+                <!--中间-->
+                <div class="order-table">
+                    <table>
+                        <tr>
+                            <td class="order-img">
+                                <img src="img/assembly.png">
+                            </td>
+                            <td class="order-text">
+                                <p>[PCB Production]</p>
+                                <p>Build Time: <span>14-15</span> days</p>
+                                <p> Size (mm)：<span>1 x 1</span></p>
+                                <p> Qty：<span>5</span></p>
+                            </td>
+                            <td class="order-price">
+                                <span>$300.00</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--底部-->
+                <div class="order-btns">
+                    <div class="del-box">
+                        <span class="iconfont icon-yduishanchu js-del-btn"></span>
+                    </div>
+                    <div class="btns">
+                        <a href="smt-detail.html" class="view-detail">View Detail</a>
+                        <a href="javascript:void(0)" class="add-file js-add-file" data="11">Add Gerber file</a>
+                    </div>
+                </div>
+            </div>
+            <!--软板订单-->
+            <div class="order-item ">
+                <!--头部-->
+                <div class="order-title ">
+                    <input type="text">
+                    <span class="iconfont icon-yduizhengqueshixin"></span>
+                    <div class="order-info">
+                        <p>Product No: A60005ASF54</p>
+                        <p>Add Time: 2018-10-29</p>
+                    </div>
+                    <div class="order-status">
+                        <div class="failed">
+                            Audit Failed
+                        </div>
+                    </div>
+                </div>
+                <!--中间-->
+                <div class="order-table">
+                    <table>
+                        <tr>
+                            <td class="order-img">
+                                <img src="img/fpc.png">
+                            </td>
+                            <td class="order-text">
+                                <p>[PCB Production]</p>
+                                <p>Build Time: <span>14-15</span> days</p>
+                                <p> Size (mm)：<span>1 x 1</span></p>
+                                <p> Qty：<span>5</span></p>
+                            </td>
+                            <td class="order-price">
+                                <span>$300.00</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--底部-->
+                <div class="order-btns">
+                    <div class="del-box">
+                        <span class="iconfont icon-yduishanchu js-del-btn"></span>
+                    </div>
+                    <div class="btns">
+                        <a href="pcb-detail.html" class="view-detail">View Detail</a>
+                        <a href="javascript:void(0)" class="add-file js-add-file" data="11">Add Gerber file</a>
+                    </div>
+                </div>
+            </div>
+            <!--钢网订单-->
+            <div class="order-item ">
+                <!--头部-->
+                <div class="order-title ">
+                    <input type="text">
+                    <span class="iconfont icon-yduizhengqueshixin"></span>
+                    <div class="order-info">
+                        <p>Product No: A60005ASF54</p>
+                        <p>Add Time: 2018-10-29</p>
+                    </div>
+                    <div class="order-status">
+                        <div class="pass-payment">
+                            Audit Failed
+                        </div>
+                    </div>
+                </div>
+                <!--中间-->
+                <div class="order-table">
+                    <table>
+                        <tr>
+                            <td class="order-img">
+                                <img src="img/smd.png">
+                            </td>
+                            <td class="order-text">
+                                <p>[PCB Production]</p>
+                                <p>Build Time: <span>14-15</span> days</p>
+                                <p> Size (mm)：<span>1 x 1</span></p>
+                                <p> Qty：<span>5</span></p>
+                            </td>
+                            <td class="order-price">
+                                <span>$300.00</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--底部-->
+                <div class="order-btns">
+                    <div class="del-box">
+                        <span class="iconfont icon-yduishanchu js-del-btn"></span>
+                    </div>
+                    <div class="btns">
+                        <a href="stencil-detail.html" class="view-detail">View Detail</a>
+                        <a href="javascript:void(0)" class="add-file js-add-file" data="11">Add Gerber file</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="car-footer">
+    <div class="item-left">
+        <!--全选-->
+        <div class="all-btn js-all-btn">
+            <input type="checkbox" checked="false" style="display: none">
+            <span class="iconfont icon-yduizhengqueshixin"></span>
+            <span class="all">All</span>
+        </div>
+        <!--总计-->
+        <div class="total-price">
+            <span class="total">Total</span>
+            <span class="price">$123456</span>
+        </div>
+    </div>
+    <div class="item-right js-calculate">
+        <!--<span>Calculate</span>-->
+        <span>Place Order</span>
+    </div>
+</footer>
+<script src="lib/zepto/zepto.js"></script>
+<script src="lib/dialog/dialog.js"></script>
+<script src="js/global.js"></script>
+<script>
+    $(function () {
+        //删除按钮
+        $(document).on('click', '.del-box .js-del-btn', function () {
+            var that = $(this);
+            $(document).dialog({
+                style: 'ios',
+                titleText: 'confirmation',
+                type: 'confirm',
+                buttonTextConfirm: 'confirm',
+                buttonTextCancel: 'cancel',
+                // closeBtnShow: true,
+                content: 'Are you sure about deleting',
+                //确定回调
+                onClickConfirmBtn: function () {
+                    // alert('你点了“确定”按钮');
+                    that.parent().parent().parent().hide();
+                    // that.parent().parent().parent().remove();
+                },
+                //取消回调
+                onClickCancelBtn: function () {
+
+                }
+            });
+        });
+        //全选按钮
+        $('.js-all-btn').click(function () {
+            $(this).toggleClass('active-btns');//全选
+            if ($(this).hasClass('active-btns')) {
+                $(this).children('input').attr('checked', 'checked');
+                $('.js-orders .order-item .order-title').each(function () {
+                    $(this).parent().addClass('active-order');
+                    $(this).children('input').attr('checked', 'checked');
+                });
+            } else {
+                $(this).children('input').removeAttr('checked');
+                $('.js-orders .order-item .order-title').each(function () {
+                    $(this).parent().removeClass('active-order');
+                    $(this).children('input').removeAttr('checked', 'checked');
+                });
+            }
+        });
+        //单独勾选
+        $(document).on('click', '.js-orders .order-item .order-title', function () {
+            $(this).parent().toggleClass('active-order');
+            if ($(this).parent().hasClass('active-order')) {
+                $(this).children('input').attr('checked', 'checked');
+            } else {
+                $(this).children('input').removeAttr('checked');
+            }
+        });
+
+        //    下单计价
+        $('.js-calculate').click(function () {
+            //输出当前选择的订单
+            $('.order-item input').each(function () {
+                console.log($(this).prop('checked'));
+            });
+        });
+
+//上传文件弹窗提示
+        $(document).on('click', '.js-add-file', function () {
+            var index = $(this).attr('data') - 1;
+            $(document).dialog({
+                style: 'ios',
+                titleShow: false,
+                buttonTextConfirm: 'confirm',
+                content: tipsArr[index],
+            });
+        })
+
+
+    });//end function
+</script>
+</body>
+</html>

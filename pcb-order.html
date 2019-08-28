@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no">
+    <!--动态计算-->
+    <script src="lib/ydui/ydui.flexible.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/place-order.css">
+    <link rel="stylesheet" href="css/total-price.css">
+    <!--字体图标-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!--弹窗-->
+    <link rel="stylesheet" href="lib/dialog/dialog.css">
+
+</head>
+<body>
+<!--头部-->
+<header class="header">
+    <div class="header-logo">
+        <i class="iconfont icon-caidan js-menu-btn"></i>
+        <a href="index.html" class="logo-img"></a>
+    </div>
+    <div class="header-car">
+        <a href="#">
+            <i class="iconfont icon-Skype"></i>
+        </a>
+        <a href="shopping-car.html" class="cars">
+            <i class="iconfont icon-gouwuche"></i>
+            <span class="car-num">99</span>
+        </a>
+    </div>
+</header>
+<!--头部-->
+<!--主体-->
+<section class="main-box">
+    <!--计价导航-->
+    <nav class="pcb-nav">
+        <!--添加  active-nav 激活样式-->
+        <div class="pcb-item active-nav">
+            <a href="pcb-order.html">
+                PCB
+            </a>
+        </div>
+        <div class="pcb-item ">
+            <a href="pcba-order.html">
+                PCBA
+            </a>
+        </div>
+        <div class="pcb-item ">
+            <a href="fpc-order.html">
+                FPC
+            </a>
+        </div>
+        <div class="pcb-item ">
+            <a href="smd-order.html">
+                SMD
+            </a>
+        </div>
+    </nav>
+    <!--参数列表-->
+    <div class="parameter-box">
+        <!--1 Board type-->
+        <div class="item">
+            <div class="item-title">
+                <span>Board type</span>
+                <div class="iconfont icon-tishi tips" data="1"></div>
+            </div>
+            <ul class="lists pcb-lists js-board-type">
+                <li class="active-list" data="1">Single <br>
+                    piece
+                </li>
+                <li data="2">Panel by <br>
+                    Customer
+                </li>
+                <li data="3">
+                    Panel by <br>
+                    PCBgogo
+                </li>
+            </ul>
+        </div>
+        <!--隐藏元素1.1-->
+        <div class="hide-item js-board-hide">
+            <div class="item">
+                <div class="item-title">
+                    <span>Route Process</span>
+                    <div>&nbsp;</div>
+                </div>
+                <ul class="lists pcb-lists">
+                    <li class="active-list">Panel as<br>
+                        V-Scoring
+                    </li>
+                    <li>Panel as<br>
+                        Tab Route
+                    </li>
+                    <li>
+                        Both V-Scoring<br>&Tab-routing
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span>X-out Allowance in Panel</span>
+                    <div>&nbsp;</div>
+                </div>
+                <ul class="lists">
+                    <li class="active-list">Accept</li>
+                    <li>No Accept</li>
+                    <li class="empty-list"></li>
+                </ul>
+            </div>
+        </div>
+        <!--隐藏元素1.2-->
+        <div class="hide-requirements js-hide-requirements">
+            <h2>Panel requirements</h2>
+            <div class="edge-box">
+                <span>Edge Rails</span>
+                <ul class="switch-box js-switch-box">
+                    <li>NO</li>
+                    <li class="active-btn">YES</li>
+                </ul>
+            </div>
+            <p>(e.g. Panel in 2*3, size of the break-away rail,
+                <br> total 5 panels=total 30 individual boards)</p>
+            <div class="edit-box">
+                <textarea></textarea>
+            </div>
+        </div>
+        <!--2 Different Design in Panel-->
+        <div class="item">
+            <div class="item-title">
+                <span>Different Design in Panel</span>
+                <div class="iconfont icon-tishi tips" data="2"></div>
+            </div>
+            <div class="diff-design">
+                <input type="tel">
+            </div>
+        </div>
+        <!--3 Size (single)-->
+        <div class="item">
+            <div class="item-title">
+                <span>Size (single)</span>
+                <div class="inch-tips">
+                    <span>inch"↔mm&nbsp;&nbsp;</span>
+                    <div class="iconfont icon-tishi js-inch-tips">
+                    </div>
+                </div>
+            </div>
+            <div class="size-single">
+                <input type="tel" placeholder="Length(mm)">
+                <span></span>
+                <input type="tel" placeholder="Width(mm)">
+            </div>
+        </div>
+        <!--4 Quantity (single)-->
+        <div class="item">
+            <div class="item-title">
+                <span>Quantity (single)</span>
+                <div>&nbsp;</div>
+            </div>
+            <input type="text" readonly class="quantity-box js-quantity-box">
+        </div>
+        <!--5 Layers-->
+        <div class="item">
+            <div class="item-title">
+                <span>Layers</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists js-layers">
+                <li data="1">1 Layer</li>
+                <li class="active-list" data="2">2 Layer</li>
+                <li data="4">4 Layer</li>
+                <li data="6">6 Layer</li>
+                <li data="8">8 Layer</li>
+                <li data="10">10 Layer</li>
+            </ul>
+        </div>
+        <!--隐藏元5.1-->
+        <div class="hide-item js-hide-layers">
+            <div class="item">
+                <div class="item-title">
+                    <span>Copper layer</span>
+                    <div>&nbsp;</div>
+                </div>
+                <ul class="lists">
+                    <li class="active-list">Top layer</li>
+                    <li>Bottom layer</li>
+                    <li>None</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span>Soldermask</span>
+                    <div>&nbsp;</div>
+                </div>
+                <ul class="lists">
+                    <li class="active-list">Top side</li>
+                    <li>Bottom side</li>
+                    <li>Both sides</li>
+                    <li>None</li>
+                    <li class="empty-list"></li>
+                    <li class="empty-list"></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span>Silkscreen Legend</span>
+                    <div>&nbsp;</div>
+                </div>
+                <ul class="lists">
+                    <li class="active-list">Top side</li>
+                    <li>Bottom side</li>
+                    <li>Both sides</li>
+                    <li>None</li>
+                    <li class="empty-list"></li>
+                    <li class="empty-list"></li>
+                </ul>
+            </div>
+        </div>
+        <!--6 Material-->
+        <div class="item">
+            <div class="item-title">
+                <span>Material</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists pcb-lists js-material">
+                <li class="active-list" data="1">Normal
+                    <br> FR-4 Board
+                </li>
+                <li data="2">Aluminum
+                    <br>Board
+                </li>
+                <li data="3">Flexible
+                    <br>Board
+                </li>
+            </ul>
+        </div>
+        <!--6.1 FR4-TG-->
+        <div class="item js-fr4">
+            <div class="item-title">
+                <span>FR4-TG</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists ">
+                <li class="active-list">TG 130-140</li>
+                <li>TG 130-140</li>
+                <li>TG 170-180</li>
+            </ul>
+        </div>
+        <!--6.2 Structure of MCPCB-->
+        <div class="item mcpcb js-mcpcb">
+            <div class="item-title">
+                <span>Structure of MCPCB</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists pcb-lists">
+                <li class="active-list">Metal core
+                    <br>in the middle
+                </li>
+                <li>Metal base on
+                    <br>the bottom side
+                </li>
+                <li class="empty-list"></li>
+            </ul>
+        </div>
+        <!--7 Thickness-->
+        <div class="item">
+            <div class="item-title">
+                <span>Thickness</span>
+                <div>Unit: mm</div>
+            </div>
+            <ul class="lists js-thickness">
+                <li data="0.4">0.4</li>
+                <li data="0.6">0.6</li>
+                <li data="0.8">0.8</li>
+                <li data="1.0">1.0</li>
+                <li data="1.2">1.2</li>
+                <li class="active-list" data="1.6">1.6</li>
+                <li data="2.0">2.0</li>
+                <li data="2.4">2.4</li>
+                <li class="empty-list"></li>
+            </ul>
+        </div>
+        <!--8 Min Track/Spacing-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Min Track/Spacing</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists ">
+                <li>4/4mil</li>
+                <li>5/5mil</li>
+                <li class="active-list">6/6mil</li>
+            </ul>
+        </div>
+        <!--9 Min Hole Size-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Min Track/Spacing</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists ">
+                <li>0.2mm</li>
+                <li>0.25mm</li>
+                <li class="active-list">0.3mm</li>
+                <li>No Drill</li>
+            </ul>
+        </div>
+        <!--10 Solder Mask-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Solder Mask</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists js-solder">
+                <li class="active-list" data="green"><i class="green"></i><span>Green</span></li>
+                <li data="red"><i class="red"></i><span>Red</span></li>
+                <li data="yellow"><i class="yellow"></i><span>Yellow</span></li>
+                <li data="blue"><i class="blue"></i><span>Blue</span></li>
+                <li data="white"><i class="white"></i><span>White</span></li>
+                <li data="purple"><i class="purple"></i><span>Purple</span></li>
+                <li data="black"><i class="black"></i><span>Black</span></li>
+                <li data="mt-black"><i class="matt-black"></i><span>Matt black</span></li>
+                <li data="mt-green"><i class="matt-green"></i><span>Matt green</span></li>
+                <li data="none">None</li>
+            </ul>
+        </div>
+        <!--11 Silkscreen-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Solder Mask</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists js-silkscreen">
+                <li class="active-list" data="white"><i class="white"></i><span>White</span></li>
+                <li data="black"><i class="black"></i><span>Black</span></li>
+                <li data="none">None</li>
+            </ul>
+        </div>
+        <!--12 Gold Fingers-->
+        <div class="item ">
+            <div class="edge-box gold-fingers">
+                <span>Gold Fingers</span>
+                <ul class="switch-box js-switch-gold">
+                    <li>NO</li>
+                    <li>YES</li>
+                </ul>
+            </div>
+        </div>
+        <!--12.1 隐藏元素 Bevelling-->
+        <div class="item hide-item js-bevelling">
+            <div class="item-title">
+                <span>Bevelling</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists ">
+                <li>No</li>
+                <li class="active-list">Yes(30°)</li>
+                <li>Yes(45°)</li>
+            </ul>
+        </div>
+        <!--13 Surface Finish-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Surface Finish</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists js-surface-finish">
+                <li class="active-list" data="1">HASL with lead</li>
+                <li data="2">HASL lead free</li>
+                <li data="3">Immersion gold</li>
+                <li data="4">OSP</li>
+                <li data="5">Hard Gold</li>
+                <li class="empty-list"></li>
+            </ul>
+            <!--tick yes -->
+            <div class="edge-box tick-box js-tick-box">
+                <span>Tick “Yes” to replace “HASL” to “ENIG”<br>without any additional charges. Thank You</span>
+                <ul class="switch-box js-switch-tick">
+                    <li>NO</li>
+                    <li>YES</li>
+                </ul>
+            </div>
+        </div>
+        <!--14 Via Process-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Via Process</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists pcb-lists">
+                <li class="active-list">Tenting vias</li>
+                <li>Plugged vias</li>
+                <li>Vias not <br>covered</li>
+            </ul>
+        </div>
+        <!--15 Finished Copper-->
+        <div class="item ">
+            <div class="item-title">
+                <span>Finished Copper</span>
+                <div>&nbsp;</div>
+            </div>
+            <ul class="lists ">
+                <li class="active-list">1 oz. Cu</li>
+                <li>2 oz. Cu</li>
+                <li>3 oz. Cu</li>
+                <li>4 oz. Cu</li>
+            </ul>
+        </div>
+        <!--16 + Add PO No.-->
+        <div class="item">
+            <div class="item-title">
+                <span>+ Add PO No.</span>
+                <div>&nbsp;</div>
+            </div>
+            <div class="diff-design">
+                <textarea name=""></textarea>
+            </div>
+        </div>
+        <!--17 Other Special Request-->
+        <div class="item special-request">
+            <div class="item-title">
+                <span>Other Special Request</span>
+                <div>&nbsp;</div>
+            </div>
+            <p>Fill in the details so that we can know what's your requirements.</p>
+            <div class="diff-design">
+                <textarea name=""></textarea>
+            </div>
+        </div>
+    </div>
+    <!--+ Additional Options-->
+    <div class="add-options">
+        <!--标题-->
+        <div class="options-title js-options-title">
+            <h3>Other Special Request</h3>
+            <p><span>(Castellated holes, edge plating, impedance control,buried/blind vias)</span>
+                <span class="iconfont icon-yduizhengqueshixin"></span></p>
+        </div>
+        <!--内容-->
+        <div class="options-box">
+            <div class="marking-box">
+                <div class="item">
+                    <div class="item-title">
+                        <span>Peelable Soldermask</span>
+                        <div class="iconfont icon-tishi tips" data="3"></div>
+                    </div>
+                    <input type="text" readonly class="quantity-box js-solder-masked">
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <span>UL Marking</span>
+                        <div class="iconfont icon-tishi tips" data="4"></div>
+                    </div>
+                    <input type="text" readonly class="quantity-box js-marking">
+                </div>
+            </div>
+            <!---->
+            <ul class="options-items js-options-items">
+                <li>Half-cut/Caste <br>llated Holes</li>
+                <li>Edge Plating</li>
+                <li>Impedance<br>control</li>
+                <li>Buried/<br>blind vias</li>
+                <li>Custom<br>Stackup</li>
+                <li>Carbon<br>Mask</li>
+                <li>Via in pad</li>
+                <li>Via filled<br>with resin</li>
+                <li>Countersinks/<br>Counterbores</li>
+                <li>Z-axis<br>milling</li>
+                <li class="empty-list"></li>
+                <li class="empty-list"></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<footer class="inner-footer">
+    <div class="footer-left">
+        <i class="iconfont icon-zhongzhi"></i>
+        <span>Reset</span>
+    </div>
+    <div class="footer-right js-footer-right">
+        <i class="iconfont icon-jijia"></i>
+        <span>Calculate</span>
+    </div>
+</footer>
+<!--弹窗模板-->
+<div class="popup-box"></div>
+<!--弹窗模板-->
+<!--单位转换 弹窗结构-->
+<!--<div class="inch-content">-->
+<!--<h5>Inch”↔mm conversion</h5>-->
+<!--<p>-->
+<!--If you enter in units of inches and press the-->
+<!--<br> [Convert] button, it will be converted into units of-->
+<!--<br> millimeters in the quotation form.-->
+<!--</p>-->
+<!--<div class="inch-item">-->
+<!--<span>X =</span>-->
+<!--<input type="text" class="js-inch-x">-->
+<!--<div class="inch-text ">inch</div>-->
+<!--</div>-->
+<!--<div class="inch-item">-->
+<!--<span>Y =</span>-->
+<!--<input type="text" class="js-inch-y">-->
+<!--<div class="inch-text js-inch-y">inch</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--单位转换 弹窗结构-->
+
+
+<!--quantity 弹窗结构-->
+<!--<div class="quantity-content">-->
+<!--<ul class="select-quantity js-select">-->
+<!--<li>5</li>-->
+<!--<li>10</li>-->
+<!--<li>15</li>-->
+<!--<li>20</li>-->
+<!--<li>25</li>-->
+<!--<li>30</li>-->
+<!--<li>40</li>-->
+<!--<li>50</li>-->
+<!--<li>75</li>-->
+<!--<li>100</li>-->
+<!--<li>125</li>-->
+<!--<li>150</li>-->
+<!--<li>200</li>-->
+<!--<li>250</li>-->
+<!--<li>300</li>-->
+<!--<li>350</li>-->
+<!--<li>400</li>-->
+<!--<li>450</li>-->
+<!--<li>500</li>-->
+<!--<li>600</li>-->
+<!--<li>700</li>-->
+<!--<li>800</li>-->
+<!--<li>900</li>-->
+<!--<li>1000</li>-->
+<!--<li>1500</li>-->
+<!--<li>2000</li>-->
+<!--<li>2500</li>-->
+<!--<li>3000</li>-->
+<!--<li>3500</li>-->
+<!--<li>4000</li>-->
+<!--<li>4500</li>-->
+<!--<li>5000</li>-->
+<!--<li>5500</li>-->
+<!--<li>6000</li>-->
+<!--<li>6500</li>-->
+<!--<li>7000</li>-->
+<!--<li>7500</li>-->
+<!--<li>8000</li>-->
+<!--<li class="empty-list"></li>-->
+<!--<li class="empty-list"></li>-->
+<!--</ul>-->
+<!--&lt;!&ndash;other &ndash;&gt;-->
+<!--<div class="other-box">-->
+<!--<h2>Other</h2>-->
+<!--<input type="text" class="js-other">-->
+<!--</div>-->
+<!--</div>-->
+<!--quantity 弹窗结构-->
+
+<!--4 6 8 层板子 弹窗结构-->
+<!--<div class="fill-box">-->
+<!--<p>Please fill in the layer order from top to bottom-->
+<!--here.</p>-->
+<!--<p class="fill-layer">-->
+<!--Please fill in the layer order from top side view-->
+<!--<br>tobottom side according to the layers name in your file.-->
+<!--</p>-->
+<!--<ul class="layers-lists js-layers-lists">-->
+<!--<li>-->
+<!--<input type="text" placeholder="L1:" data="1">-->
+<!--</li>  <li>-->
+<!--<input type="text" placeholder="L2:" data="2">-->
+<!--</li>  <li>-->
+<!--<input type="text" placeholder="L3:" data="3">-->
+<!--</li>  <li>-->
+<!--<input type="text" placeholder="L4:" data="4">-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--4 6 8 层板子 弹窗结构-->
+
+<!--特殊工艺 solderMask 弹窗结构-->
+<!--<div class="solder-mask">-->
+<!--<ul class="solder-mask js-solder-mask">-->
+<!--<li data="None">None</li>-->
+<!--<li data="Top side">Top side</li>-->
+<!--<li data="Bottom side">Bottom side</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--特殊工艺 solderMask 弹窗结构-->
+
+<!--特殊工艺 UL Marking 弹窗结构-->
+<!--<div class="solder-mask">-->
+<!--<ul class="solder-mask js-solder-mark">-->
+<!--<li data="None">None</li>-->
+<!--<li data="Yes - add to top silkscreen">Yes - add to top silkscreen</li>-->
+<!--<li data="Yes - add to bottom silkscreen">Yes - add to bottom silkscreen</li>-->
+<!--<li data="Yes - add to top soldermask">Yes - add to top solder mask</li>-->
+<!--<li data="Yes - add to bottom soldermask">Yes - add to bottom solder mask</li>-->
+<!--<li data="Yes - add to top copper">Yes - add to top copper</li>-->
+<!--<li data="Yes - add to bottom copper">Yes - add to bottom copper</li>-->
+<!--<li data="Yes - as PCBGOGO default">Yes - as PCBGOGO default</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--特殊工艺 UL Marking 弹窗结构-->
+
+<!--左侧菜单弹窗-->
+<section class="left-menu js-left-menu ">
+    <!--menu-mask-->
+    <div class="menu-mask js-menu-mask"></div>
+    <!--menu-->
+    <div class="menu-box">
+        <!--用户头像信息-->
+        <div class="user-box">
+            <div class="user-img">
+                <img src="img/user.png" alt="user-header">
+            </div>
+            <!--未登录-->
+            <div class="user-info">
+                <a href="login.html">Sign in </a>
+                <span>|</span>
+                <a href="registered.html">Join Free</a>
+            </div>
+            <!--登陆后-->
+            <div class="logined-box">
+                <div class="logined">
+                    <p>A20000000</p>
+                    <p>10010@163.com</p>
+                </div>
+            </div>
+            <div class="link-btn"></div>
+        </div>
+        <!--主菜单列表-->
+        <ul class="main-menu">
+            <li>
+                <a href="index.html">
+                    <div class="menu-text">
+                        <i class="iconfont icon-HOME"></i>Home
+                    </div>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+            <li>
+                <a href="shopping-car.html">
+                    <div class="menu-text">
+                        <i class="iconfont icon-gouwuche"></i>Shopping cart
+                    </div>
+                    <div class="menu-num">
+                        <span class="car-num">99</span>
+                        <div class="link-btn"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="pcb-order.html">
+                    <div class="menu-text">
+                        <i class="iconfont icon-jijia"></i>Quote
+                    </div>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="menu-text">
+                        <i class="iconfont icon-my"></i>My Account
+                    </div>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+        </ul>
+        <!--介绍页面-->
+        <ul class="static-page">
+            <li>
+                <a href="#">
+                    <span>PCB Layout</span>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Capabilities</span>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Forum</span>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>About Us</span>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Contact Us</span>
+                    <div class="link-btn"></div>
+                </a>
+            </li>
+        </ul>
+        <!--退出登录-->
+        <div class="sign-out">
+            <i> sign out</i>
+        </div>
+    </div>
+</section>
+<!--左侧菜单弹窗-->
+
+<!--pcb计价弹窗-->
+<div class="popup-order">
+    <div class="order-content">
+        <!--PCB Build time-->
+        <div class="build-box">
+            <h2>PCB Build time</h2>
+            <ul class="js-build-time">
+                <li class="active-time">
+                    <div class="time-box">
+                        <span class="iconfont icon-yduizhengqueshixin "></span>
+                        <span class="time">2-3 days</span>
+                    </div>
+                    <span>$5</span>
+                </li>
+                <li>
+                    <div class="time-box">
+                        <span class="iconfont icon-yduizhengqueshixin "></span>
+                        <span class="time">24hours</span>
+                        <span class="iconfont icon-Express"></span>
+                    </div>
+                    <span>$38</span>
+                </li>
+            </ul>
+        </div>
+        <!--Shipping costs-->
+        <div class="shipping-box">
+            <h2>Shipping costs</h2>
+            <!--物流选择-->
+            <select name="">
+                <option value="">FedEx-IE</option>
+                <option value="">FedEx-IP</option>
+                <option value="">DHL</option>
+                <option value="">HK DHL</option>
+                <option value="">EMS</option>
+                <option value="">HK post</option>
+                <option value="">China Post</option>
+                <option value="">E-packet</option>
+                <option value="">SF Express</option>
+                <option value="">Other shipping way</option>
+            </select>
+            <!--国家选择-->
+            <select name="selShipCountry" id="selShipCountry">
+                <option value="0">Choose Country</option>
+                <option pic="15" value="1">ANDORRA</option>
+                <option pic="222" value="2">UNITED ARAB EMIRATES</option>
+                <option pic="11" value="3">AFGHANISTAN</option>
+                <option pic="19" value="4">ANTIGUA</option>
+                <option pic="17" value="5">ANGUILLA</option>
+                <option pic="12" value="6">ALBANIA</option>
+                <option pic="21" value="7">ARMENIA</option>
+                <option pic="16" value="8">ANGOLA</option>
+                <option pic="20" value="9">ARGENTINA</option>
+                <option pic="14" value="10">AMERICAN SAMOA</option>
+                <option pic="24" value="11">AUSTRIA</option>
+                <option pic="23" value="12">AUSTRALIA</option>
+                <option pic="22" value="13">ARUBA</option>
+                <option pic="25" value="14">AZERBAIJAN</option>
+                <option pic="247" value="15">BOSNIA AND HERZEGOVINA</option>
+                <option pic="29" value="16">BARBADOS</option>
+                <option pic="28" value="17">BANGLADESH</option>
+                <option pic="31" value="18">BELGIUM</option>
+                <option pic="44" value="19">BURKINA FASO</option>
+                <option pic="43" value="20">BULGARIA</option>
+                <option pic="27" value="21">BAHRAIN</option>
+                <option pic="45" value="22">BURUNDI</option>
+                <option pic="33" value="23">BENIN</option>
+                <option pic="34" value="24">BERMUDA</option>
+                <option pic="42" value="25">BRUNEI</option>
+                <option pic="36" value="26">BOLIVIA</option>
+                <option pic="40" value="27">BRAZIL</option>
+                <option pic="26" value="28">BAHAMAS</option>
+                <option pic="35" value="29">BHUTAN</option>
+                <option pic="38" value="30">BOTSWANA</option>
+                <option pic="30" value="31">BELARUS</option>
+                <option pic="32" value="32">BELIZE</option>
+                <option pic="2" value="33">CANADA</option>
+                <option pic="236" value="34">CONGO, THE DEMOCRATIC REPUBLIC OF</option>
+                <option pic="50" value="35">CENTRAL AFRICAN REPUBLIC</option>
+                <option pic="57" value="36">CONGO</option>
+                <option pic="206" value="37">SWITZERLAND</option>
+                <option pic="246" value="38">COTE D IVOIRE</option>
+                <option pic="58" value="39">COOK ISLANDS</option>
+                <option pic="52" value="40">CHILE</option>
+                <option pic="47" value="41">CAMEROON</option>
+                <option pic="55" value="43">COLOMBIA</option>
+                <option pic="59" value="44">COSTA RICA</option>
+                <option pic="62" value="45">CUBA</option>
+                <option pic="48" value="46">CAPE VERDE</option>
+                <option pic="63" value="47">CYPRUS</option>
+                <option pic="64" value="48">CZECH REPUBLIC, THE</option>
+                <option pic="89" value="49">GERMANY</option>
+                <option pic="66" value="50">DJIBOUTI</option>
+                <option pic="65" value="51">DENMARK</option>
+                <option pic="67" value="52">DOMINICA</option>
+                <option pic="13" value="54">ALGERIA</option>
+                <option pic="70" value="55">ECUADOR</option>
+                <option pic="75" value="56">ESTONIA</option>
+                <option pic="71" value="57">EGYPT</option>
+                <option pic="74" value="58">ERITREA</option>
+                <option pic="197" value="59">SPAIN</option>
+                <option pic="76" value="60">ETHIOPIA</option>
+                <option pic="80" value="61">FINLAND</option>
+                <option pic="79" value="62">FIJI</option>
+                <option pic="77" value="63">FALKLAND ISLANDS</option>
+                <option pic="142" value="64">MICRONESIA, FEDERATED STATES OF</option>
+                <option pic="78" value="65">FAROE ISLANDS</option>
+                <option pic="81" value="66">FRANCE</option>
+                <option pic="86" value="67">GABON</option>
+                <option pic="9" value="68">UNITED KINGDOM</option>
+                <option pic="94" value="69">GRENADA</option>
+                <option pic="88" value="70">GEORGIA</option>
+                <option pic="83" value="71">FRENCH GUYANA</option>
+                <option pic="90" value="73">GHANA</option>
+                <option pic="91" value="74">GIBRALTAR</option>
+                <option pic="93" value="75">GREENLAND</option>
+                <option pic="87" value="76">GAMBIA</option>
+                <option pic="98" value="77">GUINEA REPUBLIC</option>
+                <option pic="95" value="78">GUADELOUPE</option>
+                <option pic="73" value="79">GUINEA-EQUATORIAL</option>
+                <option pic="92" value="80">GREECE</option>
+                <option pic="97" value="81">GUATEMALA</option>
+                <option pic="96" value="82">GUAM</option>
+                <option pic="99" value="83">GUINEA-BISSAU</option>
+                <option pic="100" value="84">GUYANA (BRITISH)</option>
+                <option pic="103" value="86">HONDURAS</option>
+                <option pic="61" value="87">CROATIA</option>
+                <option pic="101" value="88">HAITI</option>
+                <option pic="104" value="89">HUNGARY</option>
+                <option pic="4" value="91">INDONESIA</option>
+                <option pic="109" value="92">IRELAND, REPUBLIC OF</option>
+                <option pic="110" value="93">ISRAEL</option>
+                <option pic="106" value="94">INDIA</option>
+                <option pic="108" value="95">IRAQ</option>
+                <option pic="107" value="96">IRAN (ISLAMIC REPUBLIC OF)</option>
+                <option pic="105" value="97">ICELAND</option>
+                <option pic="111" value="98">ITALY</option>
+                <option pic="112" value="100">JAMAICA</option>
+                <option pic="114" value="101">JORDAN</option>
+                <option pic="113" value="102">JAPAN</option>
+                <option pic="116" value="103">KENYA</option>
+                <option pic="119" value="104">KYRGYZSTAN</option>
+                <option pic="46" value="105">CAMBODIA</option>
+                <option pic="117" value="106">KIRIBATI</option>
+                <option pic="56" value="107">COMOROS</option>
+                <option pic="162" value="109">KOREA, THE D.P.R OF (NORTH K.)</option>
+                <option pic="240" value="110">KOREA, REPUBLIC OF (SOUTH K.)</option>
+                <option pic="118" value="112">KUWAIT</option>
+                <option pic="49" value="113">CAYMAN ISLANDS</option>
+                <option pic="115" value="114">KAZAKHSTAN</option>
+                <option pic="245" value="115">LAO PEOPLES DEMOCRATIC REPUBLIC</option>
+                <option pic="122" value="116">LEBANON</option>
+                <option pic="0" value="117">ST. LUCIA</option>
+                <option pic="126" value="118">LIECHTENSTEIN</option>
+                <option pic="198" value="119">SRI LANKA</option>
+                <option pic="124" value="120">LIBERIA</option>
+                <option pic="123" value="121">LESOTHO</option>
+                <option pic="127" value="122">LITHUANIA</option>
+                <option pic="128" value="123">LUXEMBOURG</option>
+                <option pic="121" value="124">LATVIA</option>
+                <option pic="0" value="125">LIBYA</option>
+                <option pic="147" value="126">MOROCCO</option>
+                <option pic="143" value="127">MOLDOVA, REPUBLIC OF</option>
+                <option pic="243" value="128">MONTENEGRO, REPUBLIC OF</option>
+                <option pic="131" value="129">MADAGASCAR</option>
+                <option pic="136" value="130">MARSHALL ISLANDS</option>
+                <option pic="130" value="131">MACEDONIA, REPUBLIC OF</option>
+                <option pic="134" value="132">MALI</option>
+                <option pic="149" value="133">MYANMAR</option>
+                <option pic="145" value="134">MONGOLIA</option>
+                <option pic="0" value="136">COMMONWEALTH NO. MARIANA ISLANDS</option>
+                <option pic="137" value="137">MARTINIQUE</option>
+                <option pic="138" value="138">MAURITANIA</option>
+                <option pic="146" value="139">MONTSERRAT</option>
+                <option pic="135" value="140">MALTA</option>
+                <option pic="139" value="141">MAURITIUS</option>
+                <option pic="133" value="142">MALDIVES</option>
+                <option pic="132" value="143">MALAWI</option>
+                <option pic="141" value="144">MEXICO</option>
+                <option pic="6" value="145">MALAYSIA</option>
+                <option pic="148" value="146">MOZAMBIQUE</option>
+                <option pic="150" value="147">NAMIBIA</option>
+                <option pic="155" value="148">NEW CALEDONIA</option>
+                <option pic="158" value="149">NIGER</option>
+                <option pic="159" value="150">NIGERIA</option>
+                <option pic="157" value="151">NICARAGUA</option>
+                <option pic="153" value="152">NETHERLANDS, THE</option>
+                <option pic="164" value="153">NORWAY</option>
+                <option pic="152" value="154">NEPAL</option>
+                <option pic="151" value="155">NAURU, REPUBLIC OF</option>
+                <option pic="160" value="156">NIUE</option>
+                <option pic="156" value="157">NEW ZEALAND</option>
+                <option pic="165" value="158">OMAN</option>
+                <option pic="168" value="159">PANAMA</option>
+                <option pic="171" value="160">PERU</option>
+                <option pic="169" value="162">PAPUA NEW GUINEA</option>
+                <option pic="172" value="163">PHILIPPINES, THE</option>
+                <option pic="166" value="164">PAKISTAN</option>
+                <option pic="174" value="165">POLAND</option>
+                <option pic="176" value="166">PUERTO RICO</option>
+                <option pic="175" value="167">PORTUGAL</option>
+                <option pic="167" value="168">PALAU</option>
+                <option pic="170" value="169">PARAGUAY</option>
+                <option pic="177" value="170">QATAR</option>
+                <option pic="178" value="171">REUNION, ISLAND OF</option>
+                <option pic="179" value="172">ROMANIA</option>
+                <option pic="241" value="173">SERBIA, REPUBLIC OF</option>
+                <option pic="180" value="174">RUSSIAN FEDERATION, THE</option>
+                <option pic="181" value="175">RWANDA</option>
+                <option pic="188" value="176">SAUDI ARABIA</option>
+                <option pic="194" value="177">SOLOMON ISLANDS</option>
+                <option pic="190" value="178">SEYCHELLES</option>
+                <option pic="201" value="179">SUDAN</option>
+                <option pic="205" value="180">SWEDEN</option>
+                <option pic="7" value="181">SINGAPORE</option>
+                <option pic="0" value="182">SAINT HELENA</option>
+                <option pic="193" value="183">SLOVENIA</option>
+                <option pic="192" value="184">SLOVAKIA</option>
+                <option pic="191" value="185">SIERRA LEONE</option>
+                <option pic="186" value="186">SAN MARINO</option>
+                <option pic="189" value="187">SENEGAL</option>
+                <option pic="195" value="188">SOMALIA</option>
+                <option pic="202" value="189">SURINAME</option>
+                <option pic="187" value="191">SAO TOME AND PRINCIPE</option>
+                <option pic="72" value="192">EL SALVADOR</option>
+                <option pic="0" value="193">SYRIA</option>
+                <option pic="204" value="194">SWAZILAND</option>
+                <option pic="218" value="195">TURKS AND CAICOS ISLANDS</option>
+                <option pic="51" value="196">CHAD</option>
+                <option pic="211" value="197">TOGO</option>
+                <option pic="210" value="198">THAILAND</option>
+                <option pic="208" value="199">TAJIKISTAN</option>
+                <option pic="69" value="200">EAST TIMOR</option>
+                <option pic="215" value="201">TUNISIA</option>
+                <option pic="213" value="202">TONGA</option>
+                <option pic="216" value="203">TURKEY</option>
+                <option pic="219" value="205">TUVALU</option>
+                <option pic="209" value="207">TANZANIA</option>
+                <option pic="221" value="208">UKRAINE</option>
+                <option pic="224" value="210">URUGUAY</option>
+                <option pic="225" value="211">UZBEKISTAN</option>
+                <option pic="228" value="213">VENEZUELA</option>
+                <option pic="230" value="214">VIRGIN ISLANDS (BRITISH)</option>
+                <option pic="231" value="215">VIRGIN ISLANDS (US)</option>
+                <option pic="229" value="216">VIETNAM</option>
+                <option pic="226" value="217">VANUATU</option>
+                <option pic="185" value="218">SAMOA</option>
+                <option pic="234" value="226">YEMEN, REPUBLIC OF</option>
+                <option pic="140" value="227">MAYOTTE</option>
+                <option pic="196" value="228">SOUTH AFRICA</option>
+                <option pic="237" value="229">ZAMBIA</option>
+                <option pic="238" value="230">ZIMBABWE</option>
+                <option pic="10" value="231">UNITED STATES OF AMERICA</option>
+            </select>
+            <!--联动信息-->
+            <ul class="link-info">
+                <li>
+                    <i><img src="img/usa-falg.png" alt=""></i>
+                    <span>UNITED STATES OF AMERICA</span>
+                </li>
+                <li>
+                    10-15 days , Weight: 0.50 kg
+                </li>
+            </ul>
+        </div>
+        <!--Email-->
+        <div class="email-box">
+            <h2>E-mail</h2>
+            <input type="email">
+        </div>
+        <!--合计价格-->
+        <div class="cost-box">
+            <!--pcb-->
+            <div class="cost" style="display: block">
+                PCB Cost
+                <span>$ 38</span>
+            </div>
+            <!--运费-->
+            <div class="cost" style="display: block">
+                Shipping
+                <span>$ 21</span>
+            </div>
+            <!--分割线-->
+            <div class="split-line">
+               <i></i>
+            </div>
+            <p class="cost-tips">Note: Accurate price will be confirmed after Geber files review</p>
+        </div>
+        <!--底部-->
+        <footer class="price-footer">
+            <div class="item-left">
+                <span>Total</span>
+                <span class="price">$ 59999999</span>
+            </div>
+            <div class="item-right">
+                <span>Add to basket</span>
+            </div>
+        </footer>
+    </div>
+</div>
+<!--pcb计价弹窗-->
+
+
+<script src="lib/zepto/zepto.js"></script>
+<script src="lib/dialog/dialog.js"></script>
+<script src="js/global.js"></script>
+<script src="js/order.js"></script>
+</body>
+</html>
